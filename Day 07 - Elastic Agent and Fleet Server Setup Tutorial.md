@@ -125,7 +125,9 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
 - Add `--insecure` at the end of the command to bypass self-signed certificate issues:
     
-    `.\elastic-agent.exe install --url=https://139.180.155.135:8220 --enrollment-token=<token> --insecure`
+    `.\elastic-agent.exe install --url=https://139.180.155.135:8220 --enrollment-token=<token> --insecure
+    `
+    ![[Pasted image 20251017000628.png]]
     
 - Ensure the agent downloads and installs successfully.
     
