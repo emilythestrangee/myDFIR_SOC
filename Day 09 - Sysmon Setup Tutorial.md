@@ -47,16 +47,6 @@ Accept the license agreement if prompted. Confirm that the Sysmon service is run
 
 ---
 
-## Verify Installation
-
-Open **Event Viewer**. Navigate to:
-
-`Applications and Services Logs → Microsoft → Windows → Sysmon → Operational`
-
-Confirm that logs are being generated, including process creation and network connection events.
-
----
-
 ## Next Steps
 
 Integrate Sysmon logs with the ELK stack (Elasticsearch, Logstash, Kibana) for centralized monitoring and analysis. Familiarize yourself with key Sysmon Event IDs to detect suspicious activity effectively.
