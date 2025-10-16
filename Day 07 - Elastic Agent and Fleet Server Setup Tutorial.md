@@ -129,7 +129,8 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     `
     ![[Pasted image 20251017000628.png]]
     
-- Ensure the agent downloads and installs successfully.
+- Ensure the agent downloads and installs successfully on the web GUI:
+
     
 
 ---
