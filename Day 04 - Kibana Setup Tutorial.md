@@ -13,11 +13,9 @@ Kibana is the visualization and interface layer of the ELK stack. It allows anal
 
 ## Step 1 — Download Kibana
 
-SSH into the Ubuntu instance where Elasticsearch is installed.
+SSH into the Ubuntu instance where Elasticsearch is installed. Get the download link from the official Elastic website, then run:
 
-Get the download link from the official Elastic website, then run:
-
-`wget https://artifacts.elastic.co/downloads/kibana/kibana-8.15.0-amd64.deb`
+`wget https://artifacts.elastic.co/downloads/kibana/kibana-9.1.5-amd64.deb
 
 Check if the package downloaded correctly:
 
@@ -29,7 +27,7 @@ Check if the package downloaded correctly:
 
 Install the downloaded `.deb` file:
 
-`dpkg -i kibana-8.15.0-amd64.deb`
+`dpkg -i kibana-9.1.5-amd64.deb`
 
 ---
 
