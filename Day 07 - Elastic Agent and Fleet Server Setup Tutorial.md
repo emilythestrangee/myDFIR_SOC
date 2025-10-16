@@ -49,11 +49,9 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 ## 3. Install Fleet Server
 
-- Copy the generated installation token and command from Kibana.
+- Copy the generated installation token and command from Kibana and SSH into the Fleet server:
     
-- SSH into the Fleet server:
-    
-    `ssh root@<Fleet_Public_IP>`
+    `ssh root@139.180.155.135
     
 - Update and upgrade packages:
     
