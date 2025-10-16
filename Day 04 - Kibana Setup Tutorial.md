@@ -115,14 +115,16 @@ Encryption keys are required to secure saved objects, reporting, and security fe
 
 `./kibana-encryption-keys generate`
 
-You’ll receive three keys. Add each to the Kibana keystore:
 ![[Pasted image 20251016225230.png]]
 
 
+You’ll receive three keys. Add each to the Kibana keystore:
+
+![[Pasted image 20251016225403.png]]
 
 Paste the appropriate values when prompted and restart Kibana to apply the changes:
 
-`systemctl restart kibana`
+
 
 Log in again to confirm the configuration works correctly.
 
