@@ -63,7 +63,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
         
         `sudo ufw allow 9200`
         
-    - Firewall rules in your SOC simulation for My.
+    - Firewall rules for MyDFIR-SOC-Challenge
         ![[Pasted image 20251016233624.png]]
 
 ---
