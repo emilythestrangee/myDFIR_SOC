@@ -43,7 +43,7 @@ Run the following command to install Sysmon with the configuration file:
 `.\Sysmon64.exe -i sysmonconfig.xml`
 
 Accept the license agreement if prompted. Confirm that the Sysmon service is running in **Services**. Open Event Viewer and expand **Applications and Services Logs → Microsoft → Windows → Sysmon → Operational** to view log entries.
-
+![[Pasted image 20251017011556.png]]
 
 ---
 
