@@ -120,9 +120,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 - RDP into the Windows Server MYDFIR-WIN-emaan.
     
-- Open **PowerShell as Administrator**.
-    
-- Paste and run the copied Elastic Agent installation command.
+- Open **PowerShell as Administrator**. Paste and run the copied Elastic Agent installation command.
     
 - Add `--insecure` at the end of the command to bypass self-signed certificate issues:
     
