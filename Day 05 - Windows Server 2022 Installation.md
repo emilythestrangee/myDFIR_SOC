@@ -41,8 +41,7 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
     - Copy the public IP and use Remote Desktop from your workstation.
         
     - Enter credentials and verify you can connect.
-        
-    ![[Pasted image 20251016191853.png]]
+        ![[Pasted image 20251016192252.png]]
 ---
 
 ## Security considerations (lab vs production)
