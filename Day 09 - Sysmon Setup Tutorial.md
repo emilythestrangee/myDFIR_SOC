@@ -6,7 +6,7 @@ Goal: Install Sysmon on a Windows server and verify that it generates logs (tele
 
 ## Connect to Windows Server
 
-Use Remote Desktop (RDP) to connect to the Windows server `Challenge-WIN-Haji` (IP and credentials provided). Open Microsoft Edge on the server to download Sysmon.
+Use Remote Desktop (RDP) to connect to the Windows server MYDFIR-WIN-emaan (IP and credentials provided). Open any available browser on the server to download Sysmon.
 
 ---
 
