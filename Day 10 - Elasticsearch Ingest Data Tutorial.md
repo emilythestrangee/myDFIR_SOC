@@ -17,20 +17,17 @@ Open your Elasticsearch instance and click the **Add Integrations** button on th
 Search for "Windows" and select **Custom Windows Event Logs**. Click **Add Custom Windows Event Logs**.
 ![[Pasted image 20251017012815.png]]
 
-Provide a name for the integration (e.g., `Challenge-Win-Sysmon`) and a description (e.g., “Collect Sysmon logs from Windows hosts”).
+Provide a name for the integration and a description.
+![[Pasted image 20251017013107.png]]
 
 Obtain the **Channel Name** from the Windows Server:
 
 - RDP into the server and open **Event Viewer**.
     
 - Navigate to:
-    
-
 `Applications and Services Logs → Microsoft → Windows → Sysmon → Operational`
 
 - Right-click **Operational**, select **Properties**, and copy the full name:
-    
-
 `Microsoft-Windows-Sysmon/Operational`
 
 Paste this full name into the integration setup. Add the integration to an existing host and select the agent policy (e.g., `Challenge Windows Policy`). Click **Save and Continue**, then **Save and Deploy Changes**.
