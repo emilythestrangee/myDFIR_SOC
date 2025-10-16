@@ -30,7 +30,8 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     `http://207.148.79.228:5601`
     
 - Open the **hamburger menu** → _Management_ → **Fleet**.
-![[Pasted image 20251016231420.png]]
+<img width="1100" height="546" alt="image" src="https://github.com/user-attachments/assets/53457359-884b-4516-93a1-c4764f901753" />
+
     
 - Click **Add Fleet Server**.
     
@@ -43,7 +44,8 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     - **URL**: `https://139.180.155.135:8220`
         
 - Generate a **Fleet Server Policy**.
-    ![[Pasted image 20251016232657.png]]
+   <img width="729" height="234" alt="image" src="https://github.com/user-attachments/assets/6f456c0c-66ca-47af-b155-962df6c85bd2" />
+
 
 ---
 
@@ -61,7 +63,8 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
     - That Elasticsearch port **9200** is open on MyDFIR-ELK.
     - Firewall rules for MyDFIR-SOC-Challenge
-        ![[Pasted image 20251016233923.png]]
+        <img width="516" height="260" alt="image" src="https://github.com/user-attachments/assets/de4469ae-f493-4e04-b904-e038e0048093" />
+
 
 ---
 
@@ -69,7 +72,8 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 - **On the MyDFIR-ELK server**: allow inbound traffic on port 9200.
 
-![[Pasted image 20251016234222.png]]
+<img width="484" height="29" alt="image" src="https://github.com/user-attachments/assets/9193639e-f940-46b7-8007-b583978f6bb9" />
+
     
 - **On the MyDFIR-Fleet-Server**:
     
@@ -77,63 +81,49 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
 - Ensure the Fleet server can communicate with ELK.
 
- ![[Pasted image 20251016234611.png]]
-
-![[Pasted image 20251016234705.png]]
+ <img width="582" height="93" alt="image" src="https://github.com/user-attachments/assets/fb79ed2c-e109-46ca-91b1-cef85cc7b0eb" />
 
 
----
+<img width="766" height="161" alt="image" src="https://github.com/user-attachments/assets/89a06987-006d-4fee-8aba-8144715689d1" />
 
-## 5. Fixing the Default Port (443 → 8220)
 
-- Go to **Fleet Settings** in Kibana.
-    
-- Edit the **Fleet Server Host URL**:
-    
-    - Change from:
-        
-        `https://<Fleet_Public_IP>:443`
-        
-    - To:
-        
-        `https://<Fleet_Public_IP>:8220`
-        
-- Save and deploy the settings.
-    
 
 ---
 
-## 6. Enroll the Elastic Agent
+## 5. Enroll the Elastic Agent
 
 - After Fleet Server installation succeeds, click:  
     **“Continue enrolling Elastic Agent”** in Kibana.
     
 - Create a policy name.
-![[Pasted image 20251016234935.png]]
+<img width="928" height="807" alt="image" src="https://github.com/user-attachments/assets/a291e66c-2ce4-49ba-a6e0-60cb3a9e2056" />
+
     
 - Select **Windows** as the host type.
     
 - Copy the Windows installation command.
 ---
 
-## 7. Install the Agent on Windows Server
+## 6. Install the Agent on Windows Server
 
 - RDP into the Windows Server MYDFIR-WIN-emaan. Before actually running the commands, we need to do some configurations at firewall levels. First, run “ufw allow 8220” on the Fleet SSH console. Additionally, on the Fleet dashboard area navigate to the web GUI, **hamburger menu** → _Management_ → **Fleet*** → **Settings** and change the host URL from 443 to 8220: 
 
-    ![[Pasted image 20251017000418.png]]
+    <img width="956" height="836" alt="image" src="https://github.com/user-attachments/assets/16fc0071-9014-4a56-8daf-7480b7dc6b74" />
+
 - Open **PowerShell as Administrator**. Paste and run the copied Elastic Agent installation command.
     
 - Add `--insecure` at the end of the command to bypass self-signed certificate issues:
     
     `.\elastic-agent.exe install --url=https://139.180.155.135:8220 --enrollment-token=<token> --insecure
     `
-    ![[Pasted image 20251017000628.png]]
+   <img width="501" height="63" alt="image" src="https://github.com/user-attachments/assets/0534a635-eeb7-47a8-b35a-4db5eaca50c9" />
+
     
 - Ensure the agent downloads and installs successfully on the web GUI (_Management_ → **Fleet*** → **Settings** → **Agents**). Both agents, MYDFIR-WIN-emaan and MyDFIR-Fleet-Server display a healthy status. 
 
 ---
 
-## 8. Troubleshooting Common Issues
+## 7. Troubleshooting Common Issues
 
 - **Firewall**:
     
@@ -154,7 +144,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 ---
 
-## 9. Verify Enrollment
+## 8. Verify Enrollment
 
 - In Kibana → _Fleet → Agents_, check if the Windows host appears.
     
@@ -164,7 +154,6 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     - Event ID 4625 (failed logon attempts)
         
     - System and security telemetry
-        
 
 ---
 
