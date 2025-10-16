@@ -39,18 +39,15 @@ Paste this full name into the integration setup. Add the integration to an exist
 
 On the same **Custom Windows Event Logs** page, click **Add Custom Windows Event Logs** for Windows Defender.
 
-Provide a name and a description.
+Provide a name and a description:
+![[Pasted image 20251017013655.png]]
 
 Obtain the **Channel Name**:
 
 - Navigate to:
-    
-
 `Applications and Services Logs → Microsoft → Windows → Windows Defender → Operational`
 
 - Right-click **Operational**, select **Properties**, and copy the full name:
-    
-
 `Microsoft-Windows-Windows Defender/Operational`
 
 Paste this into the integration setup. Click **Advanced Options** and specify the Event IDs to include:
