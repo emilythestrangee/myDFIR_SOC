@@ -104,7 +104,7 @@ Use **SSH** to connect from your local machine:
 3. Assign the firewall to your VM: **Compute → VM → Settings → Firewall → Update Firewall Group**.
     ![[1_9eFOoFlTKqtO1vNVT-0Fww.jpg]]
 
----
+
 
 ## 7. Starting Elasticsearch Service
 
