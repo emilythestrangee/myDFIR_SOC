@@ -67,10 +67,7 @@ Open the **Discover** tab in Kibana and filter for `winlog.event_id` or search f
 If logs do not appear:
 
 - Ensure the integration is assigned to the correct host and agent policy.
-    
 - Restart the Elastic Agent on the Windows Server:
-    
-
 `Restart-Service -Name "Elastic Agent"`
 
 - Confirm incoming connections to port 9200 on the Elasticsearch instance.
