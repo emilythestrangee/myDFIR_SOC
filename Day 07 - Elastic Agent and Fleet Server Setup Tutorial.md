@@ -59,9 +59,9 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
 - Paste and run the Fleet installation command. If the connection fails, check:
     
-    - That Elasticsearch port **9200** is open:
+    - That Elasticsearch port **9200** is open on MyDFIR-ELK:
         
-        `sudo ufw allow 9200`
+        ![[Pasted image 20251016234145.png]]
         
     - Firewall rules for MyDFIR-SOC-Challenge
         ![[Pasted image 20251016233923.png]]
