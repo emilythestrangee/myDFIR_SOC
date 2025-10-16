@@ -7,6 +7,8 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
 ## 1. Creating a Virtual Private Cloud (VPC)
 
 1. Sign up on **Vultr** and navigate to: **Products → Network → VPC 2.0 → Add VPC**.
+
+    
     
 2. Configure your network:
     
