@@ -16,7 +16,6 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
 
 ---
 
-
 ## Deploying on Vultr (summary)
 
 1. Deploy a new server:
@@ -32,11 +31,9 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
     - Do **not** add this VM to the VPC (leave it public for lab exposure).
         
     
-    _img: placeholder for Vultr Deploy screenshot_
     
 2. Wait until the VM status becomes **Running**, then open **View Console** to see the Windows GUI and sign in using the provided credentials.
     
-    _img: placeholder for Vultr Console screenshot_
     
 3. Test RDP:
     
@@ -45,9 +42,6 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
     - Enter credentials and verify you can connect.
         
     
-    _img: placeholder for RDP connection screenshot_
-    
-
 ---
 
 ## Security considerations (lab vs production)
@@ -62,7 +56,6 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
         
 - In production you should use VPNs, IP whitelisting, or jump boxes; enable MFA; and restrict RDP to trusted networks only.
     
-
 ---
 
 ## Monitoring and expected behavior
