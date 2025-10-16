@@ -97,7 +97,7 @@ Use **SSH** to connect from your local machine:
     
 2. Configure the firewall:
     
-    - Name: `SOC-Simulation`
+    - Name: MyDFIR-SOC-Challenge
         
     - Source: Restrict SSH and Elasticsearch ports (22, 9200) to your IP only.
         
