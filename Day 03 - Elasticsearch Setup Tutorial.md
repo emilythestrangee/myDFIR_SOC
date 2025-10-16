@@ -83,11 +83,13 @@ Use **SSH** to connect from your local machine:
 1. Open the configuration file:
 `nano /etc/elasticsearch/elasticsearch.yml`
 
-2. Update network settings to allow external access:
+2. Update network settings to allow external access, start by removing the comments (#):
     
     `network.host: 207.148.79.228 http.port: 9200`
     
 2. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
+
+![[Pasted image 20251016183112.png]]
 
 ## 6. Setting Up a Firewall
 
