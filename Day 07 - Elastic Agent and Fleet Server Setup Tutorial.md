@@ -30,6 +30,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     `http://<ELK_public_IP>:5601`
     
 - Open the **hamburger menu** → _Management_ → **Fleet**.
+![[Pasted image 20251016231420.png]]
     
 - Click **Add Fleet Server**.
     

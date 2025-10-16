@@ -170,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7ce4784654442fe",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
+    "images/Pasted image 20251016231420.png",
     "Day 06 - Elastic Agent and Fleet Server Introduction.md",
     "Day 04 - Kibana Setup Tutorial.md",
     "images/Pasted image 20251016225723.png",
@@ -207,7 +208,6 @@
     "Day 15 - Remote Desktop Protocol Introduction.md",
     "Day 14 - How To Create Alerts and Dashboards in Kibana.md",
     "Day 12 - Ubuntu Server 24.02 Installation.md",
-    "Day 11 - Brute Force Attack.md",
     "images"
   ]
 }
