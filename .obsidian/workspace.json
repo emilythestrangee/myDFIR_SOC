@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 26 - Investigate SSH Brute Force Attack.md",
+                "file": "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 26 - Investigate SSH Brute Force Attack"
+              "title": "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge"
             }
           }
         ]
@@ -172,6 +172,10 @@
   },
   "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 29 - Elastic Defend Setup Tutorial.md",
+    "Day 28 - Investigate Mythic Agent.md",
+    "Day 27 - Investigate RDP Brute Force Attack.md",
+    "Day 26 - Investigate SSH Brute Force Attack.md",
     "Day 25 - osTicket + ELK Integration.md",
     "Day 24 - osTicket Setup Tutorial.md",
     "Day 23 - Ticketing System.md",
@@ -204,10 +208,6 @@
     "images/Pasted image 20251016233624.png",
     "images/Pasted image 20251016232657.png",
     "Day 04 - Kibana Setup Tutorial.md",
-    "Day 06 - Elastic Agent and Fleet Server Introduction.md",
-    "README.md",
-    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
-    "Day 29 - Elastic Defend Setup Tutorial.md",
     "images"
   ]
 }
