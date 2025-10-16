@@ -44,13 +44,9 @@ View the authentication log:
 To monitor failed login attempts or privileged user activity:
 
 - Filter failed attempts:
-    
-
 `grep -i failed auth.log`
 
 - Filter failed attempts for the root user:
-    
-
 `grep -i failed auth.log | grep -i root`
 
 - Extract source IP addresses of failed attempts:
