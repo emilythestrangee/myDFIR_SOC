@@ -113,14 +113,11 @@ Run the following commands:
 `systemctl daemon-reload systemctl enable elasticsearch.service systemctl start elasticsearch.service systemctl status elasticsearch.service`
 
 - If the service shows **dead**, run:
-    
-
 `systemctl start elasticsearch.service`
 
 - Verify the service is **active** and running.
     
-
-_img: placeholder for Elasticsearch service status screenshot_
+![[Pasted image 20251016184259.png]]
 
 ---
 
