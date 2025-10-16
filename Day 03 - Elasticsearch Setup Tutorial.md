@@ -9,7 +9,6 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
 1. Sign up on **Vultr** and navigate to: **Products → Network → VPC 2.0 → Add VPC**.
 
     
-    
 2. Configure your network:
     
     - **Location:** Pick a data center region where all VMs will reside.
@@ -20,7 +19,7 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
         
 3. Click **Add Network**.
     
-
+![[Pasted image 20251016175921.png]]
 > **Note:** All VMs you create must be under this VPC for internal communication.
 
 _img: placeholder for VPC creation screenshot_
