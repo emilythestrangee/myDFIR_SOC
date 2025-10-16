@@ -15,7 +15,7 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
         
     - **IPv4 Range:** `172.31.0.0/24`
         
-    - **Name:** Example: `SOC_Simulation`
+    - **Name:** MyDFIR-SOC-Challenge
         
 3. Click **Add Network**.
     
@@ -45,7 +45,6 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
 3. Click **Deploy** and wait until the status is **Running**.
     
 
-_img: placeholder for VM deployment screenshot_
 
 ---
 
