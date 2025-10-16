@@ -10,7 +10,6 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 - Deploy a new **Ubuntu 22.04** instance (1 CPU, 4 GB RAM).
     
 - Disable:
-    
     - Auto backups
         
     - IPv6
