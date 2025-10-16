@@ -34,7 +34,7 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
     ![[Pasted image 20251016191645.png]]
     
 2. Wait until the VM status becomes **Running**, then open **View Console** to see the Windows GUI and sign in using the provided credentials.
-    
+    ![[Pasted image 20251016191853.png]]
     
 3. Test RDP:
     
