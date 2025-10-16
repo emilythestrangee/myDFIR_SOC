@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 09 - Sysmon Setup Tutorial.md",
+                "file": "Day 10 - Elasticsearch Ingest Data Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 09 - Sysmon Setup Tutorial"
+              "title": "Day 10 - Elasticsearch Ingest Data Tutorial"
             }
           }
         ]
@@ -170,13 +170,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32dad6c4b98a1de5",
+  "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 09 - Sysmon Setup Tutorial.md",
     "images/Pasted image 20251017011556.png",
     "images/Pasted image 20251017010905.png",
     "Day 08 - Sysmon Introduction.md",
     "Day 05 - Windows Server 2022 Installation.md",
-    "Day 09 - Sysmon Setup Tutorial.md",
     "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
     "Day 06 - Elastic Agent and Fleet Server Introduction.md",
     "Day 04 - Kibana Setup Tutorial.md",
@@ -189,7 +189,6 @@
     "images/Pasted image 20251016234222.png",
     "images/Pasted image 20251016234705.png",
     "images/Pasted image 20251016234611.png",
-    "images/Pasted image 20251016234935.png",
     "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "Day 28 - Investigate Mythic Agent.md",
