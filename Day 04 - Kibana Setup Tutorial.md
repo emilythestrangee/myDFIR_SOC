@@ -67,6 +67,7 @@ Generate the token:
 `./elasticsearch-create-enrollment-token --scope kibana`
 
 Copy and save the token — you’ll use it shortly in the browser.
+![[Pasted image 20251016223000.png]]
 
 ---
 
