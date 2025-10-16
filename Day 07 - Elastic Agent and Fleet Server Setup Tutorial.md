@@ -43,7 +43,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     - **URL**: `https://139.180.155.135:8220`
         
 - Generate a **Fleet Server Policy**.
-    
+    ![[Pasted image 20251016232657.png]]
 
 ---
 
