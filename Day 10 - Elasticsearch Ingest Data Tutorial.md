@@ -88,7 +88,7 @@ If Defender logs are not immediately visible, trigger an event:
 
 ![[Pasted image 20251017020219.png]]
 
-
+![[Pasted image 20251017020240.png]]
 ---
 
 ## Notes
