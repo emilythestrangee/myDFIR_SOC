@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 04 - Kibana Setup Tutorial.md",
+                "file": "Day 06 - Elastic Agent and Fleet Server Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 04 - Kibana Setup Tutorial"
+              "title": "Day 06 - Elastic Agent and Fleet Server Introduction"
             }
           }
         ]
@@ -170,12 +170,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32dad6c4b98a1de5",
+  "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 04 - Kibana Setup Tutorial.md",
     "images/Pasted image 20251016225723.png",
     "images/Pasted image 20251016225654.png",
     "images/Pasted image 20251016225403.png",
-    "Day 04 - Kibana Setup Tutorial.md",
     "images/Pasted image 20251016225530.png",
     "images/Pasted image 20251016225230.png",
     "images/Pasted image 20251016224942.png",
@@ -183,7 +183,6 @@
     "images/Pasted image 20251016224653.png",
     "images/Pasted image 20251016224455.png",
     "images/Pasted image 20251016224049.png",
-    "images/Pasted image 20251016223959.png",
     "Day 03 - Elasticsearch Setup Tutorial.md",
     "Day 05 - Windows Server 2022 Installation.md",
     "README.md",
