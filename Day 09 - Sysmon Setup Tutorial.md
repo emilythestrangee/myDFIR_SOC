@@ -32,7 +32,7 @@ Search for "Sysmon Olaf configuration" and select the GitHub repository link: [s
 
 Open PowerShell with Administrator privileges. Navigate to the Sysmon directory using the `cd` command:
 
-`cd "C:\Path\To\Sysmon\Directory"`
+`cd "C:\Users\Administrator\Downloads\Sysmon"`
 
 ---
 
