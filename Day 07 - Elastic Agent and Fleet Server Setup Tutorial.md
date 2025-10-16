@@ -45,7 +45,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
         
 - Generate a **Fleet Server Policy**.
   
-
+![[Pasted image 20251017002845.png]]
 
 ---
 
