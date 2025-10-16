@@ -27,7 +27,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 - Access the ELK/Kibana web interface:
     
-    `http://<ELK_public_IP>:5601`
+    `http://207.148.79.228:5601`
     
 - Open the **hamburger menu** → _Management_ → **Fleet**.
 ![[Pasted image 20251016231420.png]]
@@ -38,7 +38,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
 - Enter:
     
-    - **Name**: `Challenge-Fleet-Server`
+    - **Name**: MyDFIR-Fleet-Server`
         
     - **URL**: `https://<Fleet_Public_IP>:8220`
         
