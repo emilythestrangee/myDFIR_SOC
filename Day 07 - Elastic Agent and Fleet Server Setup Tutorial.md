@@ -57,9 +57,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
     `apt-get update && apt-get upgrade -y`
     
-- Paste and run the Fleet installation command.
-    
-- If the connection fails, check:
+- Paste and run the Fleet installation command.If the connection fails, check:
     
     - That Elasticsearch port **9200** is open:
         
