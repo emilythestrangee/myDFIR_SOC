@@ -170,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7ce4784654442fe",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
+    "images/Pasted image 20251016191645.png",
     "Day 04 - Kibana Setup Tutorial.md",
     "Day 05 - Windows Server 2022 Installation.md",
     "Day 03 - Elasticsearch Setup Tutorial.md",
@@ -207,7 +208,6 @@
     "Day 14 - How To Create Alerts and Dashboards in Kibana.md",
     "Day 12 - Ubuntu Server 24.02 Installation.md",
     "Day 11 - Brute Force Attack.md",
-    "Day 10 - Elasticsearch Ingest Data Tutorial.md",
     "images"
   ]
 }

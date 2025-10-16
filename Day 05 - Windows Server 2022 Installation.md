@@ -31,6 +31,7 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
     - Do **not** add this VM to the VPC (leave it public for lab exposure).
         
     
+    ![[Pasted image 20251016191645.png]]
     
 2. Wait until the VM status becomes **Running**, then open **View Console** to see the Windows GUI and sign in using the provided credentials.
     
