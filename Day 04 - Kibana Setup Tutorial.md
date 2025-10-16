@@ -92,6 +92,7 @@ If the service is accessible, you’ll see the enrollment page:
 
 Paste the enrollment token into the enrollment field. Then, in your server terminal, generate the verification code:
 
+
 `cd /usr/share/kibana/bin ./kibana-verification-code`
 
 Enter the verification code into the web interface.
