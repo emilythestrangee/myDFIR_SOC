@@ -99,7 +99,7 @@ Use **SSH** to connect from your local machine:
     
     - Name: MyDFIR-SOC-Challenge
         
-    - Source: Restrict SSH and Elasticsearch ports (22, 9200) to your IP only.
+    - Source: Restrict SSH port (22) to your IP only.
     
 3. Assign the firewall to your VM: **Compute → VM → Settings → Firewall → Update Firewall Group**.
     
