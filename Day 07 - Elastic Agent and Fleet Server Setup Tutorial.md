@@ -40,7 +40,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
     - **Name**: MyDFIR-Fleet-Server`
         
-    - **URL**: `https://<Fleet_Public_IP>:8220`
+    - **URL**: `https://139.180.155.135:8220`
         
 - Generate a **Fleet Server Policy**.
     
