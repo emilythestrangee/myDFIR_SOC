@@ -54,8 +54,9 @@ Paste this into the integration setup. Click **Advanced Options** and specify th
 
 `1116, 1117, 5001`
 
+![[Pasted image 20251017014011.png]]
 
-Add the integration to the same existing host and agent policy. Click **Save and Continue**, then **Save and Deploy Changes**.
+Add the integration to the same existing host and agent policy MyDFIR-Windows-Policy. Click **Save and Continue**, then **Save and Deploy Changes**.
 
 ---
 
