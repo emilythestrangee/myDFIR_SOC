@@ -87,5 +87,6 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
 -  Connect via RDP and confirm access.
     
 -  Start monitoring logs for brute-force activity.
+
 **Reference**
 https://youtu.be/nBlCuLMq-zA?si=5OLWhNxRuBScCRm6
