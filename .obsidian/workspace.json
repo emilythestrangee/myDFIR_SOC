@@ -172,7 +172,13 @@
   },
   "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 08 - Sysmon Introduction.md",
     "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
+    "Day 06 - Elastic Agent and Fleet Server Introduction.md",
+    "Day 05 - Windows Server 2022 Installation.md",
+    "Day 04 - Kibana Setup Tutorial.md",
+    "Day 02 - ELK Stack Introduction.md",
+    "Day 09 - Sysmon Setup Tutorial.md",
     "images/Pasted image 20251017002845.png",
     "images/Pasted image 20251016232657.png",
     "images/Pasted image 20251016231420.png",
@@ -202,11 +208,6 @@
     "Day 14 - How To Create Alerts and Dashboards in Kibana.md",
     "Day 13 - How To Install Elastic Agent on Ubuntu.md",
     "Day 12 - Ubuntu Server 24.02 Installation.md",
-    "Day 11 - Brute Force Attack.md",
-    "Day 10 - Elasticsearch Ingest Data Tutorial.md",
-    "Day 09 - Sysmon Setup Tutorial.md",
-    "Day 05 - Windows Server 2022 Installation.md",
-    "Day 03 - Elasticsearch Setup Tutorial.md",
     "images"
   ]
 }
