@@ -105,7 +105,8 @@ Enter the verification code into the web interface. Once verified, you’ll be r
     
 
 Log in to the dashboard.
-
+![[Pasted image 20251016224746.png]]
+![[Pasted image 20251016224942.png]]
 ---
 
 ## Step 8 — Configure Encryption Keys
