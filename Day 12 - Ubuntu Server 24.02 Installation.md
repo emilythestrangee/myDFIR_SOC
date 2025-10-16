@@ -32,11 +32,9 @@ Ensure the system is up-to-date by running:
 Authentication activity is recorded in `/var/log/auth.log`.
 
 Navigate to the logs directory:
-
 `cd /var/log ls`
 
 View the authentication log:
-
 `cat auth.log`
 
 ---
