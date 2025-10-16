@@ -36,7 +36,7 @@ Navigate to the logs directory:
 
 View the authentication log:
 `cat auth.log`
-
+![[Pasted image 20251017022107.png]]
 ---
 
 ## Filter Authentication Logs
@@ -50,8 +50,6 @@ To monitor failed login attempts or privileged user activity:
 `grep -i failed auth.log | grep -i root`
 
 - Extract source IP addresses of failed attempts:
-    
-
 `grep -i failed auth.log | grep -i root | cut -d ' ' -f 11`
 
 ---
@@ -69,9 +67,7 @@ To observe login attempts from external sources:
 - Create a firewall rule to allow SSH (TCP 22) from all IPs:
     
     - Target tags: `vuln-linux`
-        
     - Source IP range: `0.0.0.0/0`
-        
     - Name: `allow-ssh-vuln-linux`
         
 
