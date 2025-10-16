@@ -43,7 +43,8 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
     - **Hostname:**  MyDFIR-ELK
         
 3. Click **Deploy** and wait until the status is **Running**.
-    ![[Pasted image 20251016181025.png]]
+    ![[1_l7TI21uIskSWk2SNbLJHeg.jpg]]
+    
     
 
 
