@@ -1,6 +1,6 @@
 ## Introduction
 
-Goal: Install Sysmon on a Windows server and verify that it generates logs.
+Goal: Install Sysmon on a Windows server and verify that it generates logs (telemetry).
 
 ---
 
