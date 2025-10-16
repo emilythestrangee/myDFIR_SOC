@@ -75,8 +75,8 @@ If logs do not appear:
 
 - Refresh Kibana and check for Sysmon logs (winlog.event_id:1):
 
-
----
+![[Pasted image 20251017020008.png]]
+---![[Pasted image 20251017020055.png]]
 
 ## Generating Windows Defender Logs for Testing
 
