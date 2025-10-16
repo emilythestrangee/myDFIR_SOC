@@ -11,11 +11,9 @@ Deploy a new Ubuntu VM on vultr.com:
 - Select **Cloud Compute** and a **Shared CPU** configuration.
 - Choose Ubuntu 24.04 LTS as the OS image.
 - Set CPU and memory (e.g., 1 vCPU, 1 GB RAM) and adjust storage to 25 GB.
-- In **Networking/Advanced Options**, attach the VM to your VPC and reserve an external IP.
-- Add a tag (e.g., `vuln-linux`) for firewall rules configuration.
 - Disable IPv6 and auto-backups.
 - Hostname: MYDFIR-Linux-emaan
-- Click **Create** and wait for the VM to start.
+- Click **Deploy Now** and wait for the VM to start.
 
 Once the VM shows as **Running**, connect via SSH.
 
