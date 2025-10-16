@@ -16,7 +16,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
         
 - Add the server to the same **VPC** as the ELK stack (e.g., internal IP `172.31.0.4`).
     
-- Name the server: `Challenge-Fleet-Server`.
+- Name the server: `MyDFIR-Fleet-Server`.
     
 - Click **Deploy** and wait for the instance to launch.
     
