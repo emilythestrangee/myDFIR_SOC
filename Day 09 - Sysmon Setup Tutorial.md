@@ -19,7 +19,7 @@ Google "Sysmon" and select the first link: [Sysmon - Microsoft Docs](https://lea
 ## Extract Sysmon
 
 Navigate to the `Downloads` folder. Right-click the downloaded Sysmon ZIP and select **Extract All**. Confirm that three binaries are extracted in the folder.
-
+![[Pasted image 20251017010905.png]]
 ---
 
 ## Download Configuration File
