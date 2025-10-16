@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 04 - Kibana Setup Tutorial.md",
+                "file": "Day 05 - Windows Server 2022 Installation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 04 - Kibana Setup Tutorial"
+              "title": "Day 05 - Windows Server 2022 Installation"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day 04 - Kibana Setup Tutorial.md",
+                "file": "Day 05 - Windows Server 2022 Installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 04 - Kibana Setup Tutorial"
+              "title": "Backlinks for Day 05 - Windows Server 2022 Installation"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day 04 - Kibana Setup Tutorial.md",
+                "file": "Day 05 - Windows Server 2022 Installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day 04 - Kibana Setup Tutorial"
+              "title": "Outgoing links from Day 05 - Windows Server 2022 Installation"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day 04 - Kibana Setup Tutorial.md",
+                "file": "Day 05 - Windows Server 2022 Installation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day 04 - Kibana Setup Tutorial"
+              "title": "Outline of Day 05 - Windows Server 2022 Installation"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "e7ce4784654442fe",
   "lastOpenFiles": [
-    "Day 05 - Windows Server 2022 Installation.md",
     "Day 04 - Kibana Setup Tutorial.md",
+    "Day 05 - Windows Server 2022 Installation.md",
     "Day 03 - Elasticsearch Setup Tutorial.md",
     "README.md",
     "Pasted image 20251016175844.png",
