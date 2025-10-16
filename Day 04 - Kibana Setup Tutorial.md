@@ -81,7 +81,7 @@ Also, update any cloud firewall rules to permit traffic on port 5601 from your I
 
 Then open a browser and go to:
 
-`http://<your_public_IP>:5601`
+`http://207.148.79.228:5601`
 
 If the service is accessible, you’ll see the enrollment page.
 
