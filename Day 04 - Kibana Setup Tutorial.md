@@ -125,6 +125,12 @@ You’ll receive three keys. Add each to the Kibana keystore. Paste the appropri
 
 Log in again to confirm the configuration works correctly.
 
+Before generating encryption keys:
+![[Pasted image 20251016225654.png]]
+
+
+After generating encryption keys:
+![[Pasted image 20251016225723.png]]
 
 ---
 
