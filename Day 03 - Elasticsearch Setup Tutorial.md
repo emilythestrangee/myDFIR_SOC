@@ -34,7 +34,7 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
         
     - **Image:** Ubuntu 22.04 x64
         
-    - **Plan:** Example — 4 vCPUs, 80GB storage
+    - **Plan:** 4 vCPUs, 80GB storage
         
     - **Additional Features:** Disable auto-backups and IPv6.
         
