@@ -19,7 +19,8 @@ Google "Sysmon" and select the first link: [Sysmon - Microsoft Docs](https://lea
 ## Extract Sysmon
 
 Navigate to the `Downloads` folder. Right-click the downloaded Sysmon ZIP and select **Extract All**. Confirm that three binaries are extracted in the folder.
-![[Pasted image 20251017010905.png]]
+<img width="394" height="255" alt="image" src="https://github.com/user-attachments/assets/3a8d3b5d-0b3f-43c7-8051-0fd98063cfed" />
+
 ---
 
 ## Download Configuration File
@@ -43,7 +44,8 @@ Run the following command to install Sysmon with the configuration file:
 `.\Sysmon64.exe -i sysmonconfig.xml`
 
 Accept the license agreement if prompted. Confirm that the Sysmon service is running in **Services**. Open Event Viewer and expand **Applications and Services Logs → Microsoft → Windows → Sysmon → Operational** to view log entries.
-![[Pasted image 20251017011556.png]]
+<img width="600" height="454" alt="image" src="https://github.com/user-attachments/assets/ecdf8f4d-7052-4235-b3bb-2f3c470b917e" />
+
 
 ---
 
