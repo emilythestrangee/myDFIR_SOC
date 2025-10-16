@@ -50,8 +50,11 @@ To monitor failed login attempts or privileged user activity:
 - Filter failed attempts for the root user:
 `grep -i failed auth.log | grep -i root`
 
+![[Pasted image 20251017022343.png]]
+
 - Extract source IP addresses of failed attempts:
-`grep -i failed auth.log | grep -i root | cut -d ' ' -f 11`
+`grep -i failed auth.log | grep -i root | cut -d ' ' -f 
+
 
 ---
 
