@@ -129,7 +129,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     `
     ![[Pasted image 20251017000628.png]]
     
-- Ensure the agent downloads and installs successfully on the web GUI (_Management_ → **Fleet*** → **Settings** → **Agents**).
+- Ensure the agent downloads and installs successfully on the web GUI (_Management_ → **Fleet*** → **Settings** → **Agents**). Both agents, MYDFIR-WIN-emaan and MyDFIR-Fleet-Server display a healthy status. 
 
 ---
 
