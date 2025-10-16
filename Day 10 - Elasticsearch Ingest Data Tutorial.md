@@ -1,7 +1,7 @@
 
 ## Introduction
 
-Goal: Ingest Sysmon and Microsoft Defender event logs from the Windows Server into Elasticsearch and confirm log visibility in Kibana.
+Goal: Ingest Sysmon and Windows Defender event logs from the Windows Server into Elasticsearch and confirm log visibility in Kibana.
 
 ---
 
