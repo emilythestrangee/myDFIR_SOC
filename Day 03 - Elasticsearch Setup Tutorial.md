@@ -40,7 +40,7 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
         
     - **VPC:** Select the VPC you just created.
         
-    - **Hostname:**  
+    - **Hostname:**  MyDFIR-ELK
         
 3. Click **Deploy** and wait until the status is **Running**.
     
