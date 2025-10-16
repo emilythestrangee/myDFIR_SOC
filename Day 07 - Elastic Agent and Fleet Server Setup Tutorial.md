@@ -109,6 +109,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     **“Continue enrolling Elastic Agent”** in Kibana.
     
 - Create a policy name, e.g., `Challenge Windows Policy`.
+-![[Pasted image 20251016234935.png]]
     
 - Select **Windows** as the host type.
     
