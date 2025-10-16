@@ -71,9 +71,7 @@ If logs do not appear:
 `Restart-Service -Name "Elastic Agent"`
 
 - Confirm incoming connections to port 9200 on the Elasticsearch instance.
-    
 - Refresh Kibana and check for logs.
-    
 
 ---
 
@@ -82,11 +80,8 @@ If logs do not appear:
 If Defender logs are not immediately visible, trigger an event:
 
 - Open **Windows Security** → **Virus & threat protection**.
-    
 - Temporarily turn off real-time protection, then turn it back on.
-    
 - The corresponding log should appear in Kibana (event code `5001`).
-    
 
 ---
 
