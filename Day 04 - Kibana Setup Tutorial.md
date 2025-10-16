@@ -39,9 +39,10 @@ Open the configuration file:
 
 Uncomment and modify the following lines:
 
-`server.port: 5601 server.host: "<your_public_IP>"`
+`server.port: 5601 server.host: 207.148.79.228
 
 Save the file and exit.
+![[Pasted image 20251016222645.png]]
 
 ---
 
