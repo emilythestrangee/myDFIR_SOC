@@ -30,7 +30,7 @@ Obtain the **Channel Name** from the Windows Server:
 - Right-click **Operational**, select **Properties**, and copy the full name:
 `Microsoft-Windows-Sysmon/Operational`
 
-Paste this full name into the integration setup. Add the integration to an existing host and select the agent policy (e.g., `Challenge Windows Policy`). Click **Save and Continue**, then **Save and Deploy Changes**.
+Paste this full name into the integration setup. Add the integration to an existing host and select the agent policy (`Challenge Windows Policy`). Click **Save and Continue**, then **Save and Deploy Changes**.
 
 ---
 
