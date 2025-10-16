@@ -19,16 +19,6 @@ Once the VM shows as **Running**, connect via SSH.
 
 ---
 
-## Access the Server
-
-Use a terminal or PowerShell session to SSH into the server:
-
-`ssh root@<IP_address>`
-
-Accept the connection and enter the password if prompted.
-
----
-
 ## Update and Upgrade Repositories
 
 Ensure the system is up-to-date by running:
