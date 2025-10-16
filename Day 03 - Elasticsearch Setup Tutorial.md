@@ -20,9 +20,7 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
 3. Click **Add Network**.
     
 ![[Pasted image 20251016175921.png]]
-> **Note:** All VMs you create must be under this VPC for internal communication.
-
-_img: placeholder for VPC creation screenshot_
+> **Note:** All VMs created must be under this VPC for internal communication.
 
 ---
 
