@@ -85,7 +85,7 @@ Use **SSH** to connect from your local machine:
 
 2. Update network settings to allow external access:
     
-    `network.host: <public-IP> http.port: 9200`
+    `network.host: 207.148.79.228 http.port: 9200`
     
 3. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
     
