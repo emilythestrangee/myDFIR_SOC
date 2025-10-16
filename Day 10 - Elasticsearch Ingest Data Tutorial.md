@@ -86,6 +86,9 @@ If Defender logs are not immediately visible, trigger an event:
 - Temporarily turn off real-time protection, then turn it back on.
 - The corresponding log should appear in Kibana (event code `5001`).
 
+![[Pasted image 20251017020219.png]]
+
+
 ---
 
 ## Notes
