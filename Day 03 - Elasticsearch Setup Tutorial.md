@@ -87,10 +87,7 @@ Use **SSH** to connect from your local machine:
     
     `network.host: 207.148.79.228 http.port: 9200`
     
-3. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
-    
-![[Pasted image 20251016182750.png]]
-
+2. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
 
 ## 6. Setting Up a Firewall
 
