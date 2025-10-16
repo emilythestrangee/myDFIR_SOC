@@ -50,7 +50,7 @@ Save the file and exit.
 
 Reload and enable the service. Check to make sure the status shows as “active (running).
 
-
+![[Pasted image 20251016222822.png]]
 
 ---
 
