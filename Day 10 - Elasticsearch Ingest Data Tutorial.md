@@ -39,7 +39,7 @@ Paste this full name into the integration setup. Add the integration to an exist
 
 On the same **Custom Windows Event Logs** page, click **Add Custom Windows Event Logs** for Windows Defender.
 
-Provide a name (e.g., `Challenge-Win-Defender`) and a description (e.g., “Collect Windows Defender logs for Event IDs 1116, 1117 & 5001”).
+Provide a name and a description.
 
 Obtain the **Channel Name**:
 
