@@ -52,7 +52,7 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
 
 Use **SSH** to connect from your local machine:
 
-`ssh root@<public-IP>`
+`ssh root@207.148.79.228>`
 
 - Accept the connection and log in with the provided password.
     
