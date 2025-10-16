@@ -8,6 +8,7 @@ Goal: Ingest Sysmon and Windows Defender event logs from the Windows Server into
 ## Log into Elasticsearch
 
 Open your Elasticsearch instance and click the **Add Integrations** button on the homepage. You can also find this option in the top-left menu.
+![[Pasted image 20251017012617.png]]
 
 ---
 
