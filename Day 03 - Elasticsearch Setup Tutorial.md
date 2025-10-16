@@ -104,11 +104,11 @@ Use **SSH** to connect from your local machine:
 3. Assign the firewall to your VM: **Compute → VM → Settings → Firewall → Update Firewall Group**.
     ![[1_9eFOoFlTKqtO1vNVT-0Fww.jpg]]
 
-
+![[Pasted image 20251016184117.png]]
 
 ## 7. Starting Elasticsearch Service
 
-Run the following commands on the VM:
+Run the following commands:
 
 `systemctl daemon-reload systemctl enable elasticsearch.service systemctl start elasticsearch.service systemctl status elasticsearch.service`
 
