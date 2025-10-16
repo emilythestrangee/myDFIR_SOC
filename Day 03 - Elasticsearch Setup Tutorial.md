@@ -44,8 +44,6 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
         
 3. Click **Deploy** and wait until the status is **Running**.
     ![[1_l7TI21uIskSWk2SNbLJHeg.jpg]]
-    
-    
 
 
 ---
