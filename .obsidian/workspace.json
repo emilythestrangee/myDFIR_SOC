@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 03 - Elasticsearch Setup Tutorial.md",
+                "file": "Day 04 - Kibana Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 03 - Elasticsearch Setup Tutorial"
+              "title": "Day 04 - Kibana Setup Tutorial"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day 03 - Elasticsearch Setup Tutorial.md",
+                "file": "Day 04 - Kibana Setup Tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 03 - Elasticsearch Setup Tutorial"
+              "title": "Backlinks for Day 04 - Kibana Setup Tutorial"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day 03 - Elasticsearch Setup Tutorial.md",
+                "file": "Day 04 - Kibana Setup Tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day 03 - Elasticsearch Setup Tutorial"
+              "title": "Outgoing links from Day 04 - Kibana Setup Tutorial"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day 03 - Elasticsearch Setup Tutorial.md",
+                "file": "Day 04 - Kibana Setup Tutorial.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day 03 - Elasticsearch Setup Tutorial"
+              "title": "Outline of Day 04 - Kibana Setup Tutorial"
             }
           }
         ]
@@ -172,9 +172,11 @@
   },
   "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 05 - Windows Server 2022 Installation.md",
+    "Day 04 - Kibana Setup Tutorial.md",
+    "Day 03 - Elasticsearch Setup Tutorial.md",
     "README.md",
     "Pasted image 20251016175844.png",
-    "Day 03 - Elasticsearch Setup Tutorial.md",
     "Pasted image 20251016184114.png",
     "images/1_9eFOoFlTKqtO1vNVT-0Fww.jpg",
     "images/1_l7TI21uIskSWk2SNbLJHeg.jpg",
@@ -206,7 +208,6 @@
     "Day 12 - Ubuntu Server 24.02 Installation.md",
     "Day 11 - Brute Force Attack.md",
     "Day 10 - Elasticsearch Ingest Data Tutorial.md",
-    "Day 09 - Sysmon Setup Tutorial.md",
     "images"
   ]
 }
