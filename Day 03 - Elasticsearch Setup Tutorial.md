@@ -61,7 +61,7 @@ Use **SSH** to connect from your local machine:
 
 `apt-get update && apt-get upgrade -y`
 
-_img: placeholder for SSH session screenshot_
+![[Pasted image 20251016181603.png]]
 
 ---
 
