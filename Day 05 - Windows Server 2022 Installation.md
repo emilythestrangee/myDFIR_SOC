@@ -42,7 +42,7 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
         
     - Enter credentials and verify you can connect.
         
-    
+    ![[Pasted image 20251016191853.png]]
 ---
 
 ## Security considerations (lab vs production)
