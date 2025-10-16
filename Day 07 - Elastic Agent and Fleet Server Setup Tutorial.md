@@ -45,7 +45,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
         
 - Generate a **Fleet Server Policy**.
   
-   <img width="729" height="234" alt="image" src="https://github.com/user-attachments/assets/6f456c0c-66ca-47af-b155-962df6c85bd2" />
+   <img width="729" height="184" alt="image" src="https://github.com/user-attachments/assets/6f456c0c-66ca-47af-b155-962df6c85bd2" />
 
 
 ---

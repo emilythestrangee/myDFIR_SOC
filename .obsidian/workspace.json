@@ -170,12 +170,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32dad6c4b98a1de5",
+  "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 09 - Sysmon Setup Tutorial.md",
+    "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
     "images/Pasted image 20251017000628.png",
     "images/Pasted image 20251017000418.png",
     "Day 05 - Windows Server 2022 Installation.md",
-    "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
     "images/Pasted image 20251016234935.png",
     "images/Pasted image 20251016234705.png",
     "images/Pasted image 20251016234611.png",
@@ -188,7 +189,6 @@
     "images/Pasted image 20251016232657.png",
     "Day 04 - Kibana Setup Tutorial.md",
     "Day 06 - Elastic Agent and Fleet Server Introduction.md",
-    "images/Pasted image 20251016231420.png",
     "README.md",
     "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "Day 23 - Ticketing System.md",
