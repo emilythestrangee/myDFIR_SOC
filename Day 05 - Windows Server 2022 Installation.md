@@ -16,50 +16,6 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
 
 ---
 
-## Deploying on GCP (summary)
-
-1. Create a VM instance:
-    
-    - Go to VM Instances → Create Instance.
-        
-    - Choose a name and the same region as other lab instances.
-        
-    - Select a small machine type (example: e2-small) and choose **Windows Server 2022** as the image.
-        
-    
-    _img: placeholder for GCP Create Instance screenshot_
-    
-2. Wait for the VM to provision (several minutes).
-    
-3. Set a Windows password from the instance page:
-    
-    - Click the arrow next to the RDP button → Set Windows password.
-        
-    - Save the generated password securely.
-        
-    
-    _img: placeholder for GCP Set Windows Password screenshot_
-    
-4. Configure a firewall rule (example for lab):
-    
-    - Create an ingress rule named e.g. `allow-rdp` with TCP port **3389** and source `0.0.0.0/0` (for lab purposes only).
-        
-    - Tag the instance (e.g., `win-vuln`) and apply the firewall rule to that tag.
-        
-    
-    _img: placeholder for firewall rule screenshot_
-    
-5. Connect via Remote Desktop:
-    
-    - Use the external IP, username, and saved password to RDP from your local machine.
-        
-    - First-time connections may take a bit longer while the server finalizes setup.
-        
-    
-    _img: placeholder for RDP login screenshot_
-    
-
----
 
 ## Deploying on Vultr (summary)
 
