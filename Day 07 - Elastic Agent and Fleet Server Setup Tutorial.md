@@ -108,14 +108,12 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 - After Fleet Server installation succeeds, click:  
     **“Continue enrolling Elastic Agent”** in Kibana.
     
-- Create a policy name, e.g., `Challenge Windows Policy`.
--![[Pasted image 20251016234935.png]]
+- Create a policy name.
+![[Pasted image 20251016234935.png]]
     
 - Select **Windows** as the host type.
     
 - Copy the Windows installation command.
-    
-
 ---
 
 ## 7. Install the Agent on Windows Server
