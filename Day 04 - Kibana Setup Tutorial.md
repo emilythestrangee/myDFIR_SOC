@@ -111,9 +111,7 @@ Log in to the dashboard.
 
 ## Step 8 — Configure Encryption Keys
 
-Encryption keys are required to secure saved objects, reporting, and security features in Kibana.
-
-Generate the keys:
+Encryption keys are required to secure saved objects, reporting, and security features in Kibana. Navigate to the Kibana binary directory and generate the keys:
 
 `./kibana-encryption-keys generate`
 
