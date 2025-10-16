@@ -57,8 +57,6 @@ Use **SSH** to connect from your local machine:
 - Accept the connection and log in with the provided password.
     
 - Update and upgrade the VM:
-    
-
 `apt-get update && apt-get upgrade -y`
 
 ![[Pasted image 20251016181603.png]]
@@ -83,8 +81,6 @@ Use **SSH** to connect from your local machine:
 ## 5. Configuring Elasticsearch
 
 1. Open the configuration file:
-    
-
 `nano /etc/elasticsearch/elasticsearch.yml`
 
 2. Update network settings to allow external access:
@@ -94,7 +90,7 @@ Use **SSH** to connect from your local machine:
 3. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
     
 
-_img: placeholder for elasticsearch.yml screenshot_
+
 
 ---
 
