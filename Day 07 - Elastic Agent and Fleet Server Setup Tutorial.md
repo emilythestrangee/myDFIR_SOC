@@ -68,6 +68,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 ## 4. Adjust Firewall Rules
 
 - **On the MyDFIR-ELK server**: allow inbound traffic on port 9200.
+
 ![[Pasted image 20251016234222.png]]
     
 - **On the MyDFIR-Fleet-Server**:
