@@ -118,7 +118,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 ## 7. Install the Agent on Windows Server
 
-- RDP into the Windows Server MYDFIR-WIN-emaan.
+- RDP into the Windows Server MYDFIR-WIN-emaan. Before actually running the commands, we need to do some configurations at firewall levels. First, run “ufw allow 8220” on the Fleet SSH console.
     
 - Open **PowerShell as Administrator**. Paste and run the copied Elastic Agent installation command.
     
