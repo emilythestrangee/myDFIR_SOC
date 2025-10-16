@@ -68,23 +68,15 @@ Use **SSH** to connect from your local machine:
 ## 4. Installing Elasticsearch
 
 1. Download the Elasticsearch Debian package:
-    
-
 `wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-9.1.5-amd64.deb'
 
 2. Install it:
-    
-
 `dpkg -i elasticsearch-9.1.5-amd64.deb`
 
 3. **Important:** Save the **Security Auto-Configuration Information**, which contains the `elastic` superuser credentials.
     
 4. If needed, reset the superuser password:
-    
-
 `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`
-
-_img: placeholder for download/install screenshot_
 
 ---
 
