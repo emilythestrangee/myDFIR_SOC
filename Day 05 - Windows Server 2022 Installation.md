@@ -31,17 +31,19 @@ Deploy a Windows Server 2022 instance to act as a target machine with RDP expose
     - Do **not** add this VM to the VPC (leave it public for lab exposure).
         
     
-    ![[Pasted image 20251016191645.png]]
-    
+   <img width="331" height="577" alt="image" src="https://github.com/user-attachments/assets/68ef4394-9382-4e17-9496-2ba1dab416f7" />
+
 2. Wait until the VM status becomes **Running**, then open **View Console** to see the Windows GUI and sign in using the provided credentials.
-    ![[Pasted image 20251016191853.png]]
+    <img width="1220" height="569" alt="image" src="https://github.com/user-attachments/assets/1af917c9-e5f7-4b1a-a52d-a11478797ad2" />
+
     
 3. Test RDP:
     
     - Copy the public IP and use Remote Desktop from your workstation.
         
     - Enter credentials and verify you can connect.
-        ![[Pasted image 20251016192252.png]]
+       <img width="861" height="635" alt="image" src="https://github.com/user-attachments/assets/8da8f832-df69-48a1-a55e-54ca11ead87b" />
+
 ---
 
 ## Security considerations (lab vs production)
