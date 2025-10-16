@@ -64,7 +64,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
     - That Elasticsearch port **9200** is open on MyDFIR-ELK.
     - Firewall rules for MyDFIR-SOC-Challenge
-        <img width="516" height="200" alt="image" src="https://github.com/user-attachments/assets/de4469ae-f493-4e04-b904-e038e0048093" />
+        <img width="516" height="160" alt="image" src="https://github.com/user-attachments/assets/de4469ae-f493-4e04-b904-e038e0048093" />
 
 
 ---
