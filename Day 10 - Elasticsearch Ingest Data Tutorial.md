@@ -15,6 +15,7 @@ Open your Elasticsearch instance and click the **Add Integrations** button on th
 ## Add Sysmon Integration
 
 Search for "Windows" and select **Custom Windows Event Logs**. Click **Add Custom Windows Event Logs**.
+![[Pasted image 20251017012815.png]]
 
 Provide a name for the integration (e.g., `Challenge-Win-Sysmon`) and a description (e.g., “Collect Sysmon logs from Windows hosts”).
 
