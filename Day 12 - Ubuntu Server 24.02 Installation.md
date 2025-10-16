@@ -45,6 +45,7 @@ To monitor failed login attempts or privileged user activity:
 
 - Filter failed attempts:
 `grep -i failed auth.log`
+![[Pasted image 20251017022237.png]]
 
 - Filter failed attempts for the root user:
 `grep -i failed auth.log | grep -i root`
