@@ -73,8 +73,9 @@ If logs do not appear:
 - Confirm incoming connections to port 9200 on the Elasticsearch instance.
 ![[Pasted image 20251017014933.png]]
 
-- Refresh Kibana and check for logs (winlog.event).
-
+- Refresh Kibana and check for logs (winlog.event_id:1):
+![[Pasted image 20251017015720.png]]
+![[Pasted image 20251017015740.png]]
 ---
 
 ## Generating Windows Defender Logs for Testing
