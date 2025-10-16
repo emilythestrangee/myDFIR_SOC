@@ -57,14 +57,14 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
     `apt-get update && apt-get upgrade -y`
     
-- Paste and run the Fleet installation command.If the connection fails, check:
+- Paste and run the Fleet installation command. If the connection fails, check:
     
     - That Elasticsearch port **9200** is open:
         
         `sudo ufw allow 9200`
         
-    - Firewall rules in your SOC simulation.
-        
+    - Firewall rules in your SOC simulation for My.
+        ![[Pasted image 20251016233624.png]]
 
 ---
 
