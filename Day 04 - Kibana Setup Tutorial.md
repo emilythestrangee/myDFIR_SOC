@@ -48,11 +48,9 @@ Save the file and exit.
 
 ## Step 4 — Start the Kibana Service
 
-Reload and enable the service:
+Reload and enable the service. Check to make sure the status shows as “active (running).
 
-`systemctl daemon-reload systemctl enable kibana.service systemctl start kibana.service systemctl status kibana.service`
 
-Check to make sure the status shows as “active (running).”
 
 ---
 
