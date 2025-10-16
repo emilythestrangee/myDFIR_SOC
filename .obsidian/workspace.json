@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 05 - Windows Server 2022 Installation.md",
+                "file": "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 05 - Windows Server 2022 Installation"
+              "title": "Day 07 - Elastic Agent and Fleet Server Setup Tutorial"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "e7ce4784654442fe",
   "lastOpenFiles": [
+    "Day 05 - Windows Server 2022 Installation.md",
     "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
     "images/Pasted image 20251016234935.png",
     "images/Pasted image 20251016234705.png",
@@ -182,7 +183,6 @@
     "Day 02 - ELK Stack Introduction.md",
     "images/Pasted image 20251016233923.png",
     "images/Pasted image 20251016233624.png",
-    "Day 05 - Windows Server 2022 Installation.md",
     "images/Pasted image 20251016232657.png",
     "Day 04 - Kibana Setup Tutorial.md",
     "Day 06 - Elastic Agent and Fleet Server Introduction.md",

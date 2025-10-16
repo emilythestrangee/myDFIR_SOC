@@ -118,7 +118,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 ## 7. Install the Agent on Windows Server
 
-- RDP into the Windows Server.
+- RDP into the Windows Server MYDFIR-WIN-emaan.
     
 - Open **PowerShell as Administrator**.
     
