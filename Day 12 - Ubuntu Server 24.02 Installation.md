@@ -14,6 +14,7 @@ Deploy a new Ubuntu VM on vultr.com:
 - In **Networking/Advanced Options**, attach the VM to your VPC and reserve an external IP.
 - Add a tag (e.g., `vuln-linux`) for firewall rules configuration.
 - Disable IPv6 and auto-backups.
+- Hostname: MYDFIR-Linux-emaan
 - Click **Create** and wait for the VM to start.
 
 Once the VM shows as **Running**, connect via SSH.
