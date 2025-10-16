@@ -40,9 +40,10 @@ Open PowerShell with Administrator privileges. Navigate to the Sysmon directory 
 
 Run the following command to install Sysmon with the configuration file:
 
-`.\Sysmon64.exe -accepteula -i sysmonconfig.xml`
+`.\Sysmon64.exe -i sysmonconfig.xml`
 
 Accept the license agreement if prompted. Confirm that the Sysmon service is running in **Services**. Open Event Viewer and expand **Applications and Services Logs → Microsoft → Windows → Sysmon → Operational** to view log entries.
+
 
 ---
 
