@@ -18,9 +18,6 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
     - **Name:** MyDFIR-SOC-Challenge
         
 3. Click **Add Network**.
-    
-![[Pasted image 20251016175921.png]]
-> **Note:** All VMs created must be under this VPC for internal communication.
 
 ---
 
@@ -121,19 +118,6 @@ Run the following commands:
 
 ---
 
-## 8. Accessing Elasticsearch
-
-- Open a browser and navigate to:
-    
-
-`https://<external-IP>:9200`
-
-- Log in with the `elastic` user and the password from the Security Auto-Configuration information.
-    
-
-_img: placeholder for Elasticsearch login screenshot_
-
----
 
 ## Conclusion
 
@@ -147,10 +131,6 @@ By the end of this setup:
     
 - Set up **firewall rules** to restrict access only to authorized IPs.
     
-
-This completes the foundational setup for a SOC environment using ELK.
-
-_img: placeholder for full system architecture diagram_
 
 
 **Reference**
