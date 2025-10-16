@@ -40,7 +40,8 @@ Goal: Deploy and configure an **Elasticsearch** instance in the cloud using **Vu
     - **Hostname:**  MyDFIR-ELK
         
 3. Click **Deploy** and wait until the status is **Running**.
-    ![[1_l7TI21uIskSWk2SNbLJHeg.jpg]]
+   <img width="270" height="337" alt="image" src="https://github.com/user-attachments/assets/47649c1d-2b7d-453c-be35-a2d99a69f4a0" />
+
 
 
 ---
@@ -56,7 +57,8 @@ Use **SSH** to connect from your local machine:
 - Update and upgrade the VM:
 `apt-get update && apt-get upgrade -y`
 
-![[Pasted image 20251016181603.png]]
+<img width="719" height="178" alt="image" src="https://github.com/user-attachments/assets/303f7a31-3626-4e71-a98c-cc2652e62adb" />
+
 
 ---
 
@@ -86,7 +88,8 @@ Use **SSH** to connect from your local machine:
     
 2. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
 
-![[Pasted image 20251016183112.png]]
+<img width="703" height="276" alt="image" src="https://github.com/user-attachments/assets/7e7bcdb3-3bb8-422f-909b-3a5c0c30f65c" />
+
 
 ## 6. Setting Up a Firewall
 
@@ -99,9 +102,11 @@ Use **SSH** to connect from your local machine:
     - Source: Restrict SSH port (22) to your IP only.
     
 3. Assign the firewall to your VM: **Compute → VM → Settings → Firewall → Update Firewall Group**.
-    ![[1_9eFOoFlTKqtO1vNVT-0Fww.jpg]]
+   <img width="1100" height="361" alt="image" src="https://github.com/user-attachments/assets/dd8ced67-4b21-431c-b3d7-7a6b04e52014" />
 
-![[Pasted image 20251016184117.png]]
+
+<img width="530" height="360" alt="image" src="https://github.com/user-attachments/assets/9375bfa3-bd72-4b5b-83ca-d83f975df6e3" />
+
 
 ## 7. Starting Elasticsearch Service
 
@@ -114,7 +119,8 @@ Run the following commands:
 
 - Verify the service is **active** and running.
     
-![[Pasted image 20251016184259.png]]
+<img width="671" height="137" alt="image" src="https://github.com/user-attachments/assets/162b47e6-2e67-4afb-9e66-443a2c3a3230" />
+
 
 ---
 
