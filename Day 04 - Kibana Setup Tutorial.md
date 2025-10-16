@@ -74,17 +74,17 @@ Copy and save the token — you’ll use it shortly in the browser.
 ## Step 6 — Access Kibana Web Interface
 
 Before opening the browser, allow traffic to port 5601 by configuring the firewall rules on vultr as well as the VM. We need to allow access from our public IP to that port, since we previously made it possible just for port 22 to be granted access. Head back to Compute →Click on your instance → Settings → Firewall → Manage: 
+![[Pasted image 20251016223959.png]]
 
 
 ![[Pasted image 20251016223834.png]]
 
-Also, update any cloud firewall rules to permit traffic on port 5601 from your IP.
-
-Then open a browser and go to:
+Also, update any cloud firewall rules to permit traffic on port 5601 from your IP.Then open a browser and go to:
 
 `http://207.148.79.228:5601`
 
-If the service is accessible, you’ll see the enrollment page.
+If the service is accessible, you’ll see the enrollment page:
+![[Pasted image 20251016224049.png]]
 
 ---
 
