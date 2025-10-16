@@ -1,7 +1,7 @@
 
 ## Objective
 
-Deploy a **Fleet Server** for centralized agent management and enroll a **Windows server** as an Elastic Agent.  This allows all endpoint telemetry to be collected and viewed from a single dashboard in Kibana.
+Deploy a **Fleet Server** for centralized agent management and enroll a **Windows server** as an Elastic Agent into a Fleet.  This allows all endpoint telemetry to be collected and viewed from a single dashboard in Kibana.
 
 ---
 
