@@ -76,6 +76,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     `ufw allow 8220 ufw allow 443`
     
 - Ensure the Fleet server can communicate with ELK.
+- ![[Pasted image 20251016234611.png]]
     
 - Update SOC simulation firewall to allow all TCP ports (or specifically 8220 and 9200) from Fleet to ELK.
     
