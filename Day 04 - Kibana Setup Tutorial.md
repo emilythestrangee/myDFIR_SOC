@@ -100,10 +100,9 @@ Enter the verification code into the web interface. Once verified, you’ll be r
 
 - **Username**: `elastic`
     
-- **Password**: retrieved from the Elasticsearch installation log or reset with:
+- **Password**: retrieved from the Elasticsearch installation log or reset with `/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`:
+![[Pasted image 20251016224653.png]]
     
-
-`/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic`
 
 Log in to the dashboard.
 
