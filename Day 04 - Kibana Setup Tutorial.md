@@ -73,7 +73,7 @@ Copy and save the token — you’ll use it shortly in the browser.
 
 ## Step 6 — Access Kibana Web Interface
 
-Before opening the browser, allow traffic to port 5601:
+Before opening the browser, allow traffic to port 5601. We need to allow access from our public IP to that port, since we previously made it possible just for port 22 to be granted access. Head back to Compute →Click on your instance → settings → firewall → manage: 
 
 `ufw allow 5601`
 
