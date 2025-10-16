@@ -89,8 +89,8 @@ Use **SSH** to connect from your local machine:
     
 3. Save and exit (`Ctrl + X`, then `Y`, then `Enter`).
     
+![[Pasted image 20251016182750.png]]
 
----
 
 ## 6. Setting Up a Firewall
 
