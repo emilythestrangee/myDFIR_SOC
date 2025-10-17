@@ -170,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32ae198a13053ba0",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
+    "images/Pasted image 20251018014608.png",
     "Day 17 - How To Create Alerts and Dashboards in Kibana (Part 3).md",
     "images/Pasted image 20251018013134.png",
     "images/Pasted image 20251018012645.png",
@@ -207,7 +208,6 @@
     "Day 25 - osTicket + ELK Integration.md",
     "Day 24 - osTicket Setup Tutorial.md",
     "Day 23 - Ticketing System.md",
-    "Day 22 - How To Create Alerts and Dashboards in Kibana.md",
     "images"
   ]
 }
