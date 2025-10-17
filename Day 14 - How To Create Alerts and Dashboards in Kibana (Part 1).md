@@ -96,11 +96,10 @@
 - Configure layer:
     
     - **Boundaries Source:** Administrative Boundaries → World Countries
-        
     - **Statistics Source:** Data view corresponding to your index
-        
     - **Join Field:** `source.geo.country_iso_code`
-        
+
+
 - Save the map as **"Challenge-SSH Failed Authentication Activity"**.
     
 - Add it to a new dashboard named **"Challenge SSH Authentication Activity"**.
