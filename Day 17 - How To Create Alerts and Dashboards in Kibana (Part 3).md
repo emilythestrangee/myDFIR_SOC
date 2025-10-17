@@ -42,10 +42,9 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 1. Go to **Discover** and modify the query to:
     
-    `event.code:4624 AND (winlog.event_data.LogonType:10 OR winlog.event_data.LogonType:7)  AND agent.name:"Challenge-WIN-Haji"`
+    `event.code:4624 AND (winlog.event_data.LogonType:10 OR winlog.event_data.LogonType:7)  AND agent.name:MYDFIR-WIN-emaan`
     
     - `4624` → Successful authentication
-        
     - LogonType `10` (RemoteInteractive) and `7` (Unlock)
         
 2. Save this query as **“Challenge-RDP Successful Authentication Activity”**.
