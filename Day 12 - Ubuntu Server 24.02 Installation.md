@@ -52,10 +52,6 @@ To monitor failed login attempts or privileged user activity:
 
 ![[Pasted image 20251017022343.png]]
 
-- Extract source IP addresses of failed attempts:
-`grep -i failed auth.log | grep -i root | cut -d ' ' -f 
-
-
 ---
 
 ## Optional: Generate Test Logs
