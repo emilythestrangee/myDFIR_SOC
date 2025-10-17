@@ -31,7 +31,7 @@
     - Ubuntu/Debian: `/var/log/auth*`
     - Red Hat/CentOS: `/var/log/secure*`
         
-- Ensure the policy supports all major Linux distributions (Debian, Ubuntu, Red Hat, CentOS).
+- Ensure the policy supports all major Linux distributions (Debian, Ubuntu, Red Hat, CentOS). As we are using Ubuntu, we don’t have the “secure” path in our system but that’s okay because the policy is created to work with Debian, Ubuntu, CentOS, Redhat, etc.
     
 ![[Pasted image 20251017181422.png]]
 
