@@ -90,7 +90,7 @@ Tool: draw.io (for creating the diagram)
 
 ## Diagram
 
-![[Pasted image 20251018014608.png]]
+
 
 
 ---
