@@ -1,7 +1,7 @@
 
 ## Introduction
 
-**Goal:** Build targeted alerts and detection rules for brute force activity on the Windows host, and extend the previous SSH detection into more structured SIEM detection rules. This day covers both simple search-threshold alerts (from saved searches) and richer Threshold detection rules under Security → Rules.
+**Goal:** Create targeted alerts and detection rules for brute force activity on the Windows server, and extend the previous SSH detection into more structured SIEM detection rules. This day covers both simple search-threshold alerts (from saved searches) and richer Threshold detection rules under Security → Rules.
 
 ---
 
