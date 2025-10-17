@@ -32,11 +32,7 @@ To secure the Mythic instance:
 Example rules:
 
 - **allow-mypc-mythic** → Source: Personal IP, allow all ports.
-    
 - **allow-targets-mythic** → Source: target VM tags.
-    
-
-Press enter or click to view image in full size
 
 ---
 
@@ -68,7 +64,6 @@ If Docker fails to start:
 
 `systemctl status docker systemctl restart docker`
 
-Press enter or click to view image in full size
 
 ---
 
@@ -82,7 +77,6 @@ Once it’s running, access the web interface:
 
 `https://<mythic-server-ip>:7443`
 
-Press enter or click to view image in full size
 
 ---
 
@@ -97,8 +91,6 @@ Look for:
 - `MYTHIC_ADMIN_USER`
 - `MYTHIC_ADMIN_PASSWORD`
 
-Press enter or click to view image in full size
-
 ---
 
 ## 8. Firewall Hardening
@@ -107,8 +99,6 @@ Press enter or click to view image in full size
     - Personal IP
     - Target Windows and Linux servers
 - Block all other sources.
-
-Press enter or click to view image in full size
 
 ---
 
@@ -124,8 +114,6 @@ Press enter or click to view image in full size
     - **Artifacts**
     - **MITRE ATT&CK Mapping**
     - **Dark Mode**
-
-Press enter or click to view image in full size
 
 ---
 
