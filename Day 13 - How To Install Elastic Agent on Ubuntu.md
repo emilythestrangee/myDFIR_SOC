@@ -57,10 +57,7 @@
     
 
 **Common Issue:**
-
 - If the installation fails, check firewall rules to ensure the Linux server can communicate with the Fleet server.
-    
-
 ---
 
 ## Verify Installation
