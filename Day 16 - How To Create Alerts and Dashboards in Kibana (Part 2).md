@@ -12,21 +12,15 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 **Steps:**
 
 - Open **Discover**.
-    
-- Filter by your Windows agent: click **agent.name** and select the Windows host (e.g., `mydfir-win-greenfire2`).
-    
+- Filter by your Windows agent: click **agent.name** and select the Windows host (`MYDFIR-WIN-emaan`).
 - Use the Event ID filter:
-    
     `event.code: 4625`
     
 - Add useful columns to the table:
-    
     - `source.ip` (source IP)
-        
     - `user.name` (username)
-        
     - any other contextual fields you want (e.g., `host.hostname`, `process.name`).
-        
+    
 - Save the search (e.g., **"RDP Failed Activity"**).
     
 
