@@ -35,13 +35,10 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 - Configure threshold parameters:
     
     - Trigger when **IS ABOVE 5** (documents)
-        
     - For the **last 5 minutes** (or your preferred window)
-        
     - Schedule checks to run every **1 minute** (common choice for authentication alerts)
-        
-- Test the query using the built-in Test feature to validate it matches expected documents.
     
+- Test the query using the built-in Test feature to validate it matches expected documents.
 - Save the alert.
     
 
