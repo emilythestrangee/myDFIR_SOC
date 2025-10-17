@@ -21,8 +21,10 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
     - `user.name` 
     
 - Save the search (**"RDP Failed Activity"**).
-    ![[Pasted image 20251017235704.png]]
-![[Pasted image 20251017235722.png]]
+    <img width="1008" height="295" alt="image" src="https://github.com/user-attachments/assets/fbcc3ce2-7435-4d75-a483-8204f2b07a14" />
+
+<img width="588" height="553" alt="image" src="https://github.com/user-attachments/assets/8b7019f6-90c4-4316-ad9e-ffeabb788184" />
+
 ---
 
 ## Create a Simple Search-Threshold Alert from Saved Search
@@ -40,7 +42,8 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
     
 - Test the query using the built-in Test feature to validate it matches expected documents.
 - Save the alert.
-![[Pasted image 20251018000449.png]]
+<img width="593" height="567" alt="image" src="https://github.com/user-attachments/assets/6bd7ca82-9a63-47e3-b963-850d5a03e59b" />
+
 
 ---
 
@@ -57,7 +60,8 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 4. Enter the query you verified in Discover. 
     
     `event.code:4625 AND agent.name: "MYDFIR-WIN-emaan" AND user.name: "Administrator"`
-    ![[Pasted image 20251018001559.png]]
+    <img width="466" height="715" alt="image" src="https://github.com/user-attachments/assets/b46bb27c-51c5-45d6-a7b0-e8205c6e1704" />
+
 5. Configure **Threshold**: set threshold value to **5** (or your desired sensitivity).
 6. Configure **Group by** fields so the rule aggregates per actor/source. Common choices:
     
@@ -71,7 +75,8 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 10. Leave actions as default (or add notification actions).
 11. Click **Create & enable rule**.
 
-![[1_XcQzDkqoU0VhMIgWteQjSA.jpg]]
+<img width="631" height="505" alt="image" src="https://github.com/user-attachments/assets/c4799803-b12a-4f0c-bec9-431fc67f9379" />
+
 
 ---
 
@@ -88,7 +93,8 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 - Add required fields: `source.ip`, `user.name`, `host.hostname`, `winlog.event_data.LogonType` (if available).
 - Set threshold to **5**, severity **medium**, schedule to run every **1 minute** with a 5-minute look-back.
 - Create & enable the rule.
-![[Pasted image 20251018003056.png]]
+<img width="502" height="588" alt="image" src="https://github.com/user-attachments/assets/4555eff0-87c9-4be6-9cc6-d782fd09ac80" />
+
 
 ---
 
@@ -101,7 +107,8 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 - After triggers, go to **Security → Alerts** (or Stack Management → Alerts) to inspect alert details. Confirm the alert contains the grouped fields (`source.ip`, `user.name`) and enough context for investigation.
 - Tune thresholds and schedule/look-back windows based on observed noise and legitimate activity patterns.
 
-![[Pasted image 20251018004048.png]]
+<img width="623" height="406" alt="image" src="https://github.com/user-attachments/assets/40f18ce2-a093-48b3-acb8-8168838b8077" />
+
 
 ---
 
