@@ -35,6 +35,9 @@
 - Apply the filter `system.auth.ssh.event:*` to narrow results.
 - Highlight failed attempts and add them to the filter for analysis.
 
+![[Pasted image 20251017225406.png]]
+
+
 ---
 
 ## Add Relevant Fields
