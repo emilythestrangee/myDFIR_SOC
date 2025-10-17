@@ -9,9 +9,11 @@
 ### 2.1 Cloud Deployment
 
 - Use vultr.com to create a new VM.
+- **Cloud Compute** (Shared CPU)
 - Minimum recommended specs: **2 CPU cores** and **4 GB RAM**.
 - OS: Ubuntu 22.04.
 - Hostname: MYDFIR-MYTHIC
+- Deploy the server.
 
 ---
 
