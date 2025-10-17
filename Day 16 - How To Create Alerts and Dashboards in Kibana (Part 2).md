@@ -65,15 +65,10 @@ Alerts created under Stack Management can notify you but may lack rich contextua
         Grouping provides per-IP and per-user counts rather than global counts.
         
 7. Add **Required fields** to ensure alert output includes the most useful fields (e.g., `source.ip`, `user.name`, `host.hostname`).
-    
 8. Set rule metadata: name, description, severity (e.g., **medium**).
-    
 9. Set schedule/look-back: run every **1 minute**, look back **5 minutes** (or run every 1 minute with a 5-minute look-back).
-    
 10. Leave actions as default (or add notification actions).
-    
 11. Click **Create & enable rule**.
-    
 
 ---
 
