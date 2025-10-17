@@ -52,9 +52,9 @@
 
 ![[Pasted image 20251017230606.png]]
 
+![[Pasted image 20251017230715.png]]
 
-
-
+![[Pasted image 20251017230726.png]]
 
 ---
 
