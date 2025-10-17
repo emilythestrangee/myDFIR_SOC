@@ -14,11 +14,10 @@
     
 - Navigate to **Agent Policies** → **Create Agent Policy**.
     
-- Enter a name for the policy (e.g., `Challenge-Linux-Policy`).
+- Enter a name for the policy (`MyDFIR-Linux-Policy`).
     
 - Click **Create Agent Policy**.
     
-
 ---
 
 ## Configure Policy
