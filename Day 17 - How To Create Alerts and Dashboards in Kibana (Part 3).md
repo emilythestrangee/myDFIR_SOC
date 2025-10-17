@@ -63,7 +63,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 **Steps**:
 
-1. Click **Create Visualization** → select **Table**.
+1. Go to **Discover** →**Create Visualization** → select **Table**.
 2. Query:
     
     `system.auth.ssh.event:* AND agent.name:MYDFIR-Linux-emaan AND system.auth.ssh.event:Failed`
