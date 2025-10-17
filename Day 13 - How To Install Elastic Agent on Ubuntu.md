@@ -47,7 +47,7 @@
     
 - Click **Add Agent**.
     
-- Select the newly created policy (e.g., `Challenge-Linux-Policy`).
+- Select the newly created policy (`MyDFIR-Linux-Policy`).
     
 - Choose **Enroll in Fleet → Linux Tar**.
     
