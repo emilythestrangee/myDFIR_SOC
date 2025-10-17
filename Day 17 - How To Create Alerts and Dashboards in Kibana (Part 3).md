@@ -51,6 +51,9 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 3. Duplicate the **previous RDP failed map** on the dashboard.
 4. Update the map’s query and title accordingly.
 
+
+
+
 ---
 
 ## 5. Add Table Visualizations for Detailed Logs
