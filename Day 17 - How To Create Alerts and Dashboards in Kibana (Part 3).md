@@ -63,25 +63,25 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 **Steps**:
 
-1. Go to **Create Visualization** → select **Table**.
+1. Go to **Create Visualization** → select **Table** from the dropdown menu .
 2. Query:
     
     `system.auth.ssh.event:* AND agent.name:MYDFIR-Linux-emaan AND system.auth.ssh.event:Failed`
     
-3. Add fields:
+1. Add fields by dragging and dropping them respectively:
     
     - `@timestamp`
     - `user.name`
     - `source.ip`
     - `source.geo.country_name`
     
-4. Configure rows:
+2. Configure rows:
     
     - Top 10 values per field
     - Uncheck **Group remaining values as “Other”**
     
-5. Sort by **Count of records** in descending order.
-6. Save as **“Challenge-SSH Failed Authentication Activity (Table)”**.
+3. Sort by **Count of records** in descending order.
+4. Save as **“Challenge-SSH Failed Authentication Activity (Table)”**.
 
 
 ---
