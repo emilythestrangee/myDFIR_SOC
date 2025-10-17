@@ -49,11 +49,11 @@
     
 - Select the newly created policy (`MyDFIR-Linux-Policy`).
     
-- Choose **Enroll in Fleet → Linux Tar**. Configure firewall rules to allow communication between the Linux host and the Fleet/ELK server on required ports (e.g., 9200). Copy the installation command from the Fleet GUI and run it via SSH on the Linux server.
+- Choose **Enroll in Fleet → Linux Tar**. Configure firewall rules to allow communication between the Linux host and the Fleet/ELK server on required ports (e.g., 9200). 
     ![[Pasted image 20251017182244.png]]
     
     
-- Add the `--insecure` flag if using self-signed certificates. When prompted, send **Y** to run Elastic Agent as a service.
+- Copy the installation command from the Fleet GUI and run it via SSH on the Linux server. Add the `--insecure` flag if using self-signed certificates. When prompted, send **Y** to run Elastic Agent as a service.
     
 
 **Common Issue:**
