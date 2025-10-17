@@ -90,26 +90,23 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 ### 5.2 SSH Successful Activity Table
 
 - Duplicate the failed SSH table.
-    
 - Update the query to:
     
     `system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve"  AND system.auth.ssh.event:"Accepted"`
     
 - Change the title to: **“Challenge-SSH Successful Authentication Activity (Table)”**.
-    
 
 ---
 
 ### 5.3 RDP Failed Activity Table
 
 - Duplicate the SSH failed table.
-    
 - Update the query to:
     
     `event.code:4625 AND agent.name:"Challenge-WIN-Haji"`
     
 - Change the title to: **“Challenge-RDP Failed Authentication Activity (Table)”**.
-    
+
 
 ---
 
