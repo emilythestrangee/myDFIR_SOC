@@ -103,6 +103,7 @@
 - Save the map as **"SSH Failed Authentications - Network Map"**.
 - Add it to a new dashboard named **"Challenge SSH Authentication Activity"**.
 ![[Pasted image 20251017232620.png]]
+![[Pasted image 20251017232748.png]]
 
 ---
 
