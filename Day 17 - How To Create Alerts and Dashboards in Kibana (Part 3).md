@@ -19,12 +19,10 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 ![https://www.elastic.co/docs/explore-analyze/images/kibana-sample_data_ecommerce.png](https://www.elastic.co/docs/explore-analyze/images/kibana-sample_data_ecommerce.png)
 
-4
 
 **Steps**:
 
-1. Navigate to **Maps** from the hamburger menu (open in a new tab for convenience).
-    
+1. Navigate to **Maps** from the hamburger menu.
 2. Paste the saved query for RDP failed activity in the search bar:
     
     `event.code:4625 AND agent.name:"Challenge-WIN-Haji"`
