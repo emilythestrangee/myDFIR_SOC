@@ -140,7 +140,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 - Click **Save** in the top right corner of the dashboard.
 
 
-End Result:** A centralized, interactive dashboard showing **SSH and RDP activity**, both failed and successful, with geographical and table details (username, IP, country).
+**End Result:** A centralized, interactive dashboard showing **SSH and RDP activity**, both failed and successful, with geographical and table details (username, IP, country).
 
 
 **Reference**
