@@ -88,12 +88,11 @@
 **Steps:**
 
 - Navigate to **Maps** under the **Analytics** menu.
-- Filter data using the saved query:
+- Filter data using the saved query and paste it into the search bar:
 
-`system.auth.ssh.event:* and agent.name:"MYDFIR-Linux-emaan" and system.auth.ssh.event:Failed`
+`system.auth.ssh.event:* and agent.name:MYDFIR-Linux-emaan and system.auth.ssh.event:Failed`
 
 - Click **Add Layer** → select **Choropleth Layer**.
-    
 - Configure layer:
     
     - **Boundaries Source:** Administrative Boundaries → World Countries
