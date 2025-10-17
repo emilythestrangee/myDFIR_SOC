@@ -46,13 +46,15 @@
 **Steps:**
 
 - Add `user.name` to track usernames.
-    
 - Add `source.ip` to track source IP addresses.
-    
 - Optionally add `source.geo.country_name` for the country of origin.
-    
 - The table should display: User, IP, Country, and authentication status.
-    
+
+![[Pasted image 20251017230606.png]]
+
+
+
+
 
 ---
 
