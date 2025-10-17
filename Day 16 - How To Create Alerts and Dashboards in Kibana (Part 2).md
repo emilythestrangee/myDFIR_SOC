@@ -70,6 +70,8 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 10. Leave actions as default (or add notification actions).
 11. Click **Create & enable rule**.
 
+
+
 ---
 
 ## Create RDP (Windows) Threshold Detection Rule
