@@ -30,6 +30,7 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 **Steps:**
 
 - With the saved search open, click **Alerts** (top-right) → **Create search threshold rule**.
+- Name the alert (e.g., `MyDFIR-RDP Brute Force Activity-emaan`).
 - Confirm the saved query is pre-populated in the rule.
 - Configure threshold parameters:
     
