@@ -47,9 +47,9 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     - `4624` → Successful authentication
     - LogonType `10` (RemoteInteractive) and `7` (Unlock)
         
-2. Save this query as **“Challenge-RDP Successful Authentication Activity”**.
-3. Duplicate the **previous RDP failed map** on the dashboard.
-4. Update the map’s query and title accordingly.
+1. Save this query as **“RDP Successful Activity”**.
+2. Duplicate the **previous RDP failed map** on the dashboard.
+3. Update the map’s query and title accordingly.
 
 
 
