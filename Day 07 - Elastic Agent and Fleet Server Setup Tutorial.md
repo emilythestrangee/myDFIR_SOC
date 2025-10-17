@@ -54,7 +54,7 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
 
 - Copy the generated installation token and command from Kibana and SSH into the Fleet server:
     
-    `ssh root@139.180.155.135
+    `ssh root@139.180.155.135`
     
 - Update and upgrade packages:
     
