@@ -68,6 +68,8 @@
 - Navigate to **Discover** in Kibana to check incoming logs.
 - Adjust the time filter to ensure recent logs are visible.
 - Filter logs by `agent.name` to view data from your Linux agent.
+
+ ![[Pasted image 20251017183854.png]]
 ---
 
 ## Analyze Logs
