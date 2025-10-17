@@ -75,7 +75,7 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 
 ---
 
-## Create RDP (Windows) Threshold Detection Rule
+## Create SSH (Windows) Threshold Detection Rule
 
 **Recommended query template:**
 
