@@ -7,7 +7,7 @@ Goal: Build a **map and table visualization** in Kibana to track and display **R
 
 ## 2. Recall Saved Queries
 
-- Navigate to **Discover** and open the **previously saved query** for RDP failed activity (`event.code:4625`).
+- Navigate to **Discover**→**Open** and open the **previously saved query** for RDP failed activity (`event.code:4625`).
     
 - Click **Open** in the top right corner and select the saved query name.
     
