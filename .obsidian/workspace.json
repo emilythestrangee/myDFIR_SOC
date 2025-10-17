@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 12 - Ubuntu Server 24.02 Installation.md",
+                "file": "Day 13 - How To Install Elastic Agent on Ubuntu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 12 - Ubuntu Server 24.02 Installation"
+              "title": "Day 13 - How To Install Elastic Agent on Ubuntu"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "31786bc9f65fe6ec",
   "lastOpenFiles": [
-    "Day 13 - How To Install Elastic Agent on Ubuntu.md",
     "Day 12 - Ubuntu Server 24.02 Installation.md",
+    "Day 13 - How To Install Elastic Agent on Ubuntu.md",
     "Day 01 - How To Create a Logical Diagram.md",
     "conflict-files-obsidian-git.md",
     "images/myDFIR_diagram.svg",

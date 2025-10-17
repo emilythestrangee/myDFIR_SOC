@@ -24,12 +24,11 @@
 
 **Steps:**
 
-- Select the system integration (e.g., `system-3`).
+- Select the system integration (`system-3`).
     
 - Verify log collection paths:
     
     - Ubuntu/Debian: `/var/log/auth*`
-        
     - Red Hat/CentOS: `/var/log/secure*`
         
 - Ensure the policy supports all major Linux distributions (Debian, Ubuntu, Red Hat, CentOS).
