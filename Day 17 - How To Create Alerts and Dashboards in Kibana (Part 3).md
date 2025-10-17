@@ -102,7 +102,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 - Duplicate the SSH failed table.
 - Update the query to:
     
-    `event.code:4625 AND agent.name:"Challenge-WIN-Haji"`
+    `event.code:4625 AND agent.name:MYDFIR-WIN-emaan`
     
 - Change the title to: **“Challenge-RDP Failed Authentication Activity (Table)”**.
 
