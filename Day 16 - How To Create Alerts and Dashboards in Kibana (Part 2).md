@@ -79,20 +79,16 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 
 **Recommended query template:**
 
-`agent.name:"mydfir-win-greenfire2" AND event.code:4625 AND (user.name:"admin" OR user.name:"administrator")`
+`system.auth.ssh.event:* AND agent.name: MYDFIR-Linux-emaan and system.auth.ssh.event: Failed and user.name: root`
 
 **Steps:**
 
 - Repeat the Threshold rule creation flow above using the RDP query.
-    
 - Group by `source.ip` and `user.name` so you get per-user, per-IP counts.
-    
 - Add required fields: `source.ip`, `user.name`, `host.hostname`, `winlog.event_data.LogonType` (if available).
-    
 - Set threshold to **5**, severity **medium**, schedule to run every **1 minute** with a 5-minute look-back.
-    
 - Create & enable the rule.
-    
+
 
 ---
 
