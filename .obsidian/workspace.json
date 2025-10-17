@@ -170,8 +170,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32ae198a13053ba0",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
+    "images/Pasted image 20251018025606.png",
+    "images/Pasted image 20251018025519.png",
     "Day 19 - How To Create an Attack Diagram.md",
     "images/Untitled Diagram.drawio.png",
     "images/Pasted image 20251018014608.png",
@@ -185,7 +187,6 @@
     "images/Pasted image 20251018004048.png",
     "images/Pasted image 20251018003530.png",
     "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1).md",
-    "images/Pasted image 20251018003056.png",
     "Day 15 - Remote Desktop Protocol Introduction.md",
     "Day 12 - Ubuntu Server 24.02 Installation.md",
     "Day 13 - How To Install Elastic Agent on Ubuntu.md",
@@ -207,7 +208,6 @@
     "Day 26 - Investigate SSH Brute Force Attack.md",
     "Day 25 - osTicket + ELK Integration.md",
     "Day 24 - osTicket Setup Tutorial.md",
-    "Day 23 - Ticketing System.md",
     "images"
   ]
 }

@@ -50,11 +50,15 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 `cd Mythic 
 `./install_docker_ubuntu.sh`
 
+![[Pasted image 20251018025519.png]]
+
+![[Pasted image 20251018025606.png]]
 
 
 ### Start Mythic
 
-`make ./mythic-cli start`
+`make 
+`./mythic-cli start`
 
 Press enter or click to view image in full size
 
