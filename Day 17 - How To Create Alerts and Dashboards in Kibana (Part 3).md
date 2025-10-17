@@ -29,8 +29,10 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     - Join field: `source.geo.country_iso_code`
 
 6. Click **Add and continue** → **Save** the map.
-7. Add it to the **existing dashboard** (e.g., `Challenge Authentication Activity`).
+7. Add it to the **existing dashboard**.
 ![[Pasted image 20251018005811.png]]
+
+![[Pasted image 20251018005929.png]]
 
 ---
 
@@ -47,11 +49,8 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     - LogonType `10` (RemoteInteractive) and `7` (Unlock)
         
 2. Save this query as **“Challenge-RDP Successful Authentication Activity”**.
-    
 3. Duplicate the **previous RDP failed map** on the dashboard.
-    
 4. Update the map’s query and title accordingly.
-    
 
 ---
 
@@ -153,5 +152,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     
 
 ✅ **End Result:** A centralized, interactive dashboard showing **SSH and RDP activity**, both failed and successful, with geographical and table details (username, IP, country).
+
+
 **Reference**
 https://youtu.be/pAfIi6Z6a2g?si=rrv48fwEZepmsiQh
