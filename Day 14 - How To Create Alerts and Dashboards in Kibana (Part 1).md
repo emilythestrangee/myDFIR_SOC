@@ -18,7 +18,6 @@
 ## Identify Key Fields
 
 **Fields to Track:**
-
 - **Failed Attempts:** Detect authentication failures.
 - **User:** Identify usernames targeted.
 - **Source IP:** Track origin of login attempts.
@@ -31,13 +30,9 @@
 **Steps:**
 
 - Use `system.auth.ssh.event` to filter failed, invalid, or accepted login attempts.
-    
 - Add `system.auth.ssh.event` as a column.
-    
 - Apply the filter `system.auth.ssh.event:*` to narrow results.
-    
 - Highlight failed attempts and add them to the filter for analysis.
-    
 
 ---
 
