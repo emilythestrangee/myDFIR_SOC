@@ -35,9 +35,11 @@
 - Apply the filter `system.auth.ssh.event:*` to narrow results.
 - Highlight failed attempts and add them to the filter for analysis.
 
-![[Pasted image 20251017225406.png]]
+<img width="582" height="320" alt="image" src="https://github.com/user-attachments/assets/45d7dc23-9018-4de2-9d4c-e4bf9dd520b1" />
 
-![[Pasted image 20251017230430.png]]
+
+<img width="1148" height="400" alt="image" src="https://github.com/user-attachments/assets/a9e950db-5754-4cd7-ba16-f814ee208d34" />
+
 
 ---
 
@@ -50,19 +52,24 @@
 - Optionally add `source.geo.country_name` for the country of origin.
 - The table should display: User, IP, Country, and authentication status.
 
-![[Pasted image 20251017230606.png]]
+<img width="539" height="446" alt="image" src="https://github.com/user-attachments/assets/71d49ba6-a9d8-4c6a-8fc8-9f2b09bce99e" />
 
-![[Pasted image 20251017230715.png]]
 
-![[Pasted image 20251017230726.png]]
+<img width="285" height="219" alt="image" src="https://github.com/user-attachments/assets/47fa1771-4b69-45d3-b32e-c6bf05678e13" />
 
-![[Pasted image 20251017230826.png]]
+
+<img width="294" height="172" alt="image" src="https://github.com/user-attachments/assets/3852f1f7-bbce-487c-9e9e-91d923865218" />
+
+
+<img width="1169" height="348" alt="image" src="https://github.com/user-attachments/assets/cab35aa5-af30-40be-a9d7-fb13b3264f14" />
+
 
 ---
 ## Save the Query
 
 - Save the search as **"SSH Failed Activity"** for reuse in alerts and dashboards.
-![[Pasted image 20251017230943.png]]
+<img width="600" height="566" alt="image" src="https://github.com/user-attachments/assets/252b0698-d689-43cf-a1f1-5b9f13b56fa6" />
+
 
 ---
 
@@ -77,9 +84,11 @@
 - Test the query to ensure it matches documents.
 - Save the rule.
 
-![[Pasted image 20251017231626.png]]
+<img width="581" height="485" alt="image" src="https://github.com/user-attachments/assets/f079667f-56c8-4175-a49a-a8a1858ab2bf" />
 
-![[Pasted image 20251017231635.png]]
+
+<img width="572" height="103" alt="image" src="https://github.com/user-attachments/assets/a46ec818-f428-4ab4-81bd-2e96ac2e0e24" />
+
 
 ---
 
@@ -99,11 +108,16 @@
     - **Statistics Source:** Data view corresponding to your index
     - **Join Field:** `source.geo.country_iso_code`
 
-![[Pasted image 20251017232403.png]]
+<img width="506" height="717" alt="image" src="https://github.com/user-attachments/assets/0c326d9d-ce61-45fd-b362-7412e4138615" />
+
 - Save the map as **"SSH Failed Authentications - Network Map"**.
 - Add it to a new dashboard named **"MyDFIR-Authentication-Activity"**.
-![[Pasted image 20251017232620.png]]
-![[Pasted image 20251017232748.png]]
+
+  
+<img width="665" height="341" alt="image" src="https://github.com/user-attachments/assets/370e4682-d4c7-4635-999d-5c246c5f2671" />
+
+<img width="1100" height="484" alt="image" src="https://github.com/user-attachments/assets/b47b56fc-052f-4234-810a-1918d0bb6472" />
+
 
 ---
 
@@ -121,7 +135,8 @@
 - Save and add it to the same dashboard.
 - Adjust the time filter to visualize recent activity (eg: Last 30 days).
 
-![[Pasted image 20251017233638.png]]
+<img width="1100" height="315" alt="image" src="https://github.com/user-attachments/assets/f4015c79-04b5-4f32-b4c3-7261ea6cf609" />
+
 
 ---
 ## Outcome
