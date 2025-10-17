@@ -50,7 +50,9 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 1. Save this query as **“RDP Successful Activity”**.
 2. Duplicate the **previous RDP failed map** on the dashboard.
 3. Update the map’s query and title accordingly.
+4. Optionally, update the **RDP Failed Authentication** map title to **RDP Failed Authentications"
 
+![[Pasted image 20251018010937.png]]
 
 
 
