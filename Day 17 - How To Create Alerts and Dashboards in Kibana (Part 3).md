@@ -25,12 +25,10 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 1. Navigate to **Maps** from the hamburger menu.
 2. Paste the saved query for RDP failed activity in the search bar:
     
-    `event.code:4625 AND agent.name:"Challenge-WIN-Haji"`
+    `event.code:4625 AND agent.name:MYDFIR-WIN-emaan`
     
 3. Adjust the time range to **Last 7 days** and click **Refresh**.
-    
 4. Click **Add Layer** → choose **Choropleth**.
-    
 5. In the settings:
     
     - Boundary: **World Countries**
