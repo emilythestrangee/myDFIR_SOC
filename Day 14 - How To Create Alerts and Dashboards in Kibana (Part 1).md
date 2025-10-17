@@ -119,7 +119,8 @@
 `system.auth.ssh.event:* and agent.name:MYDFIR-Linux-emaan and system.auth.ssh.event:Accepted
 
 - Save and add it to the same dashboard.
-- Adjust the time filter to visualize recent activity (e.g., Last 12 hours).
+- Adjust the time filter to visualize recent activity (eg: Last 30 days).
+
 
 ---
 
