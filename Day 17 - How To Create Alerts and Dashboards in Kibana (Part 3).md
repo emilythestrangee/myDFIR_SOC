@@ -30,9 +30,11 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 6. Click **Add and continue** → **Save** the map.
 7. Add it to the **existing dashboard**.
-![[Pasted image 20251018005811.png]]
+<img width="1322" height="557" alt="image" src="https://github.com/user-attachments/assets/5838cbb7-dd62-4daf-a0f3-17bfb653f4c4" />
 
-![[Pasted image 20251018005929.png]]
+
+<img width="754" height="405" alt="image" src="https://github.com/user-attachments/assets/b0e04bb6-c758-46fc-be73-e87d12208123" />
+
 
 ---
 
@@ -52,7 +54,8 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 3. Update the map’s title to **RDP Successful Authentications**.
 4. Optionally, update the **RDP Failed Authentication** map title to **RDP Failed Authentications.
 
-![[Pasted image 20251018010937.png]]
+<img width="1100" height="549" alt="image" src="https://github.com/user-attachments/assets/47fd7430-fb47-4d40-9839-5b18a69613f4" />
+
 
 
 
@@ -92,7 +95,8 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     
 - Change the title to: **“SSH Successful Authentications [Table]”**.
 
-![[Pasted image 20251018012645.png]]
+<img width="1100" height="548" alt="image" src="https://github.com/user-attachments/assets/d3fa6232-44a9-417a-9989-d8e450197764" />
+
 
 ---
 
@@ -115,7 +119,8 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     
 - Change the title to: **“RDP Successful Authentications [Table]”**.
 
-![[Pasted image 20251018013134.png]]
+<img width="1100" height="547" alt="image" src="https://github.com/user-attachments/assets/1cae3ee5-9f46-46ce-99f7-91fdc64f8190" />
+
 
 ---
 
