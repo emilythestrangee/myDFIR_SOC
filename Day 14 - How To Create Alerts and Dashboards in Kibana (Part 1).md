@@ -121,15 +121,13 @@
 - Save and add it to the same dashboard.
 - Adjust the time filter to visualize recent activity (eg: Last 30 days).
 
+![[Pasted image 20251017233638.png]]
 
 ---
-
 ## Outcome
 
 - The dashboard now shows failed and successful SSH login attempts by source country.
-    
 - Alerts notify when brute force thresholds are exceeded.
-    
 - This setup allows proactive monitoring and geographic tracking of login attempts.
 
 
