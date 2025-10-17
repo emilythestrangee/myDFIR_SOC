@@ -89,7 +89,8 @@ Tool: draw.io (for creating the diagram)
 ---
 
 ## Diagram
-![Uploading image.png…]()
+<img width="880" height="2661" alt="image" src="https://github.com/user-attachments/assets/fb812422-ad5c-4f30-86bb-f3194fa41cce" />
+
 
 
 
