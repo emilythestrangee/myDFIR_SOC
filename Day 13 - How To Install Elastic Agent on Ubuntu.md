@@ -21,7 +21,7 @@
 
 ---
 
-## 3. Configure Policy
+## Configure Policy
 
 **Steps:**
 
@@ -38,7 +38,7 @@
 
 ---
 
-## 4. Enroll Agent
+## Enroll Agent
 
 **Steps:**
 
@@ -66,7 +66,7 @@
 
 ---
 
-## 5. Verify Installation
+## Verify Installation
 
 **Steps:**
 
@@ -81,7 +81,7 @@
 
 ---
 
-## 6. Analyze Logs
+## Analyze Logs
 
 **Steps:**
 
@@ -93,5 +93,7 @@
 `grep -i failed /var/log/auth.log | grep -i root | cut -d ' ' -f 11`
 
 - Add important fields to Kibana tables for structured analysis.
+
+
 **Reference**
 https://youtu.be/QHJr2-Kav4k?si=Lol4L_dwzyRZYfF5
