@@ -71,7 +71,7 @@
 **Steps:**
 
 - Click **Alerts** → **Create Search Threshold Rule**.
-- Name the alert (e.g., `Challenge - SSH Brute Force Activity - Steve`).
+- Name the alert (e.g., `MyDFIR-SSH Brute Force Activity-emaan`).
 - The saved query is automatically applied.
 - Set threshold: trigger if more than **5 failed attempts** occur within **5 minutes**.
 - Test the query to ensure it matches documents.
