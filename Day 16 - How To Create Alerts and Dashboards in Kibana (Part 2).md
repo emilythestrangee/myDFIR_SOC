@@ -13,7 +13,7 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 
 - Open **Discover**.
 - Filter by your Windows agent: click **agent.name** and select the Windows host (`MYDFIR-WIN-emaan`).
-- Use the Event ID filter:
+- Use the Event ID filter in the search bar:
     `event.code: 4625`
     
 - Add useful columns to the table:
