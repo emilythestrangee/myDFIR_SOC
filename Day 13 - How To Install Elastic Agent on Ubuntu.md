@@ -68,8 +68,6 @@
 - Navigate to **Discover** in Kibana to check incoming logs.
 - Adjust the time filter to ensure recent logs are visible.
 - Filter logs by `agent.name` to view data from your Linux agent.
-    
-
 ---
 
 ## Analyze Logs
@@ -77,7 +75,6 @@
 **Steps:**
 
 - Identify errors and events using Kibana or SSH commands.
-    
 - Example: Find failed SSH login attempts on the Ubuntu server:
     
 
