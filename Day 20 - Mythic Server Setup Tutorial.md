@@ -60,8 +60,6 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 `make 
 `./mythic-cli start`
 
-Press enter or click to view image in full size
-
 ---
 
 ## Fixing Docker Issues
