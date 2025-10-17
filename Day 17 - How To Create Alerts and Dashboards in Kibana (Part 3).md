@@ -132,18 +132,15 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 - You should now have:
     
-    - 🗺 2 Choropleth maps (RDP Failed & Successful)
-        
-    - 🗺 2 SSH maps from previous steps
-        
+    - 🗺 2 RDP maps (Failed & Successful)
+    - 🗺 2 SSH maps from previous days
     - 📊 4 tables (SSH Failed/Success, RDP Failed/Success)
         
 - Review all titles and queries to ensure they’re correct.
-    
 - Click **Save** in the top right corner of the dashboard.
-    
 
-✅ **End Result:** A centralized, interactive dashboard showing **SSH and RDP activity**, both failed and successful, with geographical and table details (username, IP, country).
+
+End Result:** A centralized, interactive dashboard showing **SSH and RDP activity**, both failed and successful, with geographical and table details (username, IP, country).
 
 
 **Reference**
