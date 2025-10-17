@@ -113,15 +113,11 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 **Configuration tips:**
 
 - Group by `source.ip` and `winlog.event_data.UserSid`.
-    
 - Set **threshold = 1** (single occurrence is noteworthy).
-    
 - Set required fields: `source.ip`, `user.name`, `host.hostname`.
-    
 - Set severity appropriate to confidence (e.g., high or medium).
-    
 - Test carefully — dynamic personal IPs can trigger false positives.
-    
+
 
 ---
 
@@ -130,13 +126,10 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 **Steps to validate rules:**
 
 - For RDP: attempt several failed RDP logins using a random password (from a test client) to reach the threshold and trigger the alerts.
-    
 - For SSH: attempt failed SSH auths (or use a log replay) to trigger the SSH threshold rule.
-    
 - After triggers, go to **Security → Alerts** (or Stack Management → Alerts) to inspect alert details. Confirm the alert contains the grouped fields (`source.ip`, `user.name`) and enough context for investigation.
-    
 - Tune thresholds and schedule/look-back windows based on observed noise and legitimate activity patterns.
-    
+
 
 ---
 
@@ -145,26 +138,18 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 **Immediate steps:**
 
 - Expand the alert to view required fields and example documents.
-    
 - Note offending `source.ip`, `user.name`, timestamps, and the host affected.
-    
 - Pivot to **Discover** or the host timeline and search for additional context (related events, process, parent process) around the alert time.
-    
 - If confirmed malicious, follow containment/remediation playbook (block IP, reset credentials, isolate host, gather forensic artifacts).
-    
 
 ---
 
 ## Summary / Outcomes
 
 - You created both simple search-threshold alerts and richer Threshold detection rules in the SIEM rules engine.
-    
 - Windows-focused detection uses `event.code:4625` for failed logons and `event.code:4624` for successful logons.
-    
 - Grouping by `source.ip` and `user.name` is essential to produce actionable alerts with per-attacker granularity.
-    
 - Schedule and threshold tuning are necessary to balance detection sensitivity vs. noise.
-    
 - Test alerts with controlled failed attempts and validate the alert payload before relying on them operationally.
 
 
