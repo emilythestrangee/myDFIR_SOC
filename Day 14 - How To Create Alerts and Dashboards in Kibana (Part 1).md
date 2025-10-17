@@ -57,12 +57,12 @@
 ![[Pasted image 20251017230726.png]]
 
 ![[Pasted image 20251017230826.png]]
----
 
+---
 ## Save the Query
 
 - Save the search as **"SSH Failed Activity"** for reuse in alerts and dashboards.
-    
+![[Pasted image 20251017230943.png]]
 
 ---
 
