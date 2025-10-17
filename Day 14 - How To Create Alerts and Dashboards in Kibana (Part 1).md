@@ -41,7 +41,7 @@
 
 ---
 
-## Add Relevant Fields
+## Add Relevant Columns
 
 **Steps:**
 
