@@ -101,7 +101,7 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 - After triggers, go to **Security → Alerts** (or Stack Management → Alerts) to inspect alert details. Confirm the alert contains the grouped fields (`source.ip`, `user.name`) and enough context for investigation.
 - Tune thresholds and schedule/look-back windows based on observed noise and legitimate activity patterns.
 
-![[Pasted image 20251018003530.png]]
+
 
 ---
 
