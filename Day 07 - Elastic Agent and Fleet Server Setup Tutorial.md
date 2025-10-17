@@ -78,7 +78,8 @@ Deploy a **Fleet Server** for centralized agent management and enroll a **Window
     
 - **On the MyDFIR-Fleet-Server**:
     
-    `ufw allow 8220 ufw allow 443`
+    `ufw allow 8220`
+    `ufw allow 443`
     
 - Ensure the Fleet server can communicate with ELK.
 
