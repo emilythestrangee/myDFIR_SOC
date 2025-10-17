@@ -13,7 +13,7 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
     - Location: Singapore
     - OS: Ubuntu (4 GB RAM)
     - Disable Auto Backups & IPv6
-    - Set Hostname: `MYDFIR-MYTHI`
+    - Set Hostname: `MYDFIR-MYTHIC`
 
 3. Deploy the server.
 
@@ -22,17 +22,10 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 ## Installing Kali Linux
 
 1. Download Kali Linux from the official website.
-    
 2. Choose the Virtual Machine version (VMware is used in this setup).
-    
 3. Extract the downloaded file using 7-Zip.
-    
 4. Locate and open the `.vmx` file in **VMware Workstation**.
-    
 5. Power on the Kali VM.
-    
-
-Press enter or click to view image in full size
 
 ---
 
