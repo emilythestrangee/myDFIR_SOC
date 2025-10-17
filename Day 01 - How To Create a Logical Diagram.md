@@ -109,7 +109,8 @@ This completes the Day 1 setup. The logical diagram now acts as the reference ar
 ## Diagram 
 
 
-<img width="1001" height="961" alt="image" src="https://github.com/user-attachments/assets/30fba44e-6b3d-4bce-9fa7-6d0c3674355d" />
+<img width="1001" height="961" alt="image" src="https://github.com/user-attachments/assets/7a71e7db-e694-43ed-b312-8b1b3eb4e793" />
+
 
 
 
