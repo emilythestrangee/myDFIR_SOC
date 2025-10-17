@@ -46,7 +46,11 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 
 ### Clone & Install Mythic
 
-`git clone https://github.com/its-a-feature/Mythic.git cd Mythic ./install_docker_ubuntu.sh`
+`git clone https://github.com/its-a-feature/Mythic.git
+`cd Mythic 
+`./install_docker_ubuntu.sh`
+
+
 
 ### Start Mythic
 
