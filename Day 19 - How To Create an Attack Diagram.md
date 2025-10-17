@@ -9,13 +9,6 @@ Tool: draw.io (for creating the diagram)
 
 ## Components of the Diagram
 
-![https://www.drawio.com/assets/img/blog/threat-modelling-process-flow.png](https://www.drawio.com/assets/img/blog/threat-modelling-process-flow.png)
-
-![https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/photo/cyber/THE-CYBER-KILL-CHAIN-body.png.pc-adaptive.full.medium.png](https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/photo/cyber/THE-CYBER-KILL-CHAIN-body.png.pc-adaptive.full.medium.png)
-
-![https://www.dnsfilter.com/hubfs/Imported_Blog_Media/6138e35e0ef28036125430bd_C2-attack-servers-2.png](https://www.dnsfilter.com/hubfs/Imported_Blog_Media/6138e35e0ef28036125430bd_C2-attack-servers-2.png)
-
-
 - **Attacker Laptop (Kali Linux)**
     
     - Color: Red
