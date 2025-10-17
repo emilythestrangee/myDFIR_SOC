@@ -55,20 +55,13 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 ## 5. Add Table Visualizations for Detailed Logs
 
-![https://www.tutorialspoint.com/kibana/images/visualization.jpg](https://www.tutorialspoint.com/kibana/images/visualization.jpg)
 
-![https://us1.discourse-cdn.com/elastic/original/3X/4/9/49592638f6d8d9d1f08940bf50ecaafcd3be20a1.png](https://us1.discourse-cdn.com/elastic/original/3X/4/9/49592638f6d8d9d1f08940bf50ecaafcd3be20a1.png)
-
-![https://us1.discourse-cdn.com/elastic/original/2X/f/f9235963a6db0e329171274d2961a50eae39c502.jpg](https://us1.discourse-cdn.com/elastic/original/2X/f/f9235963a6db0e329171274d2961a50eae39c502.jpg)
-
-4
 
 ### 5.1 SSH Failed Activity Table
 
 **Steps**:
 
 1. Click **Create Visualization** → select **Table**.
-    
 2. Query:
     
     `system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve"  AND system.auth.ssh.event:"Failed"`
@@ -90,9 +83,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     - Uncheck **Group remaining values as “Other”**
         
 5. Sort by **Count of records** in descending order.
-    
 6. Save as **“Challenge-SSH Failed Authentication Activity (Table)”**.
-    
 
 ---
 
