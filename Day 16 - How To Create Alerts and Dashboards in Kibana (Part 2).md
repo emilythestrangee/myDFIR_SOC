@@ -55,14 +55,12 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 3. Select **Threshold** as the rule type.
 4. Enter the query you verified in Discover. Example SSH query (from Day 14):
     
-    `event.code:4625 AND agent.name: "MYDFIR-Linux-emaan" AND user.name: "Administrator"`
-    
+    `event.code:4625 AND agent.name: "MYDFIR-WIN-emaan" AND user.name: "Administrator"`
+    ![[Pasted image 20251018001559.png]]
 5. Configure **Threshold**: set threshold value to **5** (or your desired sensitivity).
-    
 6. Configure **Group by** fields so the rule aggregates per actor/source. Common choices:
     
     - `source.ip`
-        
     - `user.name`  
         Grouping provides per-IP and per-user counts rather than global counts.
         
