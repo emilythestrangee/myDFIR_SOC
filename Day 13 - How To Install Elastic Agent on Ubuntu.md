@@ -65,9 +65,8 @@
 **Steps:**
 
 - Confirm the agent status in **Fleet**; it should show as **Healthy** with memory and other metrics.
-    
 - Navigate to **Discover** in Kibana to check incoming logs.
-    
+
 - Adjust the time filter to ensure recent logs are visible.
     
 - Filter logs by `agent.name` to view data from your Linux agent.
