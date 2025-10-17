@@ -70,14 +70,13 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     
 3. Add fields by dragging and dropping them respectively:
     
-    - `@timestamp`
     - `user.name`
     - `source.ip`
     - `source.geo.country_name`
     
 4. Configure rows:
     
-    - Top 10 values per field
+    - Top 10 values per field by changing "Number of values"
     - Uncheck **Group remaining values as “Other”**
     
 5. Sort by **Count of records** in descending order.
