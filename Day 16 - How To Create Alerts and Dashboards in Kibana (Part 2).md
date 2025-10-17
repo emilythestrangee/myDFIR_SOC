@@ -40,7 +40,7 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
     
 - Test the query using the built-in Test feature to validate it matches expected documents.
 - Save the alert.
-    
+![[Pasted image 20251018000449.png]]
 
 ---
 
