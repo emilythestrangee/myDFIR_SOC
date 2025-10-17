@@ -31,10 +31,10 @@
     - Ubuntu/Debian: `/var/log/auth*`
     - Red Hat/CentOS: `/var/log/secure*`
         
-- Ensure the policy supports all major Linux distributions (Debian, Ubuntu, Red Hat, CentOS). As we are using Ubuntu, we don’t have the “secure” path in our system. Navigating to the /var/log directory in our Ubuntu VM MYDFIR-L
+- Ensure the policy supports all major Linux distributions (Debian, Ubuntu, Red Hat, CentOS). As we are using Ubuntu, we don’t have the “secure” path in our system. Navigating to the /var/log directory in our Ubuntu VM MYDFIR-Linux-emaan, we can see that only 'auth.log' is present not 'secure'.
 
 ![[Pasted image 20251017181422.png]]
-
+![[Pasted image 20251017181807.png]]
 
 ---
 
