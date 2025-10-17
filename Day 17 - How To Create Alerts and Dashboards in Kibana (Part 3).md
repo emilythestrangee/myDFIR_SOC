@@ -30,7 +30,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 6. Click **Add and continue** → **Save** the map.
 7. Add it to the **existing dashboard** (e.g., `Challenge Authentication Activity`).
-
+![[Pasted image 20251018005811.png]]
 
 ---
 
