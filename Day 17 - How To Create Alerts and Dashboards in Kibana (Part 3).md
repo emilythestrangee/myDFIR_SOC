@@ -80,7 +80,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     - Uncheck **Group remaining values as “Other”**
     
 5. Sort by **Count of records** in descending order.
-6. Save as **“Challenge-SSH Failed Authentication Activity (Table)”**.
+6. Save as **“SSH Failed Authentication Activity [Table]”**.
 
 
 ---
