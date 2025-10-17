@@ -1,126 +1,150 @@
-## 1. Introduction
+## Introduction
 
-**Goal**: We’ll deploy a new Ubuntu server to host our Mythic C2 instance and configure a secure environment to ensure only authorized machines can access it.
-
----
-
-## Deploying the Mythic Server
-
-### 2.1 Cloud Deployment
-
-- Use vultr.com to create a new VM.
-- **Cloud Compute** (Shared CPU)
-- Minimum recommended specs: **2 CPU cores** and **4 GB RAM**.
-- OS: Ubuntu 22.04.
-- Hostname: MYDFIR-MYTHIC
-- Deploy the server.
+Goal: setting up **Mythic**, a Command and Control (C2) framework used for red teaming operations. For this setup, we will use **Vultr** as our cloud provider to host the Mythic C2 instance.  **Kali Linux** will also be installed to serve as the attacker machine.
 
 ---
 
-## 3. Firewall Configuration
+## Deploying a Server on Vultr
 
-To secure the Mythic instance:
+1. Log in to Vultr and click **“Deploy New Server.”**
+2. Select the following options:
+    
+    - Cloud Compute (Shared CPU)
+    - Location: Singapore
+    - OS: Ubuntu (4 GB RAM)
+    - Disable Auto Backups & IPv6
+    - Set Hostname: `MYDFIR-MYTHI`
 
-- Allow ingress traffic from:
-    - Personal IP (your attacker machine).
-    - IPs of the target servers (Windows Server and Linux Server).
-- Deny all other inbound traffic.
-- Optional: Add IAP rule if using GCP SSH web service.
-
-Example rules:
-
-- **allow-mypc-mythic** → Source: Personal IP, allow all ports.
-- **allow-targets-mythic** → Source: target VM tags.
+3. Deploy the server.
 
 ---
 
-## 4. Installing Mythic C2
+## Installing Kali Linux
 
-### 4.1 System Update
-
-`apt-get update && apt-get upgrade -y`
-
-### 4.2 Install Dependencies
-
-`apt install docker-compose apt install make`
+1. Download Kali Linux from the official website.
+    
+2. Choose the Virtual Machine version (VMware is used in this setup).
+    
+3. Extract the downloaded file using 7-Zip.
+    
+4. Locate and open the `.vmx` file in **VMware Workstation**.
+    
+5. Power on the Kali VM.
+    
 
 Press enter or click to view image in full size
 
-### 4.3 Clone Mythic Repository
-
-`git clone https://github.com/its-a-feature/Mythic cd Mythic`
-
-### 4.4 Run Installation Script
-
-`./install_docker_ubuntu.sh`
-
 ---
 
-## 5. Docker Troubleshooting
+## Setting Up Mythic C2
 
-If Docker fails to start:
+### Accessing the Vultr Instance
 
-`systemctl status docker systemctl restart docker`
+`ssh root@<challenge_mythic_server_ip>`
 
+### Update & Upgrade the System
 
----
+`apt-get update && apt-get upgrade -y`
 
-## 6. Start Mythic
+### Install Dependencies
 
-Within the Mythic directory:
+`apt-get install docker-compose make -y`
+
+### Clone & Install Mythic
+
+`git clone https://github.com/its-a-feature/Mythic.git cd Mythic ./install_docker_ubuntu.sh`
+
+### Start Mythic
 
 `make ./mythic-cli start`
 
-Once it’s running, access the web interface:
-
-`https://<mythic-server-ip>:7443`
-
+Press enter or click to view image in full size
 
 ---
 
-## 7. Accessing Credentials
+## Fixing Docker Issues
 
-Mythic’s default credentials are stored in the hidden `.env` file:
+If Docker fails to start, use:
 
-`ls -la cat .env`
+`systemctl restart docker`
 
-Look for:
+Verify the status:
 
-- `MYTHIC_ADMIN_USER`
-- `MYTHIC_ADMIN_PASSWORD`
-
----
-
-## 8. Firewall Hardening
-
-- Only allow TCP traffic on all ports from:
-    - Personal IP
-    - Target Windows and Linux servers
-- Block all other sources.
+`systemctl status docker`
 
 ---
 
-## 9. Accessing the Dashboard
+## Configuring Firewall
 
-- URL: `https://<publicIP>:7443`
-- Login with the credentials from the `.env` file.
-- Explore the interface to familiarize yourself with:
+Create a firewall group `Challenge-Mythic-Firewall` on Vultr.
+
+Allow TCP traffic from trusted IPs only:
+
+- TCP 1–65535 (Source: Personal IP)
     
-    - **Callbacks** (connected agents)
-    - **Payloads**
-    - **File Hosting**
-    - **Artifacts**
-    - **MITRE ATT&CK Mapping**
-    - **Dark Mode**
+- TCP 1–65535 (Source: Challenge-WIN-Haji)
+    
+- TCP 1–65535 (Source: Challenge-Linux-Steve)
+    
+
+Apply `Challenge-Mythic-Firewall` to the Mythic server.
+
+Press enter or click to view image in full size
 
 ---
 
-## 10. Summary
+## Accessing Mythic C2 Web Interface
 
-- Deployed and configured a Mythic C2 server.
-- Installed required dependencies.
-- Secured access with firewall rules.
-- Accessed the Mythic dashboard successfully.
+1. Copy the server’s public IP.
+    
+2. Open a browser and navigate to:
+    
+    `https://<mythic-server_ip>:7443`
+    
+
+### Login Credentials
+
+- Default Username: `mythic_admin`
+    
+- Password: Stored in the `.env` file
+    
+
+`cat .env`
+
+You can also change the default operation name:
+
+- Default: `operation-cima`
+    
+- Example new name: `operation-challenge`
+    
+
+Press enter or click to view image in full size
+
+---
+
+## Mythic C2 Dashboard Overview
+
+- **Callbacks:** List of connected agents.
+    
+- **Payloads:** Preconfigured exploits.
+    
+- **File Hosting:** Upload and download files.
+    
+- **Artifacts:** Keylogging, screenshots, credentials, reports.
+    
+- **MITRE ATT&CK Mapping:** Identify and map attack techniques.
+    
+- **Tags:** Categorize and organize targets.
+    
+- **Dark Mode:** Available for UI preference.
+    
+
+---
+
+## Conclusion
+
+We successfully deployed a Mythic C2 instance on Vultr, configured the firewall, and accessed the Mythic dashboard.  
+This setup will be used in the next sessions to generate payloads from Kali Linux and launch controlled attacks against the Windows Server target.
 
 **Reference**
 https://youtu.be/JKO1pZ45_5I?si=d1IJH0__AzCTxdOi
