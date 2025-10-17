@@ -73,11 +73,13 @@
 - Click **Alerts** → **Create Search Threshold Rule**.
 - Name the alert (e.g., `MyDFIR-SSH Brute Force Activity-emaan`).
 - The saved query is automatically applied.
-- Set threshold: trigger if more than **5 failed attempts** occur within **5 minutes**.
+- Set threshold: trigger if more than **5 failed attempts** occur within **5 days**.
 - Test the query to ensure it matches documents.
 - Save the rule.
 
-![[Pasted image 20251017231517.png]]
+![[Pasted image 20251017231626.png]]
+
+![[Pasted image 20251017231635.png]]
 
 ---
 
@@ -86,9 +88,7 @@
 **Steps:**
 
 - Navigate to **Maps** under the **Analytics** menu.
-    
 - Filter data using the saved query:
-    
 
 `system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve" AND system.auth.ssh.event:"Failed"`
 
