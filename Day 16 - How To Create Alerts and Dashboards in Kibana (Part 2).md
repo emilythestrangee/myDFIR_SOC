@@ -44,16 +44,17 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 
 ---
 
-## Create Detailed Detection Rules (SIEM) — Threshold Rule Type
+## Create Detailed Detection Rules (SIEM) — RDP (Windows) Threshold Detection Rule
+
 
 Alerts created under Stack Management can notify you but may lack rich contextual fields. Detection rules under **Security → Rules → Detection rules** allow grouping, required fields, severity, and more informative alerts.
 
-**Steps to create a Threshold detection rule (SSH example first, then RDP):**
+**Steps to create a Threshold detection rule (RDP first, then SSH):**
 
 1. Go to **Security → Rules → Detection rules** (SIEM).
 2. Click **Create new rule**.
 3. Select **Threshold** as the rule type.
-4. Enter the query you verified in Discover. Example SSH query (from Day 14):
+4. Enter the query you verified in Discover. 
     
     `event.code:4625 AND agent.name: "MYDFIR-WIN-emaan" AND user.name: "Administrator"`
     ![[Pasted image 20251018001559.png]]
