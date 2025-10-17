@@ -59,9 +59,6 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 ---
 
 ## 5. Add Table Visualizations for Detailed Logs
-
-
-
 ### 5.1 SSH Failed Activity Table
 
 **Steps**:
@@ -69,26 +66,23 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 1. Click **Create Visualization** → select **Table**.
 2. Query:
     
-    `system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve"  AND system.auth.ssh.event:"Failed"`
+    `system.auth.ssh.event:* AND agent.name:MYDFIR-Linux-emaan AND system.auth.ssh.event:Failed`
     
 3. Add fields:
     
     - `@timestamp`
-        
     - `user.name`
-        
     - `source.ip`
-        
     - `source.geo.country_name`
-        
+    
 4. Configure rows:
     
     - Top 10 values per field
-        
     - Uncheck **Group remaining values as “Other”**
-        
+    
 5. Sort by **Count of records** in descending order.
 6. Save as **“Challenge-SSH Failed Authentication Activity (Table)”**.
+
 
 ---
 
