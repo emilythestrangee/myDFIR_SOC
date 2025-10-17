@@ -33,7 +33,7 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 
 ### Accessing the Vultr Instance (MYDFIR-MYTHIC)
 
-`ssh root@<challenge_mythic_server_ip>`
+`ssh root@<MYDFIR-MYTHIC_ip>`
 
 ### Update & Upgrade the System
 
