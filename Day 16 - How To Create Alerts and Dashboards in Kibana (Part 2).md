@@ -50,7 +50,7 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 
 **Steps to create a Threshold detection rule (SSH example first, then RDP):**
 
-1. Go to **Security → Rules → Detection rules**.
+1. Go to **Security → Rules → Detection rules** (SIEM).
 2. Click **Create new rule**.
 3. Select **Threshold** as the rule type.
 4. Enter the query you verified in Discover. Example SSH query (from Day 14):
