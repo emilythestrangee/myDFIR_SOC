@@ -77,6 +77,7 @@
 - Test the query to ensure it matches documents.
 - Save the rule.
 
+![[Pasted image 20251017231517.png]]
 
 ---
 
