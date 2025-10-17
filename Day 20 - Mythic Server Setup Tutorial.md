@@ -9,21 +9,13 @@
 ### 2.1 Cloud Deployment
 
 - Use a cloud provider to create a new VM (e.g., GCP or Vultr).
-    
 - Minimum recommended specs: **2 CPU cores** and **4 GB RAM**.
-    
 - OS: Ubuntu 22.04.
-    
 - Disk: 30 GB (can be increased as needed).
-    
 - Enable HTTP and HTTPS traffic in the firewall.
-    
 - Add a network tag (e.g., `mythic-server`) for firewall rules.
-    
 - Reserve a **static external IP**.
-    
 
-Press enter or click to view image in full size
 
 ---
 
@@ -32,15 +24,10 @@ Press enter or click to view image in full size
 To secure the Mythic instance:
 
 - Allow ingress traffic from:
-    
     - Personal IP (your attacker machine).
-        
     - IPs of the target servers (Windows Server and Linux Server).
-        
 - Deny all other inbound traffic.
-    
 - Optional: Add IAP rule if using GCP SSH web service.
-    
 
 Example rules:
 
@@ -108,9 +95,7 @@ Mythic’s default credentials are stored in the hidden `.env` file:
 Look for:
 
 - `MYTHIC_ADMIN_USER`
-    
 - `MYTHIC_ADMIN_PASSWORD`
-    
 
 Press enter or click to view image in full size
 
@@ -119,13 +104,9 @@ Press enter or click to view image in full size
 ## 8. Firewall Hardening
 
 - Only allow TCP traffic on all ports from:
-    
     - Personal IP
-        
     - Target Windows and Linux servers
-        
 - Block all other sources.
-    
 
 Press enter or click to view image in full size
 
@@ -134,23 +115,15 @@ Press enter or click to view image in full size
 ## 9. Accessing the Dashboard
 
 - URL: `https://<publicIP>:7443`
-    
 - Login with the credentials from the `.env` file.
-    
 - Explore the interface to familiarize yourself with:
     
     - **Callbacks** (connected agents)
-        
     - **Payloads**
-        
     - **File Hosting**
-        
     - **Artifacts**
-        
     - **MITRE ATT&CK Mapping**
-        
     - **Dark Mode**
-        
 
 Press enter or click to view image in full size
 
