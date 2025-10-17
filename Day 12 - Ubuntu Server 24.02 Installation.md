@@ -36,7 +36,8 @@ Navigate to the logs directory:
 
 View the authentication log:
 `cat auth.log`
-![[Pasted image 20251017022107.png]]
+<img width="689" height="263" alt="image" src="https://github.com/user-attachments/assets/6ea4ba90-1ef0-4882-b42e-c8ea733e634c" />
+
 ---
 
 ## Filter Authentication Logs
@@ -45,12 +46,17 @@ To monitor failed login attempts or privileged user activity:
 
 - Filter failed attempts:
 `grep -i failed auth.log`
-![[Pasted image 20251017022237.png]]
+<img width="698" height="362" alt="image" src="https://github.com/user-attachments/assets/edadff3e-19f2-49bf-a2b5-dfe7b194dccc" />
+
 
 - Filter failed attempts for the root user:
 `grep -i failed auth.log | grep -i root`
 
 ![[Pasted image 20251017022343.png]]
+
+- Filter failed attempts for the root user: 
+`grep -i failed auth.log | grep -i root`
+<img width="613" height="68" alt="image" src="https://github.com/user-attachments/assets/bc7c9895-bd12-4bd7-a1f0-e6fac2212bd0" />
 
 ---
 
