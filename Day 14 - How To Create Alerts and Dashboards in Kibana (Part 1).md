@@ -56,6 +56,7 @@
 
 ![[Pasted image 20251017230726.png]]
 
+![[Pasted image 20251017230826.png]]
 ---
 
 ## Save the Query
