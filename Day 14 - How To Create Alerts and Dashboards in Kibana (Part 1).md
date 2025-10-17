@@ -13,7 +13,6 @@
 - Filter by your Linux server by clicking **agent.name** (e.g., `MYDFIR-Linux-emaan`).
 - Set the time range for initial analysis (Today).
 
-
 ---
 
 ## Identify Key Fields
@@ -21,13 +20,9 @@
 **Fields to Track:**
 
 - **Failed Attempts:** Detect authentication failures.
-    
 - **User:** Identify usernames targeted.
-    
 - **Source IP:** Track origin of login attempts.
-    
 - **Location:** Geo-location of source IPs.
-    
 
 ---
 
