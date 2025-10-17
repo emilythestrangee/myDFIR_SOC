@@ -8,9 +8,10 @@
 
 ### 2.1 Cloud Deployment
 
-- Use a cloud provider to create a new VM (e.g., GCP or Vultr).
+- Use vultr.com to create a new VM.
 - Minimum recommended specs: **2 CPU cores** and **4 GB RAM**.
 - OS: Ubuntu 22.04.
+- Hostname: MYDFI
 - Disk: 30 GB (can be increased as needed).
 - Enable HTTP and HTTPS traffic in the firewall.
 - Add a network tag (e.g., `mythic-server`) for firewall rules.
