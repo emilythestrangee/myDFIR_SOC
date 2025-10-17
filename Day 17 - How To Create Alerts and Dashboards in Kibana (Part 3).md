@@ -103,7 +103,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     
     `event.code:4625 AND agent.name:MYDFIR-WIN-emaan`
     
-- Change the title to: **“Challenge-RDP Failed Authentication Activity (Table)”**.
+- Change the title to: **“RDP Failed Authentications [Table]”**.
 
 
 ### 5.4 RDP Successful Activity Table
@@ -113,9 +113,9 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     
     `event.code:4624 AND (winlog.event_data.LogonType:10 OR winlog.event_data.LogonType:7)  AND agent.name:MYDFIR-WIN-emaan
     
-- Change the title to: **“Challenge-RDP Successful Authentication Activity (Table)”**.
+- Change the title to: **“RDP Successful Authentications Table)”**.
 
-
+![[Pasted image 20251018013134.png]]
 
 ---
 
