@@ -11,14 +11,12 @@
             "id": "32ae198a13053ba0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1).md",
-                "mode": "source",
-                "source": false
+                "file": "images/Pasted image 20251017232748.png"
               },
-              "icon": "lucide-file",
-              "title": "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1)"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251017232748"
             }
           }
         ]
@@ -170,8 +168,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32dad6c4b98a1de5",
+  "active": "32ae198a13053ba0",
   "lastOpenFiles": [
+    "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1).md",
     "images/Pasted image 20251017233638.png",
     "images/Pasted image 20251017232748.png",
     "images/Pasted image 20251017232620.png",
@@ -182,9 +181,7 @@
     "images/Pasted image 20251017230943.png",
     "images/Pasted image 20251017230826.png",
     "images/Pasted image 20251017230726.png",
-    "images/Pasted image 20251017230715.png",
     "Day 12 - Ubuntu Server 24.02 Installation.md",
-    "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1).md",
     "Day 13 - How To Install Elastic Agent on Ubuntu.md",
     "Day 01 - How To Create a Logical Diagram.md",
     "conflict-files-obsidian-git.md",
