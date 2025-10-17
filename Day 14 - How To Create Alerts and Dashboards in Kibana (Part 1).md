@@ -112,16 +112,14 @@
 **Steps:**
 
 - Duplicate the failed attempts map.
-- Rename it to **"Challenge-SSH Successful Authentication Activity"**.
+- Rename it to **"SSH Successful Authentications"**.
 - Update the query to filter successful logins:
     
 
-`system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve" AND system.auth.ssh.event:"Accepted"`
+`system.auth.ssh.event:* and agent.name:MYDFIR-Linux-emaan and system.auth.ssh.event:Successful`
 
 - Save and add it to the same dashboard.
-    
 - Adjust the time filter to visualize recent activity (e.g., Last 12 hours).
-    
 
 ---
 
