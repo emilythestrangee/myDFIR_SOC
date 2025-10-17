@@ -90,7 +90,7 @@
 - Navigate to **Maps** under the **Analytics** menu.
 - Filter data using the saved query:
 
-`system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve" AND system.auth.ssh.event:"Failed"`
+`system.auth.ssh.event:* and agent.name:"MYDFIR-Linux-emaan" and system.auth.ssh.event:Failed`
 
 - Click **Add Layer** → select **Choropleth Layer**.
     
