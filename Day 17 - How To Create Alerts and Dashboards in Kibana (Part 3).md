@@ -80,7 +80,7 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
     - Uncheck **Group remaining values as “Other”**
     
 5. Sort by **Count of records** in descending order.
-6. Save as **“SSH Failed Authentication Activity [Table]”**.
+6. Save as **“SSH Failed Authentications [Table]”**.
 
 
 ### 5.2 SSH Successful Activity Table
@@ -88,11 +88,12 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 - Duplicate the failed SSH table.
 - Update the query to:
     
-    `system.auth.ssh.event:* AND agent.name:"Challenge-Linux-Steve"  AND system.auth.ssh.event:"Accepted"`
+    `system.auth.ssh.event:* AND agent.name:MYDFIR-Linux-emaan  AND system.auth.ssh.event:Accepted`
     
-- Change the title to: **“SSH Successful Activity [Table)”**.
+- Change the title to: **“SSH Successful Authentications [Table]”**.
 
 ![[Pasted image 20251018012645.png]]
+
 ---
 
 ### 5.3 RDP Failed Activity Table
