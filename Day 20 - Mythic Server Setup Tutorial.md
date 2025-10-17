@@ -42,7 +42,8 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 ### Install Dependencies
 
 `apt-get install docker-compose 
-``
+`apt install make`
+
 ### Clone & Install Mythic
 
 `git clone https://github.com/its-a-feature/Mythic.git cd Mythic ./install_docker_ubuntu.sh`
