@@ -29,6 +29,7 @@
 
 **Steps:**
 
+- Look for fields that relate to the authentication status of each log record.
 - Use `system.auth.ssh.event` to filter failed, invalid, or accepted login attempts.
 - Add `system.auth.ssh.event` as a column.
 - Apply the filter `system.auth.ssh.event:*` to narrow results.
