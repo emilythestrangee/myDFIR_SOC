@@ -13,13 +13,6 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 
 ## 3. Create a Map for RDP Failed Authentications
 
-![https://www.elastic.co/docs/explore-analyze/images/kibana-gs_add_cloropeth_layer.png](https://www.elastic.co/docs/explore-analyze/images/kibana-gs_add_cloropeth_layer.png)
-
-![https://www.elastic.co/docs/explore-analyze/images/kibana-layer_search.png](https://www.elastic.co/docs/explore-analyze/images/kibana-layer_search.png)
-
-![https://www.elastic.co/docs/explore-analyze/images/kibana-sample_data_ecommerce.png](https://www.elastic.co/docs/explore-analyze/images/kibana-sample_data_ecommerce.png)
-
-
 **Steps**:
 
 1. Navigate to **Maps** from the hamburger menu.
@@ -32,15 +25,12 @@ Navigate to **Discover**→**Open** and open the previously saved query i.e, **R
 5. In the settings:
     
     - Boundary: **World Countries**
-        
     - Data view: `alert-security.alerts...`
-        
     - Join field: `source.geo.country_iso_code`
-        
+
 6. Click **Add and continue** → **Save** the map.
-    
 7. Add it to the **existing dashboard** (e.g., `Challenge Authentication Activity`).
-    
+
 
 ---
 
