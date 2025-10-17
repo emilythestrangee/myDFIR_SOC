@@ -71,6 +71,8 @@
 - Click the plus button at the right of the Linux agent name to check those logs
 
  ![[Pasted image 20251017183854.png]]
+![[Pasted image 20251017184320.png]]
+
 ---
 
 ## Analyze Logs
@@ -79,8 +81,6 @@
 
 - Identify errors and events using Kibana or SSH commands.
 - Example: Find failed SSH login attempts on the Ubuntu server:
-    
-
 `grep -i failed /var/log/auth.log | grep -i root | cut -d ' ' -f 11`
 
 - Add important fields to Kibana tables for structured analysis.
