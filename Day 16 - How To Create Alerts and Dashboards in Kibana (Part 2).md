@@ -88,26 +88,7 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 - Add required fields: `source.ip`, `user.name`, `host.hostname`, `winlog.event_data.LogonType` (if available).
 - Set threshold to **5**, severity **medium**, schedule to run every **1 minute** with a 5-minute look-back.
 - Create & enable the rule.
-
-
----
-
-## Create an Alert for Suspicious Successful Logon (Optional)
-
-**Purpose:** Notify when a successful login (Event ID **4624**) occurs from any IP other than your known personal IP — useful for early detection of unauthorized access.
-
-**Query template:**
-
-`agent.name:"mydfir-win-greenfire2" AND event.code:4624 AND user.name:"<username>" AND NOT (source.ip:"<personalIP>")`
-
-**Configuration tips:**
-
-- Group by `source.ip` and `winlog.event_data.UserSid`.
-- Set **threshold = 1** (single occurrence is noteworthy).
-- Set required fields: `source.ip`, `user.name`, `host.hostname`.
-- Set severity appropriate to confidence (e.g., high or medium).
-- Test carefully — dynamic personal IPs can trigger false positives.
-
+![[Pasted image 20251018003056.png]]
 
 ---
 
