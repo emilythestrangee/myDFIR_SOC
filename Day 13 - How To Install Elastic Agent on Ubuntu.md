@@ -33,6 +33,8 @@
         
 - Ensure the policy supports all major Linux distributions (Debian, Ubuntu, Red Hat, CentOS).
     
+![[Pasted image 20251017181422.png]]
+
 
 ---
 
