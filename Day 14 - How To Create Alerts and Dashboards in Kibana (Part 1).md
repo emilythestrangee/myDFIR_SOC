@@ -89,7 +89,7 @@
 
 ---
 
-## 8. Create Dashboard
+## Create Dashboard
 
 **Steps:**
 
@@ -117,7 +117,7 @@
 
 ---
 
-## 9. Create Successful Authentication Dashboard
+## Create Successful Authentication Dashboard
 
 **Steps:**
 
@@ -137,12 +137,14 @@
 
 ---
 
-## 10. Outcome
+## Outcome
 
 - The dashboard now shows failed and successful SSH login attempts by source country.
     
 - Alerts notify when brute force thresholds are exceeded.
     
 - This setup allows proactive monitoring and geographic tracking of login attempts.
+
+
 **Reference**
 https://youtu.be/AdUMhT1l1eY?si=6FJSv4Hiohr-5d9R
