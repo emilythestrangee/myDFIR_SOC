@@ -22,8 +22,8 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
     - any other contextual fields you want (e.g., `host.hostname`, `process.name`).
     
 - Save the search (e.g., **"RDP Failed Activity"**).
-    
-
+    ![[Pasted image 20251017235704.png]]
+![[Pasted image 20251017235722.png]]
 ---
 
 ## Create a Simple Search-Threshold Alert from Saved Search
@@ -31,9 +31,7 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 **Steps:**
 
 - With the saved search open, click **Alerts** (top-right) → **Create search threshold rule**.
-    
 - Confirm the saved query is pre-populated in the rule.
-    
 - Configure threshold parameters:
     
     - Trigger when **IS ABOVE 5** (documents)
