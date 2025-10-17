@@ -10,11 +10,9 @@
 **Steps:**
 
 - Log into **Elasticsearch Web GUI** → **Discover**.
-    
-- Filter by your Linux server by clicking **agent.name** (e.g., `Challenge-Linux-Steve`).
-    
+- Filter by your Linux server by clicking **agent.name** (e.g., `MYDFIR-Linux-emaan`).
 - Set the time range for initial analysis (e.g., Today).
-    
+
 
 ---
 
