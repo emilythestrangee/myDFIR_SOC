@@ -55,7 +55,7 @@ Alerts created under Stack Management can notify you but may lack rich contextua
 3. Select **Threshold** as the rule type.
 4. Enter the query you verified in Discover. Example SSH query (from Day 14):
     
-    `system.auth.ssh.event:* AND agent.name:"mydfir-linux" AND (system.auth.ssh.event:"Invalid" OR system.auth.ssh.event:"error:" OR system.auth.ssh.event:"Failed") AND user.name:"root"`
+    `system.auth.ssh.event:* AND agent.name:MYDFIR-Linux-emaan AND (system.auth.ssh.event:"Invalid" OR system.auth.ssh.event:"error:" OR system.auth.ssh.event:"Failed") AND user.name:"root"`
     
 5. Configure **Threshold**: set threshold value to **5** (or your desired sensitivity).
     
