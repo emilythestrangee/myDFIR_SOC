@@ -101,7 +101,7 @@
 
 ![[Pasted image 20251017232403.png]]
 - Save the map as **"SSH Failed Authentications - Network Map"**.
-- Add it to a new dashboard named **"Challenge SSH Authentication Activity"**.
+- Add it to a new dashboard named **"MyDFIR-Authentication-Activity"**.
 ![[Pasted image 20251017232620.png]]
 ![[Pasted image 20251017232748.png]]
 
@@ -112,9 +112,7 @@
 **Steps:**
 
 - Duplicate the failed attempts map.
-    
 - Rename it to **"Challenge-SSH Successful Authentication Activity"**.
-    
 - Update the query to filter successful logins:
     
 
