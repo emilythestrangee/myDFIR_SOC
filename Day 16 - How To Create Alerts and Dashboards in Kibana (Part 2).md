@@ -19,9 +19,8 @@ Windows failed logons are represented by Event ID **4625**. Start in Discover to
 - Add useful columns to the table:
     - `source.ip`
     - `user.name` 
-    - any other contextual fields you want (e.g., `host.hostname`, `process.name`).
     
-- Save the search (e.g., **"RDP Failed Activity"**).
+- Save the search (**"RDP Failed Activity"**).
     ![[Pasted image 20251017235704.png]]
 ![[Pasted image 20251017235722.png]]
 ---
