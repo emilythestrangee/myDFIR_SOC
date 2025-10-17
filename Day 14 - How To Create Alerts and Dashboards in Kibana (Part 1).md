@@ -100,9 +100,9 @@
     - **Join Field:** `source.geo.country_iso_code`
 
 ![[Pasted image 20251017232403.png]]
-- Save the map as **"Challenge-SSH Failed Authentication Activity"**.
+- Save the map as **"SSH Failed Authentications - Network Map"**.
 - Add it to a new dashboard named **"Challenge SSH Authentication Activity"**.
-
+![[Pasted image 20251017232620.png]]
 
 ---
 
