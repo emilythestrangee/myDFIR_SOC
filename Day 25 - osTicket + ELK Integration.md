@@ -140,6 +140,7 @@
 3. Verify that a new ticket has been created from the webhook test.
 4. Confirm that the subject and message match the XML payload details.
     
+![[Pasted image 20251018232758.png]]
 
 ---
 
