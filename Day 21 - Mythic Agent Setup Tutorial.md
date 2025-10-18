@@ -136,7 +136,7 @@ Disable Windows Defender:
 
 ### 9. Hosting and Downloading Payload
 
-1. **Download Payload**
+1. **Download Payload and Move the file to a new directory**
     
     `wget <payload_download_link> --no-check-certificate
     
