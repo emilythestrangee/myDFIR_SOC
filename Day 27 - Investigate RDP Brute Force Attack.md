@@ -125,7 +125,7 @@ Lastly, we will investigate the brute force attack originating from a Kali VM we
 
 **Approach:**
 
-- Remember the Kali session left traces (e.g., a Mythic agent install and related logs). Use those artifacts to bound the search.
+- The Kali session left traces (e.g., a Mythic agent install and related logs). Use those artifacts to bound the search.
     
 - Use the timeline of the Mythic agent deletion (if present) as an _end_ marker for the suspicious activity. Treat it as the endpoint to limit noise from unrelated past logins from your personal IP.
     
