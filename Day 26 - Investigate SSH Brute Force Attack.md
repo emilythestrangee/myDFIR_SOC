@@ -18,7 +18,7 @@
     
     - Expand the alert by clicking on **“View Details.”**
     - Review the rule name, detection source, and description of the alert.
-    - For instance, check for the My-DFIR-SSH-Brute-Force-Activity alert.
+    - For instance, check for the `MyDFIR-SSH Brute Force Activity-emaan` alert.
 
 ![[Pasted image 20251018234633.png]]
 
