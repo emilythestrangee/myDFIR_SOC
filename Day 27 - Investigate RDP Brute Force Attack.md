@@ -49,7 +49,7 @@
 
 ---
 
-### 5. Investigating Post-Login Activity
+### 4. Investigating Post-Login Activity
 
 **Steps:**
 
@@ -78,7 +78,7 @@
 
 ---
 
-### 6. Closing the Investigation
+### 5. Closing the Investigation
 
 **Steps:**
 
@@ -93,5 +93,7 @@
     - Update RDP brute force detection rules if needed.
         
 - Close the alert once mitigation and documentation are complete.
+
+
 **Reference**
 https://youtu.be/l9KA6dPdOs8?si=w4SZCr8RGoZv7R1K
