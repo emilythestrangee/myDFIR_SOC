@@ -122,10 +122,7 @@
 ### 7. Reconstructing the Kali-based Attack
 
 Lastly, we will investigate the brute force attack originating from a Kali VM we used on day 21. 
-
-**Approach:**
-
-- The Kali session left traces (e.g., a Mythic agent install and related logs). Use those artifacts to bound the search.
+The Kali session left traces (e.g., a Mythic agent install and related logs). Use those artifacts to bound the search.
 
 **Steps:**
 
@@ -152,9 +149,7 @@ Lastly, we will investigate the brute force attack originating from a Kali VM we
 - Multiple credential read events and discovery/enumeration commands following the successful login.
     
 - Defender being disabled around the same timeframe.
-    
 - A network connection from the host to the Kali IP (port 9999) used to fetch or stage the Mythic agent.
-    
 - A file creation event indicating the agent binary or dropper was written to disk.
 
 **Reference**
