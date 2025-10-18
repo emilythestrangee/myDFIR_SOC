@@ -23,14 +23,16 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     - Set the time range to **30 days** to capture all relevant events.
     - Sort events from **old to new**.
     
-    ![[Pasted image 20251018180240.png]]
+    <img width="521" height="216" alt="image" src="https://github.com/user-attachments/assets/7d44d9dd-539a-48e0-9f25-6a02534db210" />
+
 
 3. **Identify Relevant Events**
     
     - Look for events with `event.code: 11` (file creation).
     - Note the **target file name**, **username**, and **process GUID**.
 
-![[Pasted image 20251018180559.png]]
+<img width="786" height="325" alt="image" src="https://github.com/user-attachments/assets/4848558a-ccb8-4338-9473-f1d13172270d" />
+
 3. **Focus on Process Create Events**
     
     - Change the query to look for `event.code: 1` (process create).
@@ -74,7 +76,8 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     - Schedule: **Every 5 minutes**
     - Enable the rule.
 
-![[Screenshot 2025-10-18 182352.png]]
+<img width="601" height="436" alt="image" src="https://github.com/user-attachments/assets/c5af2b8a-a80e-4b66-bb8e-12ab49141f37" />
+
 
 ---
 
@@ -106,7 +109,8 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.CommandLine`
 - `winlog.event_data.CurrentDirectory`
 
-![[Screenshot 2025-10-18 185327.png]]
+<img width="602" height="403" alt="image" src="https://github.com/user-attachments/assets/0de16abf-0bb8-451f-8c08-d04666a0c05d" />
+
 ---
 
 #### b. External Network Connections
@@ -120,7 +124,8 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.DestinationIp`
 - `winlog.event_data.DestinationPort`
 
-![[Pasted image 20251018185114.png]]
+<img width="1100" height="336" alt="image" src="https://github.com/user-attachments/assets/ea8be63a-db28-414d-838a-5cda20f89b5c" />
+
 ---
 
 #### c. Windows Defender Activity
@@ -133,7 +138,8 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.Product Name`
 - `event.code`
 
-![[Pasted image 20251018185248.png]]
+<img width="476" height="345" alt="image" src="https://github.com/user-attachments/assets/d8f57aec-e24f-4904-b5ae-5c806febff6b" />
+
 ---
 
 ### 6. Building the Dashboard
