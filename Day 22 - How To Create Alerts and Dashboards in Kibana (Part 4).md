@@ -12,17 +12,14 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 1. **Access Elastic Web GUI**
     
     - Click the hamburger icon.
-        
     - Select **Discover**.
-        
     - Create a new search to reset the view.
     
 2. **Query for Mythic C2 Activity**
     
     - Search for the binary:
-        
         `svrhost-haji.exe`
-        
+    
     - Set the time range to **30 days** to capture all relevant events.
     - Sort events from **old to new**.
 
