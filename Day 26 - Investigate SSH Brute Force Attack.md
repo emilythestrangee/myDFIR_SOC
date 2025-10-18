@@ -32,7 +32,7 @@
     - Use tools like AbuseIPDB and GreyNoise to check the reputation of the IP address.
     - Example: An IP reported 1,816 times with 100% confidence of abuse is highly suspicious.
 
-
+![[Pasted image 20251019000458.png]]
 
 2. **Were Any Other Users Affected by This IP?**:
     
