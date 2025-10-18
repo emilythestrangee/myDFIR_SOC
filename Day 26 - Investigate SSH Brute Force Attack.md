@@ -1,132 +1,131 @@
 ### 1. Introduction
 
-**Goal:** Learn how to investigate an SSH Brute Force alert, identify key indicators, and integrate the alert with osTicket to streamline incident tracking and response.
+**Goal:** Learn how to investigate a potential DNS exfiltration alert and identify suspicious patterns that indicate data leakage through DNS queries.
 
 ---
 
-### 2. Configuring Kibana for Public Access
+### 2. Accessing Alerts
 
 **Steps:**
 
-- SSH into the ELK server and navigate to the Kibana configuration directory.
-- Open `kibana.yml` and search for:
-    `server.publicBaseUrl`
+- **Navigate to Alerts:**
     
-- Change the value to:
-    `http://<publicIP-ELK>:5601`
-    
-- Save the file.
-- Restart the Kibana service to apply the changes.
-
-
-
----
-
-### 3. Accessing and Editing the SSH Brute Force Rule
-
-**Steps:**
-
-- Log in to the Elastic GUI.
-- Navigate to **Security** → **Rules**.
-- Click on **Detection Rules (SIEM)** and open the SSH Brute Force rule.
-- Click **Edit rule settings** → **Actions** tab.
-- Add **Webhook** as the action and select the osTicket connector.
-- Change the **Action frequency** to _For each alert_ (for testing).
-- In the body, use the osTicket XML template and insert dynamic variables such as `{{rule.name}}`, `{{rule.url}}`, and `{{alert.id}}`.
-
-
-**Example Body:**
-
-`<?xml version="1.0" encoding="UTF-8"?> <ticket alert="true" autorespond="true" source="API">     <name>Angry User</name>     <email>api@osticket.com</email>     <subject>{{rule.name}}</subject>     <message type="text/plain"><![CDATA[         Rule URL: {{rule.url}}         Alert ID: {{alert.id}}         Message content here     ]]></message> </ticket>`
-
----
-
-### 4. Testing the Webhook Integration
-
-**Steps:**
-
-- If no alert is generated naturally, simulate an SSH brute force attack to trigger the rule.
-- Verify that a ticket is automatically created in osTicket.
-- Assign the ticket to an analyst for further investigation.
-
----
-
-### 5. Investigative Methodology
-
-**Key Questions to Guide the Investigation:**
-
-- **Is the IP Known for Brute Force Activity?**
-    
-    - Use AbuseIPDB, GreyNoise Intelligence, and VirusTotal to check reputation.
-    - Example: An IP reported over 20,000 times with SSH brute force tags is highly suspicious.
-    
-- **Were Any Other Users Affected by This IP?**
-    
-    - Search the IP in Kibana’s **Discover** tab.
-    - Check for distinct user accounts targeted.
-    - Example: `root`, `testuser`, and `ts3server`.
-    
-- **Were Any Logins Successful?**
-    
-    - Filter logs with:
+    - Click on the hamburger icon and select **“Alerts”** under the security tab.
+    - Review the list of alerts and select the one related to **DNS exfiltration**.
         
-        `<attacker_IP> AND system.auth.ssh.event : "Accepted"`
-        
-    - If no matches, no successful logins occurred.
+- **View Alert Details:**
     
-- **What Activity Occurred After Successful Logins?**
-    
-    - If logins were successful, check for:
+    - Expand the alert by clicking on **“View Details.”**
         
-        - Downloaded payloads
-        - Execution of discovery commands
-        - Malicious binaries or persistence mechanisms
+    - Review the rule name, detection source, and description of the alert.
+        
 
 ---
 
-### 6. Closing the Alert
+### 3. Investigative Methodology
+
+**Key Questions:**
+
+- **Is the Domain or Subdomain Suspicious?**
+    
+    - Check if the queried domain or subdomain is known for malicious activity.
+        
+    - Use reputation services such as AbuseIPDB, VirusTotal, or GreyNoise.
+        
+    - Example: A domain flagged for data exfiltration by multiple engines is a strong indicator.
+        
+- **Are There High Volumes of Unusual DNS Requests?**
+    
+    - Use Kibana Discover to filter by the destination domain.
+        
+    - Look for excessive TXT or NULL record queries over a short period.
+        
+    - Example: 2,000+ queries in 10 minutes may indicate exfiltration.
+        
+- **What Endpoint or Host Generated the Requests?**
+    
+    - Identify the source IP and hostname.
+        
+    - Check for patterns like service accounts or critical servers generating requests.
+        
+- **Is the Query Pattern Encoded or Structured?**
+    
+    - Look for Base64-like strings or long subdomains.
+        
+    - Example: `ZXhhbXBsZS5leGZpbC5jb20` can indicate encoded payloads.
+        
+
+---
+
+### 4. Closing the Alert
 
 **Steps:**
 
 - **Document Findings:**
     
-    - Summarize details such as IP reputation, number of attempts, affected users, and results.
-    - Example: “Malicious IP detected, multiple failed login attempts, no successful authentication.”
-
-- **Integrate with Ticketing:**
+    - Record details of suspicious domains, source IPs, and query patterns.
+        
+    - Add relevant screenshots or log excerpts in the incident notes.
+        
+- **Block or Contain:**
     
-    - Go to **Rules**.
-    - Select the SSH Brute Force rule and verify Webhook configuration.
-    - This ensures future alerts automatically generate tickets.
+    - If malicious activity is confirmed, block the domain at the DNS firewall.
+        
+    - Isolate the affected host for further forensic investigation.
+        
+- **Update Detection Rules:**
+    
+    - Modify or fine-tune DNS exfiltration detection rules to catch similar behavior faster.
+        
 
 ---
 
-### 7. Reviewing and Closing Tickets
+### 5. Integrating with Ticketing System
 
 **Steps:**
 
-- **Review Ticket Details:**
+- **Configure Alert Routing:**
     
-    - Confirm subject and message reflect the rule name and relevant information.
+    - Under “Rules,” select the DNS exfiltration detection rule.
+        
+    - Edit the rule to push alerts via webhook to the ticketing platform.
+        
+- **Customize Ticket Details:**
     
-- **Assign and Document:**
+    - Include relevant variables such as domain, source IP, and rule name.
+        
+    - Remove unnecessary fields like attachments if not needed.
+        
+- **Test Integration:**
     
-    - Assign the ticket to yourself or another analyst.
-    - Add investigation notes and findings.
-    
-- **Resolve and Close:**
-    
-    - Mark the ticket as _Resolved_ and post a closing reply.
-    - Closed tickets can be reviewed under the **Closed** tab in osTicket for audit purposes.
+    - Save the rule configuration.
+        
+    - Run a test to ensure tickets are being created correctly.
+        
 
 ---
 
-### 8. Conclusion
+### 6. Reviewing and Closing Tickets
 
-- SSH brute force alerts should always be analyzed to assess potential compromise.
-- Checking IP reputation provides fast context on attack severity.
-- Integrating alerts with osTicket improves documentation, visibility, and escalation.
-- Automating ticket creation increases efficiency in real-world SOC workflows.
+**Steps:**
+
+- **Review Ticket:**
+    
+    - Check that the ticket contains alert details and investigation notes.
+        
+    - Ensure the responsible analyst is assigned.
+        
+- **Document Resolution:**
+    
+    - Add remediation steps such as domain blocking or host isolation.
+        
+    - Reference any detection rule changes.
+        
+- **Close Ticket:**
+    
+    - Provide a closing summary and select **Resolved**.
+        
+    - Ensure all logs and notes are attached to support future investigations.
 
 **Reference**
 https://youtu.be/sXQ1hsAFX7U?si=Uw3wS9MFCwbo62J1
