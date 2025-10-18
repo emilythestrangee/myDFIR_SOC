@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 27 - Investigate RDP Brute Force Attack.md",
+                "file": "Day 21 - Mythic Agent Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 27 - Investigate RDP Brute Force Attack"
+              "title": "Day 21 - Mythic Agent Setup Tutorial"
             }
           }
         ]
@@ -170,15 +170,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32dad6c4b98a1de5",
+  "active": "32ae198a13053ba0",
   "lastOpenFiles": [
+    "Day 27 - Investigate RDP Brute Force Attack.md",
     "images/Pasted image 20251019013221.png",
     "images/Pasted image 20251019013020.png",
     "images/Pasted image 20251019012953.png",
     "images/Pasted image 20251019012906.png",
     "images/Pasted image 20251019012725.png",
     "Day 26 - Investigate SSH Brute Force Attack.md",
-    "Day 27 - Investigate RDP Brute Force Attack.md",
     "images/Pasted image 20251019012614.png",
     "images/Screenshot (27).png",
     "images/Pasted image 20251019003551.png",
@@ -194,7 +194,6 @@
     "Day 16 - How To Create Alerts and Dashboards in Kibana (Part 2).md",
     "Day 17 - How To Create Alerts and Dashboards in Kibana (Part 3).md",
     "images/Pasted image 20251019001214.png",
-    "images/Pasted image 20251019001025.png",
     "Day 15 - Remote Desktop Protocol Introduction.md",
     "Day 25 - osTicket + ELK Integration.md",
     "Day 24 - osTicket Setup Tutorial.md",
