@@ -18,7 +18,6 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 ### 3. Preparing the Windows Server
 
 1. **Create Fake Password File**
-    
     - Navigate to `Documents` and create a file named `passwords.txt`.
         
 2. **Change Windows Password**
