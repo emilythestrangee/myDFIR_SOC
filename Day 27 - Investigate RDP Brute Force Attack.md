@@ -121,7 +121,7 @@
 
 ### 7. Reconstructing the Kali-based Attack
 
-Lastly, we will investigate the brute force attack originating from a Kali VM you. You did not change IP via VPN, so the attacker IP matches your personal IP — this prevents starting the hunt by IP alone. Instead, use other pivots and time constraints.
+Lastly, we will investigate the brute force attack originating from a Kali VM we used on day 21. 
 
 **Approach:**
 
