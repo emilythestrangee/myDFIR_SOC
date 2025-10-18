@@ -112,8 +112,7 @@ You can also change the default operation name:
 ![[Pasted image 20251018031729.png]]
 
 
-
-
+![[Pasted image 20251018031849.png]]
 
 
 ## Mythic C2 Dashboard Overview
