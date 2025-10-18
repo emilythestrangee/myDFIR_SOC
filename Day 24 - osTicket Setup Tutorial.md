@@ -82,7 +82,9 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         - Port 443 (HTTPS)
             
     - Allow TCP traffic.
-        
+
+
+
 
 ---
 
