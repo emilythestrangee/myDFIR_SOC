@@ -20,11 +20,9 @@
 2. **Add a New API Key**
     
     - Click **Admin Panel** on the top menu.
-        
     - Go to **Manage → API**.
-        
     - Click **Add New API Key**.
-        
+
 3. **Configure the Key**
     
     - Enter the **private IP address** of your Challenge-ELK server (since both are in the same VPC).
