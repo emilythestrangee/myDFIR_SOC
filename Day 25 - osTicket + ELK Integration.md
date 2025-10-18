@@ -35,7 +35,8 @@
     - Copy and store the generated API key securely, it will be used in Elastic.
     
 
-![[Pasted image 20251018225806.png]]
+<img width="939" height="450" alt="image" src="https://github.com/user-attachments/assets/b3fdd7ae-a1ad-4328-b1e3-d7e92d562814" />
+
 
 ---
 
@@ -70,7 +71,8 @@
                 
     - Click **Save & Test**.
         
-![[Pasted image 20251018231505.png]]
+<img width="1100" height="755" alt="image" src="https://github.com/user-attachments/assets/1028a9a1-2b10-4f90-a22b-d31a3aba762c" />
+
 
 ---
 ### 4. Creating Action Body (Payload)
@@ -85,7 +87,8 @@
 2. **Sample XML Payload:**
 
     
-    ![[Pasted image 20251018232447.png]]
+    <img width="1100" height="760" alt="image" src="https://github.com/user-attachments/assets/aa78fcf6-25e6-4015-ba86-a6ea1aadd6e4" />
+
 3. **Customize Payload**
     
     - Paste the XML payload into the connector’s **Action Body** field.
@@ -97,7 +100,8 @@
     - If successful, a ticket should be created in osTicket.
 
 
-![[Pasted image 20251018232512.png]]
+<img width="1100" height="260" alt="image" src="https://github.com/user-attachments/assets/b7e23e3e-bad1-4613-826e-dd737bbcfb83" />
+
 
 ---
 
@@ -140,7 +144,8 @@
 3. Verify that a new ticket has been created from the webhook test.
 4. Confirm that the subject and message match the XML payload details.
     
-![[Pasted image 20251018232758.png]]
+<img width="789" height="293" alt="image" src="https://github.com/user-attachments/assets/3f6ff748-51e2-4e82-b501-8e7ddc2fe7de" />
+
 
 ---
 
