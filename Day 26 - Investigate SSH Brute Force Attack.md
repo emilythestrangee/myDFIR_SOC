@@ -86,9 +86,7 @@
 
 - **Configure Alert Routing:**
     
-    - Under “Rules,” select the DNS exfiltration detection rule.
-    - Edit the rule to push alerts via webhook to the ticketing platform.
-
+    - Under “Rules,” modify our existing rule for SSH brute force attacks and add an “Action”.
 
 
 - **Customize Ticket Details:**
