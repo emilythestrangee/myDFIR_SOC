@@ -53,28 +53,21 @@
 2. **Create a Webhook Connector**
     
     - In **Stack Management**, go to **Connectors** under _Alerts and Insights_.
-        
     - Click **Create Connector**.
-        
     - Select **Webhook**.
-        
     - Fill in:
         
         - **Name:** `osTicket`
-            
         - **URL:**
             
             `http://<OS_Ticket_Private_IP>/osticket/upload/api/tickets.xml`
             
         - **Method:** POST
-            
         - **Authentication:** None
-            
         - **HTTP Header:**
             
             - Key: `X-API-Key`
-                
-            - Value: _<your API key>_
+            - Value: _<your API key>
                 
     - Click **Save & Test**.
         
