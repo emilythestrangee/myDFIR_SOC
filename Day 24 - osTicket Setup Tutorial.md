@@ -25,7 +25,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 5. After setup, select **View Console**.
 6. RDP into the server using:
     
-    `xfreerdp /v:<Challenge-OSticket-IP> /u:Administrator`
+    `xfreerdp /v:<MYDFIR-osTicket-IP> /u:Administrator`
     
 
 ---
