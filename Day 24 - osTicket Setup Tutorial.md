@@ -162,7 +162,6 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     `C:\xampp\htdocs\osticket\upload\include`
     
     - Rename:
-        
         `ost-sampleconfig.php → ost-config.php`
         
 
