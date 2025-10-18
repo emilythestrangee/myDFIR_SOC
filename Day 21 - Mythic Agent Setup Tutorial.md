@@ -114,11 +114,12 @@ Disable Windows Defender:
     
     ![[Screenshot (25).png]]
     
-1. **Install HTTP C2 Profile**
+3. **Install HTTP C2 Profile**
     
     `./mythic-cli install github https://github.com/MythicC2Profiles/http`
     
-2. **Create Payload in Mythic Web GUI**
+    
+4. **Create Payload in Mythic Web GUI**
     
     - Target OS: **Windows**
     - Output Format: **WinExe**
