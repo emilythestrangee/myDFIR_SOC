@@ -39,7 +39,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 4. **Create Alert Criteria**
     
     - Modified query:
-        `event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or winlog.event_data.Hashes:*4B9414B7F5C3EB1B83ED8D1B98A0C298229977A67BE784DE5E09D2D647D75152*)`
+        `event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or winlog.event_data.Hashes:*FD6A88F718337FA6611C067693F65970D6EE073EC548A31D95C3D2F814296D2C*)`
         
     - Save the search as:
         `Challenge Mythic Apollo Process Create`
