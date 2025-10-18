@@ -180,21 +180,23 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Go to User accounts and select the root account with the public ip address as the host name. Select the Database tab and add privileges to the newly created database on this account.
     
     ![[Pasted image 20251018222327.png]]
+![[Pasted image 20251018222611.png]]
 
-1. **Basic Installation**
+
+2. **Basic Installation**
     
     - Enter Helpdesk Name, Admin credentials.
     - In PHP MyAdmin, create a new database:
         
         `challenge-db`
         
-2. **Database Configuration**
+3. **Database Configuration**
     
     - Host: `public IP`
     - Username: `root`
     - Password: `Winter2024!`
         
-3. **Complete Installation**
+4. **Complete Installation**
     
     - Ensure DB privileges are set.
     - Rerun setup if required until successful.
