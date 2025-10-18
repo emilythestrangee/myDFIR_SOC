@@ -49,7 +49,7 @@
     - Search for successful login attempts using keywords like `accepted`.
     - Ensure correct capitalization in queries.
     - No successful logins found found.
-    
+    ![[Pasted image 20251019001214.png]]
 
 4. **What Activity Occurred After Successful Logins?**:
     
@@ -65,19 +65,19 @@
 - **Document Findings:**
     
     - Record details of suspicious domains, source IPs, and query patterns.
-        
     - Add relevant screenshots or log excerpts in the incident notes.
         
 - **Block or Contain:**
     
     - If malicious activity is confirmed, block the domain at the DNS firewall.
-        
     - Isolate the affected host for further forensic investigation.
         
 - **Update Detection Rules:**
     
     - Modify or fine-tune DNS exfiltration detection rules to catch similar behavior faster.
         
+
+
 
 ---
 
