@@ -146,9 +146,10 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 
 ![[Pasted image 20251019022652.png]]
 - Searching network events in the same interval revealed an established connection back to the Kali host  on **port 9999** — the same port we used to pull down the Mythic agent.
-    
+![[Pasted image 20251019022804.png]]
 - Finally, I located a file-creation event that corresponded to the Mythic agent binary being written to disk.
     
+
 
 **What to look for in the session:**
 
