@@ -84,7 +84,11 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 
 Run basic discovery commands in PowerShell or CMD:
 
-`whoami ipconfig net user net group net user Administrator`
+`whoami 
+`ipconfig 
+`net user 
+`net group 
+`net user Administrator`
 
 
 ---
