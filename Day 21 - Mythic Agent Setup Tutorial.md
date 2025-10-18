@@ -180,7 +180,6 @@ Disable Windows Defender:
     `whoami 
     `ipconfig`
     
-![[Pasted image 20251018172757.png]]
 ---
 
 ### 11. Exfiltration
