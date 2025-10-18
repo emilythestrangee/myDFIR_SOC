@@ -152,7 +152,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 
 - **Panel Names:**
     
-    - `Process Created (PowerShell, CMD, rundll32)`
+    - `Process Created (PowerShell, CMD, Rundll32)`
     - `Process Initiated Network Connections`
     - `Microsoft Defender Disabled`
     
