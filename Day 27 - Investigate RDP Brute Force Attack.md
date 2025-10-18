@@ -124,15 +124,29 @@
 Lastly, we will investigate the brute force attack originating from a Kali VM we used on day 21. 
 The Kali session left traces (e.g., a Mythic agent install and related logs). Use those artifacts to bound the search.
 
-**Steps:**
+**Investigation Flow:**
 
-1. Search for successful logons (`event.code:4624`) with the target username and your personal IP.
+- Searched for successful Windows logons for the account I used (example username: `administrator`) with `event.code:4624` and restricted results to before the agent-deletion timestamp. That returned multiple sessions.
     
-2. From the returned logon events, start with the earliest one and copy the **TargetLogonId**.
+- I inspected the earliest session first and copied its `TargetLogonId`. That session showed a successful logon that immediately logged off — consistent with an automated scan/tool. (This matched the Crowbar behavior we ran when it found the password.)
     
-3. Inspect the session tied to that logon ID. Short-lived successes that immediately log off may indicate automated tools or scans (e.g., Crowbar stopping when it finds a password).
+- I went back to the list of `TargetLogonId` values and tried the last one in the set. The first few had nothing interesting, but the next `TargetLogonId` I tried produced many related events — lots of process creation and activity logged.
     
-4. If the first logon ID yields limited findings, iterate through the other returned logon IDs until you find one that shows richer activity (process creations, credential accesses).
+- Immediately after that successful logon I found events indicating **credentials were read** (credential-access indicators recorded).
+    
+- I also observed **PowerShell** process activity in that same session (command lines and script execution entries).
+    
+- Treating the successful logon timestamp as the **start** and the agent-deletion timestamp as the **end**, I created a between-time window to focus the investigation.
+    
+- To reduce noise I limited my queries to the most relevant providers: **Sysmon**, **Windows Security Auditing**, and **Windows Defender** (i.e., `Microsoft-Windows-Sysmon`, `Microsoft-Windows-Security-Auditing`, `Microsoft-Windows-Windows Defender`).
+    
+- Within that narrowed window and provider set I found extensive credential reads and discovery/enumeration activity (matching the discovery commands we executed).
+    
+- I also observed Windows Defender being disabled during the window.
+    
+- Searching network events in the same interval revealed an established connection back to the Kali host (example destination IP: `198.51.100.7`) on **port 9999** — the same port we used to pull down the Mythic agent.
+    
+- Finally, I located a file-creation event that corresponded to the Mythic agent binary being written to disk.
     
 
 **What to look for in the session:**
