@@ -141,24 +141,13 @@ Lastly, we will investigate the brute force attack originating from a Kali VM we
 **What to look for in the session:**
 
 - Events showing credentials being read (possible credential-dump activity).
-    
 - PowerShell execution or script runs (common for post-exploit activity).
-    
 - Windows Defender being disabled or tampered with.
-    
 - Network connections established back to your Kali VM (in this lab, you expect an established connection on a non-standard port such as 9999).
-    
 - File creation events that correspond to the Mythic agent binary or related payloads.
-    
 
-**Narrowing to the precise timeframe:**
 
-- Use the successful logon timestamp as the _start_ and the agent deletion timestamp as the _end_ to build a “between” time window.
-    
-- Limit queries to relevant event providers to reduce noise: for example `Microsoft-Windows-Sysmon`, `Microsoft-Windows-Security-Auditing`, and `Microsoft-Windows-Windows Defender`.
-    
-
-**Outcome observations (typical for the lab setup):**
+**Outcome observations:**
 
 - Multiple credential read events and discovery/enumeration commands following the successful login.
     
