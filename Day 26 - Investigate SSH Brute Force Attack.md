@@ -82,7 +82,7 @@
 
 ### 5. Integrating with Ticketing System
 
-**Steps:**
+**Steps to configure Elastic instance to push alerts to osTicket so we can automatically generate a ticket on osTicket for each alert generated:**
 
 - **Configure Alert Routing:**
     
