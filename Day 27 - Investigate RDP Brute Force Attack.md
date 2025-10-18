@@ -119,5 +119,7 @@
     - Save the rule configuration.
     - Run a test to ensure tickets are being created correctly.
 
+
+
 **Reference**
 https://youtu.be/l9KA6dPdOs8?si=w4SZCr8RGoZv7R1K
