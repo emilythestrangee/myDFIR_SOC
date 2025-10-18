@@ -83,41 +83,21 @@
         [osTicket API tickets.md](https://github.com/osTicket/osTicket/blob/develop/setup/doc/api/tickets.md)
         
 2. **Sample XML Payload:**
+
     
-    <?xml version="1.0" encoding="UTF-8"?>
-    `<ticket alert="true" autorespond="true" source="API">
-``	    <name>Angry User</name>
-``	    <email>api@osticket.com</email>
-``	    <subject>MyDFIR-30DayChallenge-emaan</subject>
-``	    <phone>318-555-8634X123</phone>
-``	    <message type="text/plain"><![CDATA[Message content here]]></message>
-	`<attachments>
-	        <file name="file.txt" type="text/plain"><![CDATA[
-	            File content is here and is automatically trimmed
-	        ]]></file>
-	        <file name="image.gif" type="image/gif" encoding="base64">
-            R0lGODdhMAAwAPAAAAAAAP///ywAAAAAMAAwAAAC8IyPqcvt3wCcDkiLc7C0qwy
-            GHhSWpjQu5yqmCYsapyuvUUlvONmOZtfzgFzByTB10QgxOR0TqBQejhRNzOfkVJ
-            +5YiUqrXF5Y5lKh/DeuNcP5yLWGsEbtLiOSpa/TPg7JpJHxyendzWTBfX0cxOnK
-            PjgBzi4diinWGdkF8kjdfnycQZXZeYGejmJlZeGl9i2icVqaNVailT6F5iJ90m6
-            mvuTS4OK05M0vDk0Q4XUtwvKOzrcd3iq9uisF81M1OIcR7lEewwcLp7tuNNkM3u
-            Nna3F2JQFo97Vriy/Xl4/f1cf5VWzXyym7PHhhx4dbgYKAAA7
-	        </file>
-	    </attachments>
-	    <ip>123.211.233.122</ip>
-	</ticket>`
-    
+    ![[Pasted image 20251018232447.png]]
 3. **Customize Payload**
     
     - Paste the XML payload into the connector’s **Action Body** field.
-    - Update the subject line to something meaningful (e.g., `Challenge - Haji`).
+    - Update the subject line to something meaningful (e.g., MyDFIR-30DayChallenge-emaan).
         
 4. **Run the Test**
     
     - Click **Run Test**.
-        
     - If successful, a ticket should be created in osTicket.
-        
+
+
+![[Pasted image 20251018232512.png]]
 
 ---
 
@@ -128,7 +108,6 @@
 1. **Check Network Reachability**
     
     - If the test fails with _“Unreachable”_, check the connection between ELK and osTicket.
-        
     - SSH into your ELK server and:
         
         `ping <OS_Ticket_Private_IP>`
