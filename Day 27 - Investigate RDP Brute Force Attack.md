@@ -126,7 +126,7 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 
 **Investigation Flow:**
 
-- Searched for successful Windows logons for the account I used (example username: `administrator`) with `event.code:4624` and restricted results to before the agent-deletion timestamp. That returned multiple sessions.
+- Searched for successful Windows logons for the account I used with `event.code:4624` and the ip. This returned multiple sessions.
     
 - I inspected the earliest session first and copied its `TargetLogonId`. That session showed a successful logon that immediately logged off — consistent with an automated scan/tool. (This matched the Crowbar behavior we ran when it found the password.)
     
