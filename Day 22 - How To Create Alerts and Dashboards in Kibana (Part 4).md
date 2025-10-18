@@ -106,6 +106,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.CommandLine`
 - `winlog.event_data.CurrentDirectory`
 
+
 ---
 
 #### b. External Network Connections
@@ -119,6 +120,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.DestinationIp`
 - `winlog.event_data.DestinationPort`
 
+![[Pasted image 20251018185114.png]]
 ---
 
 #### c. Windows Defender Activity
