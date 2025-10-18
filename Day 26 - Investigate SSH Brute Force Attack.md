@@ -54,9 +54,8 @@
 4. **What Activity Occurred After Successful Logins?**:
     
     - If there were successful logins, investigate subsequent activities.
-    - Look for signs of malicious behavior like downloading scripts, running discovery commands, executing malicious files or perform.
-
-Once investigation is finished we can either close the alert or escalate it depending on our findings.
+    - Look for signs of malicious behavior like downloading scripts, running discovery commands, executing malicious files or performing persistence.
+    - Once investigation is finished we can either close the alert or escalate it depending on our findings.
 
 ---
 
@@ -79,8 +78,6 @@ Once investigation is finished we can either close the alert or escalate it depe
     - Modify or fine-tune DNS exfiltration detection rules to catch similar behavior faster.
         
 
-
-
 ---
 
 ### 5. Integrating with Ticketing System
@@ -90,19 +87,16 @@ Once investigation is finished we can either close the alert or escalate it depe
 - **Configure Alert Routing:**
     
     - Under “Rules,” select the DNS exfiltration detection rule.
-        
     - Edit the rule to push alerts via webhook to the ticketing platform.
         
 - **Customize Ticket Details:**
     
     - Include relevant variables such as domain, source IP, and rule name.
-        
     - Remove unnecessary fields like attachments if not needed.
         
 - **Test Integration:**
     
     - Save the rule configuration.
-        
     - Run a test to ensure tickets are being created correctly.
         
 
@@ -115,19 +109,16 @@ Once investigation is finished we can either close the alert or escalate it depe
 - **Review Ticket:**
     
     - Check that the ticket contains alert details and investigation notes.
-        
     - Ensure the responsible analyst is assigned.
         
 - **Document Resolution:**
     
     - Add remediation steps such as domain blocking or host isolation.
-        
     - Reference any detection rule changes.
         
 - **Close Ticket:**
     
     - Provide a closing summary and select **Resolved**.
-        
     - Ensure all logs and notes are attached to support future investigations.
 
 **Reference**
