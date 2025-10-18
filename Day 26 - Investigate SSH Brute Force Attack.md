@@ -28,27 +28,26 @@
 
 **Key Questions:**
 
-- **Is the Domain or Subdomain Suspicious?**
+1. **Is the IP Known for Brute Force Activity?**:
     
-    - Check if the queried domain or subdomain is known for malicious activity.
-    - Use reputation services such as AbuseIPDB, VirusTotal, or GreyNoise.
-    - Example: A domain flagged for data exfiltration by multiple engines is a strong indicator.
-    
-- **Are There High Volumes of Unusual DNS Requests?**
-    
-    - Use Kibana Discover to filter by the destination domain.
-    - Look for excessive TXT or NULL record queries over a short period.
-    - Example: 2,000+ queries in 10 minutes may indicate exfiltration.
+    - Use tools like AbuseIPDB and GreyNoise to check the reputation of the IP address.
+    - Example: An IP reported 1,816 times with 100% confidence of abuse is highly suspicious.
 
-- **What Endpoint or Host Generated the Requests?**
+![[Pasted image 20251018234919.png]]
+1. **Were Any Other Users Affected by This IP?**:
     
-    - Identify the source IP and hostname.
-    - Check for patterns like service accounts or critical servers generating requests.
-
-- **Is the Query Pattern Encoded or Structured?**
+    - Search for the IP address in Kibana's Discover tab.
+    - Check for distinct users targeted by the IP.
+    - Example: Users root, oracle, guest, and test were targeted.
+2. **Were Any Logins Successful?**:
     
-    - Look for Base64-like strings or long subdomains.
-    - Example: `ZXhhbXBsZS5leGZpbC5jb20` can indicate encoded payloads.
+    - Search for successful login attempts using keywords like `accepted`.
+    - Ensure correct capitalization in queries.
+    - Example: No successful logins found within the last 30 days.
+3. **What Activity Occurred After Successful Logins?**:
+    
+    - If there were successful logins, investigate subsequent activities.
+    - Look for signs of malicious behavior like downloading scripts, running discovery commands, or executing malicious files.
 
 ---
 
