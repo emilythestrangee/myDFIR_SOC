@@ -157,6 +157,10 @@ Disable Windows Defender:
     
     - Navigate into "C:\Users\Public\Downloads" to check if the file has been downloaded.
     
+    ![[Pasted image 20251018172206.png]]
+
+    
+    
 3. **Execute Payload**
     
     `.\apollo.exe`
