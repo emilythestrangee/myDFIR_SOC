@@ -110,7 +110,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 
 #### b. External Network Connections
 
-`event.code:3 and event.provider:"Microsoft-Windows-Sysmon" and winlog.event_data.Initiated:true and not winlog.event_data.Image:*MsMpEng.exe`
+`event.code:3 and event.provider:"Microsoft-Windows-Sysmon" and winlog.event_data.Initiated:true`
 
 **Fields:**
 
