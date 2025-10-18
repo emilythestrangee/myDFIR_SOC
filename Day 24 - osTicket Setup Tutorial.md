@@ -148,7 +148,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 
 1. Download osTicket self-hosted version.
 2. Extract files twice to access the `osTicket-v1.18.2` folder.
-3. Create a new directory:
+3. Create a new directory called "osticket":
     
     `C:\xampp\htdocs\osticket`
     
