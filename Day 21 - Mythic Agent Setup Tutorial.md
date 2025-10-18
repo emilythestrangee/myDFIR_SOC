@@ -110,7 +110,7 @@ Disable Windows Defender:
     
 2. **Install Apollo Agent**
     
-    `./mythic-cli install github https://github.com/MythicAgents/Apollo`
+    `./mythic-cli install github https://github.com/MythicAgents/Apollo.git`
     
 3. **Install HTTP C2 Profile**
     
