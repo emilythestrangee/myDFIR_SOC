@@ -192,6 +192,8 @@ Disable Windows Defender:
 1. **Download the Target File**
     
     `download C:\Users\Administrator\Documents\passwords.txt`
+
+
     
 2. **Verify in Mythic Web GUI**
     - Navigate to **Files** → Check `passwords.txt` contents.
