@@ -1,8 +1,7 @@
 
 ### 1. Introduction
 
-**Goal:** Successfully integrate osTicket with the ELK Stack to automate ticket creation from alerts.  
-This allows us to log and track security alerts, aligning with **Accounting and Auditing** in security best practices.
+**Goal:** Successfully integrate osTicket with the ELK Stack to automate ticket creation from alerts and send a test alert into osTicket.
 
 ---
 
@@ -14,7 +13,7 @@ This allows us to log and track security alerts, aligning with **Accounting and 
     
     - Navigate to:
         
-        `http://<Challenge-OSticket-IP>/osticket/upload/scp`
+        `http://<MYDFIR-osTicket-IP>/osticket/upload/scp`
         
     - Log in as an administrator.
         
