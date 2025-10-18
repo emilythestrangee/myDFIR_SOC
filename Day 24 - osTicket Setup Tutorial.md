@@ -76,7 +76,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 2. **Create Firewall Rules**
     
     - Open **Windows Defender Firewall with Advanced Security**.
-    - Add inbound rules for:
+    - Add inbound rule for:
         
         - Port 80 (HTTP)
         - Port 443 (HTTPS)
@@ -103,7 +103,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
     `localhost / 127.0.0.1 | phpMyAdmin 5.2.1`
     
-
+![[Pasted image 20251018215855.png]]
 ---
 
 ### 7. Configuring PHP MyAdmin
