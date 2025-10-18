@@ -115,12 +115,15 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Go to **User Accounts**.
     - Edit the **root** account → change hostname from `localhost` to the **public IP**.
     - Set password to:
-        
         `Winter2024!`
         
     - Repeat the same for the **pma** account.
 
 ![[Pasted image 20251018220535.png]]
+
+
+
+
 
 2. **Edit Config File**
     
