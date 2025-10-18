@@ -94,7 +94,6 @@ Press enter or click to view image in full size
 ## Accessing Mythic C2 Web Interface
 
 1. Copy the server’s public IP.
-    
 2. Open a browser and navigate to:
     
     `https://<mythic-server_ip>:7443`
@@ -103,9 +102,7 @@ Press enter or click to view image in full size
 ### Login Credentials
 
 - Default Username: `mythic_admin`
-    
 - Password: Stored in the `.env` file
-    
 
 `cat .env`
 
