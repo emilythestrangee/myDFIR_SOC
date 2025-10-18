@@ -50,9 +50,11 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 `cd Mythic 
 `./install_docker_ubuntu.sh`
 
-![[Pasted image 20251018025519.png]]
+<img width="748" height="263" alt="image" src="https://github.com/user-attachments/assets/23534453-bcf4-49cf-bd6b-d2dfe387f19f" />
 
-![[Pasted image 20251018025606.png]]
+
+<img width="711" height="352" alt="image" src="https://github.com/user-attachments/assets/d6abf821-df82-440d-b4bf-2c629b73bc46" />
+
 
 
 ### Start Mythic
@@ -70,8 +72,10 @@ If Docker fails to start, use:
 Verify the status:
 `systemctl status docker`
 
-![[Pasted image 20251018030153.png]]
-![[Pasted image 20251018030319.png]]
+<img width="388" height="232" alt="image" src="https://github.com/user-attachments/assets/6eec2e98-709f-4773-9b3f-e0f8cec07822" />
+
+<img width="583" height="326" alt="image" src="https://github.com/user-attachments/assets/18021245-cdbe-482f-aec1-9f44396da736" />
+
 
 
 ---
@@ -86,7 +90,8 @@ Allow TCP traffic from trusted IPs only:
 - TCP 1–65535 (Source: MYDFIR-Linux-emaan)
 
 Apply `MyDFIR-Mythic-Firewall` to the Mythic server and update firewall group.
-![[Pasted image 20251018030747.png]]
+<img width="531" height="406" alt="image" src="https://github.com/user-attachments/assets/2408fc16-5972-458f-ba2a-1717c15d0314" />
+
 
 ---
 
@@ -104,15 +109,18 @@ Apply `MyDFIR-Mythic-Firewall` to the Mythic server and update firewall group.
 - Password: Stored in the `.env` file
 
 `cat .env`
-![[Pasted image 20251018031430.png]]
+<img width="864" height="848" alt="image" src="https://github.com/user-attachments/assets/c18df90c-ac8d-40ff-8902-6959889bbafb" />
+
 You can also change the default operation name:
 
 - Default: `operation-cima`
 - Example new name: `operation-challenge`
-![[Pasted image 20251018031729.png]]
+<img width="906" height="676" alt="image" src="https://github.com/user-attachments/assets/3177bc82-a61f-4474-8954-e16738a99c53" />
 
 
-![[Pasted image 20251018031849.png]]
+
+<img width="1100" height="541" alt="image" src="https://github.com/user-attachments/assets/46b4a6d6-5fd2-4122-90f9-4097a713a50f" />
+
 
 
 ## Mythic C2 Dashboard Overview
