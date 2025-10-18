@@ -77,7 +77,7 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     
 2. **Trust the certificate** to complete the connection.
     
-
+![[Screenshot 2025-10-18 163516.png]]
 ---
 
 ### 6. Discovery Phase
@@ -85,6 +85,7 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 Run basic discovery commands in PowerShell or CMD:
 
 `whoami ipconfig net user net group net user Administrator`
+
 
 ---
 
