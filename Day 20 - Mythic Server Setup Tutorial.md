@@ -77,7 +77,7 @@ Verify the status:
 ---
 ## Configuring Firewall
 
-Create a firewall group `Challenge-Mythic-Firewall` on Vultr.
+Create a firewall group `MyDFIR-Mythic-Firewall` on Vultr.
 
 Allow TCP traffic from trusted IPs only:
 
