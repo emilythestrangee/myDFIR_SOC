@@ -179,9 +179,10 @@ Disable Windows Defender:
     
     `whoami 
     `ipconfig`
+    
     ![[Pasted image 20251018173109.png]]
 
-
+![[Screenshot 2025-10-18 173134.png]]
 
 
 ---
