@@ -19,7 +19,7 @@
     - Expand the alert by clicking on **“View Details.”**
     - Review the rule name, detection source, and description of the alert.
     - For instance, check for the `MyDFIR-SSH Brute Force Activity-emaan` alert.
-    - After checking a few alerts, a certain ip stood out i.e., 
+    - After checking a few alerts, a certain ip stood out i.e., **183.66.17.82**.
 
 ---
 
