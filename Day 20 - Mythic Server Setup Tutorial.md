@@ -103,6 +103,8 @@ Apply `MyDFIR-Mythic-Firewall` to the Mythic server and update firewall group.
 - Default Username: `mythic_admin`
 - Password: Stored in the `.env` file
 
+`cat .env`
+![[Pasted image 20251018031430.png]]
 You can also change the default operation name:
 
 - Default: `operation-cima`
