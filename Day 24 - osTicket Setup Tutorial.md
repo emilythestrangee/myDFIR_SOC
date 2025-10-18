@@ -186,10 +186,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 2. **Basic Installation**
     
     - Enter Helpdesk Name, Admin credentials.
-    - In PHP MyAdmin, create a new database:
-        
-        `challenge-db`
-        
+    
 3. **Database Configuration**
     
     - Host: `public IP`
