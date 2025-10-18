@@ -89,7 +89,7 @@ Run basic discovery commands in PowerShell or CMD:
 `net user 
 `net group 
 `net user Administrator`
-
+![[Pasted image 20251018164112.png]]
 
 ---
 
