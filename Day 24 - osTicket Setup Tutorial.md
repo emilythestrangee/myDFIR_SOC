@@ -27,7 +27,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
     `xfreerdp /v:<MYDFIR-osTicket-IP> /u:Administrator`
     
-
+![[Screenshot 2025-10-18 214900.png]]
 ---
 
 ### 3. Configuring the Firewall
