@@ -199,6 +199,11 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Rerun setup if required until successful.
     
 ![[Pasted image 20251018223016.png]]
+
+![[Pasted image 20251018223043.png]]
+
+
+
 ---
 
 ### 10. Finalizing OS Ticket Setup
@@ -212,11 +217,15 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         `C:\xampp\htdocs\osticket\upload\include`
         
     - Open PowerShell as Administrator.
-        
     - Run:
         
         `icacls .\ost-config.php /reset`
-        
+
+
+
+
+
+
 2. **Access URLs**
     
     - Client Portal:
