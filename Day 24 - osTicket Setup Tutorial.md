@@ -220,24 +220,23 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Run:
         
         `icacls .\ost-config.php /reset`
-
-
-
-
+    
+![[Pasted image 20251018223144.png]]
 
 
 2. **Access URLs**
     
     - Client Portal:
         
-        `http://<Challenge-OSticket-IP>/osticket/upload/`
+        `http://<MYDFIR-osTicket-IP>/osticket/upload/`
         
     - Staff Panel:
         
-        `http://<Challenge-OSticket-IP>/osticket/upload/scp`
+        `http://<MYDFIR-osTicket-IP>/osticket/upload/scp`
         
 3. Log in using the admin credentials created during setup.
-    
+
+
 
 ---
 
