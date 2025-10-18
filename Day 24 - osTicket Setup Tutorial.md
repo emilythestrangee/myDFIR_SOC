@@ -123,8 +123,6 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 
 
 
-
-
 2. **Edit Config File**
     
     - Go to:
@@ -135,12 +133,12 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
     - Change:
         
-        - Server host → `Challenge-OSticket` public IP.
+        - Server host → `MYDFIR-osTicket` public IP.
         - Root and pma passwords → `Winter2024!`.
             
     - Save changes.
         
-
+![[Pasted image 20251018220954.png]]
 ---
 
 ### 8. Installing OS Ticket
