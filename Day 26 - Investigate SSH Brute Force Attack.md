@@ -48,7 +48,8 @@
     
     - Search for successful login attempts using keywords like `accepted`.
     - Ensure correct capitalization in queries.
-    - No successful logins found within the last 30 days.
+    - No successful logins found found.
+    
 
 4. **What Activity Occurred After Successful Logins?**:
     
