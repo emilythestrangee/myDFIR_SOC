@@ -200,9 +200,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
 ![[Pasted image 20251018223016.png]]
 
-![[Pasted image 20251018223043.png]]
-
-
+![[Pasted image 20251018223550.png]]
 
 ---
 
