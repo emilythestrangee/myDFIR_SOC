@@ -67,9 +67,8 @@
         - **HTTP Header:**
             
             - Key: `X-API-Key`
-            - Value: _<your API key>
-                
-    - Click **Save & Test**.
+            - Value: <API key>
+      
         
 
 ---
