@@ -198,8 +198,7 @@ Disable Windows Defender:
     - Navigate to **Files** → Check `passwords.txt` contents.
 
 
-
-
+![[Pasted image 20251018173804.png]]
 
 **Reference**
 https://youtu.be/85x0NLj2zUo?si=_cpuOgH-OqAYwgYo
