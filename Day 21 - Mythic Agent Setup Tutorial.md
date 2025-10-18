@@ -128,8 +128,9 @@ Disable Windows Defender:
     - C2 Profile: **HTTP**
     - Callback Host: `http://<MYDFIR-MYTHIC-IP>`
     - Port: `80`
-    - Payload Name: `ChallengeMythicPayload`
+    - Payload Name: `apollo.exe`
 
+![[Pasted image 20251018170233.png]]
 
 ---
 
