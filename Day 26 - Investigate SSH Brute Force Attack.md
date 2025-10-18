@@ -99,9 +99,6 @@
     - Save the rule configuration.
     - Run a test to ensure tickets are being created correctly.
 
-
-
-
 ---
 
 ### 6. Reviewing and Closing Tickets
@@ -112,7 +109,9 @@
     
     - Check that the ticket contains alert details and investigation notes.
     - Ensure the responsible analyst is assigned.
-        
+
+
+
 - **Document Resolution:**
     
     - Add remediation steps such as domain blocking or host isolation.
