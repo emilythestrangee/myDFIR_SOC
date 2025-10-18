@@ -106,7 +106,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.CommandLine`
 - `winlog.event_data.CurrentDirectory`
 
-
+![[Screenshot 2025-10-18 185327.png]]
 ---
 
 #### b. External Network Connections
