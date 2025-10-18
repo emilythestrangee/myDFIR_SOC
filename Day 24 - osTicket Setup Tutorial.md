@@ -53,7 +53,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
 4. Complete installation and launch the XAMPP Control Panel.
 
-
+![[Pasted image 20251018215231.png]]
 
 ---
 
