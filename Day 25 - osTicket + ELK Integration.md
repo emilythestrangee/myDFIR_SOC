@@ -22,21 +22,20 @@
     - Click **Admin Panel** on the top menu.
     - Go to **Manage → API**.
     - Click **Add New API Key**.
-
+    
 3. **Configure the Key**
     
     - Enter the **private IP address** of your Challenge-ELK server (since both are in the same VPC).
-        
     - Check **Can Create Tickets**.
-        
-    - Add internal notes (e.g., _Challenge SOC Integration_).
-        
+    - Add internal notes.
     - Click **Add Key**.
-        
+    
 4. **Save the Key**
     
-    - Copy and store the generated API key securely — it will be used in Elastic.
-        
+    - Copy and store the generated API key securely, it will be used in Elastic.
+    
+
+![[Pasted image 20251018225806.png]]
 
 ---
 
