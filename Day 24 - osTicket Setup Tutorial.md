@@ -177,7 +177,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 1. **Create Database**
     
     - Before we proceed with basic installation, we will first create a database on our server.
-    - Go to User accounts and select the root account with the iublic Ip address as the host name. Select the Database tab and add privileges to the newly created database on this account.
+    - Go to User accounts and select the root account with the public ip address as the host name. Select the Database tab and add privileges to the newly created database on this account.
     
     ![[Pasted image 20251018222327.png]]
 
