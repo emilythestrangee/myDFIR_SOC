@@ -12,13 +12,11 @@
     
     - Click on the hamburger icon and select **“Alerts”** under the security tab.
     - Review the list of alerts and select the one related to **DNS exfiltration**.
-        
+    
 - **View Alert Details:**
     
     - Expand the alert by clicking on **“View Details.”**
-        
     - Review the rule name, detection source, and description of the alert.
-        
 
 ---
 
