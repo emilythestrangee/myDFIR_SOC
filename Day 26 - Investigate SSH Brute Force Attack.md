@@ -110,8 +110,6 @@
     - Check that the ticket contains alert details and investigation notes.
     - Ensure the responsible analyst is assigned.
 
-
-
 - **Document Resolution:**
     
     - Add remediation steps such as domain blocking or host isolation.
@@ -122,5 +120,7 @@
     - Provide a closing summary and select **Resolved**.
     - Ensure all logs and notes are attached to support future investigations.
 
+
+![[Pasted image 20251019003551.png]]
 **Reference**
 https://youtu.be/sXQ1hsAFX7U?si=Uw3wS9MFCwbo62J1
