@@ -129,7 +129,7 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 - Searched for successful Windows logons for the account I used with `event.code:4624` and the ip. This returned multiple sessions.
     
 - I inspected the earliest session first and copied its `TargetLogonId`. That session showed a successful logon that immediately logged off — consistent with an automated scan/tool, since it all happened within a difference of a couple of seconds. (This matched the Crowbar behavior we ran when it found the password.)
-    
+    ![[Screenshot 2025-10-19 021958.png]]
 - I went back to the list of sessions to get some `TargetLogonId` values. The first few had nothing interesting, but the next `TargetLogonId` I tried produced many related events — lots of process creation and activity logged.
     
 - Immediately after that successful logon I found events indicating **credentials were read** (credential-access indicators recorded).
