@@ -68,11 +68,12 @@
             
             - Key: `X-API-Key`
             - Value: <API key>
-      
+        - Select **Webhook**.
         
 
 ---
 
+3. Configuring Elastic Connector
 ### 4. Creating Action Body (Payload)
 
 **Steps:**
