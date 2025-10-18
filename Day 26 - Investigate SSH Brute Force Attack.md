@@ -87,13 +87,15 @@
 - **Configure Alert Routing:**
     
     - Under “Rules,” modify our existing rule for SSH brute force attacks and add an “Action”.
-
+![[Pasted image 20251019002526.png]]
 
 - **Customize Ticket Details:**
     
     - Include relevant variables such as domain, source IP, and rule name.
     - Remove unnecessary fields like attachments if not needed.
-        
+
+
+
 - **Test Integration:**
     
     - Save the rule configuration.
