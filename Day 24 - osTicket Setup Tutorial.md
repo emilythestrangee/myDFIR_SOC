@@ -83,7 +83,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
             
     - Allow TCP traffic.
 
-
+![[Pasted image 20251018215730.png]]
 
 
 ---
