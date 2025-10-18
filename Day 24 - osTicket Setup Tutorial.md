@@ -232,16 +232,10 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 
 ### 12. Conclusion
 
-✅ **Summary:**
-
 - Successfully deployed a Windows server and installed XAMPP.
-    
 - Configured PHP MyAdmin for remote access.
-    
 - Installed and configured osTicket for ticket management.
-    
 - Accessed both client and staff portals.
-    
 - Verified ticketing system functionality.
 
 **Reference**
