@@ -88,7 +88,7 @@
     <ticket alert="true" autorespond="true" source="API">
 	    <name>Angry User</name>
 	    <email>api@osticket.com</email>
-	    <subject>MyDFIR-30Day-Challenge-em</subject>
+	    <subject>MyDFIR-30DayChallenge-emaan</subject>
 	    <phone>318-555-8634X123</phone>
 	    <message type="text/plain"><![CDATA[Message content here]]></message>
 	    <attachments>
