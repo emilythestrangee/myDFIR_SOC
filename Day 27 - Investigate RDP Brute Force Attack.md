@@ -20,8 +20,7 @@
     - Expand the alert to see metadata such as the **source IP, target username, timestamp, and number of failed attempts**.
     - Take note of any contextual information provided by the detection rule.
     -  For instance, check for the `MyDFIR-RDP Brute Force Activity-emaan` alert.
-    - After checking a few alerts, a certain ip stood out i.e.,  For instance, check for the `MyDFIR-SSH Brute Force Activity-emaan` alert.
-    - After checking a few alerts, a certain ip stood out i.e., **183.66.17.82**..
+    - After checking a few alerts, a certain ip stood out i.e., **91.238.181.8**.
 
 
 ---
