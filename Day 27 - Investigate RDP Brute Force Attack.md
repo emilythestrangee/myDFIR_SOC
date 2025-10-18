@@ -147,6 +147,7 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 **Outcome observations:**
 
 - Multiple credential read events and discovery/enumeration commands following the successful login.
+    
 - Defender being disabled around the same timeframe.
 - A network connection from the host to the Kali IP (port 9999) used to fetch or stage the Mythic agent.
 - A file creation event indicating the agent binary or dropper was written to disk.
