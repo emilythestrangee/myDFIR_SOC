@@ -16,7 +16,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     - Select **Discover**.
         
     - Create a new search to reset the view.
-        
+    
 2. **Query for Mythic C2 Activity**
     
     - Search for the binary:
@@ -24,31 +24,26 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
         `svrhost-haji.exe`
         
     - Set the time range to **30 days** to capture all relevant events.
-        
     - Sort events from **old to new**.
-        
+
 3. **Identify Relevant Events**
     
     - Look for events with `event.code: 11` (file creation).
-        
     - Note the **target file name**, **username**, and **process GUID**.
-        
+    
 4. **Focus on Process Create Events**
     
     - Change the query to look for `event.code: 1` (process create).
-        
     - Copy the SHA-1 hash and run it through OSINT (e.g., VirusTotal).
-        
+    
 5. **Create Alert Criteria**
     
     - Use `OriginalFileName` and `SHA-256` in the query:
-        
         `event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or winlog.event_data.Hashes:*4B9414B7F5C3EB1B83ED8D1B98A0C298229977A67BE784DE5E09D2D647D75152*)`
         
     - Save the search as:
-        
         `Challenge Mythic Apollo Process Create`
-        
+
 
 ---
 
@@ -59,37 +54,25 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 1. **Create a New Rule**
     
     - Go to **Security → Detection Rules**.
-        
     - Click **Create New Rule**.
-        
     - Select **Custom Query** and paste the saved query.
-        
+    
 2. **Add Required Fields**
     
     - `@timestamp`
-        
     - `winlog.event_data.User`
-        
     - `winlog.event_data.ParentImage`
-        
     - `winlog.event_data.ParentCommandLine`
-        
     - `winlog.event_data.Image`
-        
     - `winlog.event_data.CommandLine`
-        
     - `winlog.event_data.CurrentDirectory`
-        
+    
 3. **Finalize and Enable Rule**
     
     - Name: `Challenge Mythic Apollo Process Create Detected`
-        
     - Severity: **Critical**
-        
     - Schedule: **Every 5 minutes**
-        
     - Enable the rule.
-        
 
 ---
 
@@ -100,12 +83,9 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 1. **Define Dashboard Panels**
     
     - **Process Create Events:** Event ID `1` for PowerShell, CMD, and rundll32.
-        
     - **External Network Connections:** Event ID `3`.
-        
     - **Windows Defender Activity:** Event ID `5001`.
-        
-
+    
 ---
 
 ### 5. Queries for Dashboard Panels
@@ -117,9 +97,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 **Fields:**
 
 - `@timestamp`
-    
 - `winlog.event_data.User`
-    
 - `winlog.event_data.ParentImage`
 - `winlog.event_data.ParentCommandLine`
 - `winlog.event_data.Image`
