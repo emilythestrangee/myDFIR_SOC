@@ -197,7 +197,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
     - Ensure DB privileges are set.
     - Rerun setup if required until successful.
-
+    
+![[Pasted image 20251018223016.png]]
 ---
 
 ### 10. Finalizing OS Ticket Setup
