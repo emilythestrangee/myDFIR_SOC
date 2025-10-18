@@ -88,7 +88,9 @@
     
     - Under “Rules,” select the DNS exfiltration detection rule.
     - Edit the rule to push alerts via webhook to the ticketing platform.
-        
+
+
+
 - **Customize Ticket Details:**
     
     - Include relevant variables such as domain, source IP, and rule name.
