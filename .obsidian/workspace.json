@@ -170,8 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32ae198a13053ba0",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
+    "images/Pasted image 20251018231505.png",
     "Day 08 - Sysmon Introduction.md",
     "Day 25 - osTicket + ELK Integration.md",
     "images/Pasted image 20251018225806.png",
@@ -207,7 +208,6 @@
     "Day 07 - Elastic Agent and Fleet Server Setup Tutorial.md",
     "Day 06 - Elastic Agent and Fleet Server Introduction.md",
     "Day 04 - Kibana Setup Tutorial.md",
-    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "images"
   ]
 }

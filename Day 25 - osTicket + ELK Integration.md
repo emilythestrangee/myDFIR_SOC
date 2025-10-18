@@ -70,9 +70,9 @@
                 
     - Click **Save & Test**.
         
+![[Pasted image 20251018231505.png]]
 
 ---
-
 ### 4. Creating Action Body (Payload)
 
 **Steps:**
