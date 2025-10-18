@@ -33,10 +33,6 @@
     - Use tools like AbuseIPDB and GreyNoise to check the reputation of the IP address.
     - Example: An IP reported 1,816 times with 100% confidence of abuse is highly suspicious.
 
-![[Pasted image 20251018234919.png]]
-
-![[Pasted image 20251018235020.png]]
-
 
 
 2. **Were Any Other Users Affected by This IP?**:
@@ -44,7 +40,6 @@
     - Search for the IP address in Kibana's Discover tab.
     - Check for distinct users targeted by the IP.
     - Example: Users root, oracle, guest, and test were targeted.
-
 
 
 
