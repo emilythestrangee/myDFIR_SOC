@@ -98,10 +98,8 @@ Run basic discovery commands in PowerShell or CMD:
 Disable Windows Defender:
 
 - Open **Windows Security** → **Virus & Threat Protection**.
-    
 - Disable Real-time protection and other security features.
-    
-
+![[Pasted image 20251018164559.png]]
 ---
 
 ### 8. Execution Phase (Mythic Agent Setup)
