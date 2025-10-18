@@ -106,7 +106,7 @@ Disable Windows Defender:
 
 1. **Access Mythic Server**
     
-    `ssh root@<Challenge-Mythic-IP>`
+    `ssh root@<MYDFIR-MYTHIC-IP>`
     
 2. **Install Apollo Agent**
     
@@ -119,19 +119,12 @@ Disable Windows Defender:
 4. **Create Payload in Mythic Web GUI**
     
     - Target OS: **Windows**
-        
     - Output Format: **WinExe**
-        
     - Commands: **Include All**
-        
     - C2 Profile: **HTTP**
-        
-    - Callback Host: `http://<Challenge-Mythic-IP>`
-        
+    - Callback Host: `http://<MYDFIR-MYTHIC-IP>`
     - Port: `80`
-        
     - Payload Name: `ChallengeMythicPayload`
-        
 
 ---
 
