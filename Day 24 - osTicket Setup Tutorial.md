@@ -19,7 +19,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - **Plan:** 55 GB, 1 CPU, 2 GB RAM.
     - Disable IPv6 and auto backup.
     - Enable **Virtual Private Cloud**.
-    - Hostname: `Challenge-OSticket`.
+    - Hostname: `MYDFIR-osTicket`.
     
 4. Click **Deploy Now**.
 5. After setup, select **View Console**.
