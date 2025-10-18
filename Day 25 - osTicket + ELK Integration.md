@@ -172,7 +172,7 @@
 - Confirmed that alerts in Elastic can now automatically generate tickets in osTicket.
     
 
-💡 _This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed._
+This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed.
 
 **Reference**
-https://youtu.be/P9YxutqWAF0?si=LuH-J8rqkQ0yWPz6
+https://youtu.be/P9YxutqWAF0?si=3D_WKyhhvN5mfTBe
