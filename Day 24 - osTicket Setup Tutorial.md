@@ -228,6 +228,9 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
         `http://<MYDFIR-osTicket-IP>/osticket/upload/`
 
+![[Pasted image 20251018224317.png]]
+
+
     - Staff Panel:
         
         `http://<MYDFIR-osTicket-IP>/osticket/upload/scp`
