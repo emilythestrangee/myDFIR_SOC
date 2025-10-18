@@ -115,19 +115,16 @@
 2. **Verify IP Configuration**
     
     - Ensure the osTicket server has its **private VPC IP** properly set.
-        
     - Update network adapter settings if necessary.
         
 3. **Update Connector URL**
     
     - Use the private IP address instead of the public one if in the same VPC.
-        
     - Save and re-run the test.
         
 4. **Firewall Rules**
     
     - Ensure ports 80 (HTTP) or 443 (HTTPS) are allowed from ELK to osTicket.
-        
 
 ---
 
@@ -137,12 +134,10 @@
 
 1. Log back into osTicket Agent Panel:
     
-    `http://<Challenge-OSticket-IP>/osticket/upload/scp`
+    `http://<MYDFIR-osTicket-IP>/osticket/upload/scp`
     
 2. Go to **Tickets**.
-    
 3. Verify that a new ticket has been created from the webhook test.
-    
 4. Confirm that the subject and message match the XML payload details.
     
 
