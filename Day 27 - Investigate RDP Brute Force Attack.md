@@ -14,7 +14,7 @@
     - Navigate to **Security → Alerts**.
     - Filter for alerts related to **RDP login failures** or brute force detection.
     - Select the alert you want to investigate.
-    
+![[Pasted image 20251019012906.png]]
 - **Review Alert Details:**
     
     - Expand the alert to see metadata such as the **source IP, target username, timestamp, and number of failed attempts**.
