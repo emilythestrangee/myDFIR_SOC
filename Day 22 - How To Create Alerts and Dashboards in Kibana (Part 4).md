@@ -38,7 +38,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     
 4. **Create Alert Criteria**
     
-    - Use `OriginalFileName` and `SHA-256` in the query:
+    - Modified query:
         `event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or winlog.event_data.Hashes:*4B9414B7F5C3EB1B83ED8D1B98A0C298229977A67BE784DE5E09D2D647D75152*)`
         
     - Save the search as:
