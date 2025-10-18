@@ -119,8 +119,8 @@
     - Save the rule configuration.
     - Run a test to ensure tickets are being created correctly.
 
+### 7. Integrating with Ticketing System
 
-. Integrating with Ticketing System
 
 **Reference**
 https://youtu.be/l9KA6dPdOs8?si=w4SZCr8RGoZv7R1K
