@@ -109,8 +109,12 @@ You can also change the default operation name:
 
 - Default: `operation-cima`
 - Example new name: `operation-challenge`
+![[Pasted image 20251018031729.png]]
 
----
+
+
+
+
 
 ## Mythic C2 Dashboard Overview
 
