@@ -131,6 +131,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 - `winlog.event_data.Product Name`
 - `event.code`
 
+
 ---
 
 ### 6. Building the Dashboard
