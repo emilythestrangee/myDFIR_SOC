@@ -23,7 +23,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     - Set the time range to **30 days** to capture all relevant events.
     - Sort events from **old to new**.
     
-    ![[Pasted image 20251018180044.png]]
+    ![[Pasted image 20251018180240.png]]
 
 3. **Identify Relevant Events**
     
