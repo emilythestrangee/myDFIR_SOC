@@ -69,7 +69,7 @@
             - Key: `X-API-Key`
             - Value: _<your API key>_
                 
-    - Click **Save & Test**.
+    
         
 
 ---
