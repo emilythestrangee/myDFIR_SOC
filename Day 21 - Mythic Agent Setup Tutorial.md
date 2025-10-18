@@ -1,29 +1,17 @@
 
 ### 1. Introduction
 
-This session covers how to:
-
-- Perform an RDP brute force attack using Kali Linux.
-- Generate a Mythic C2 agent and host it.
-- Establish a C2 session from a compromised Windows server.
-    
-- Exfiltrate a sensitive file to complete the attack chain.
-    
+Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 agent and host it, establish a C2 session from a compromised Windows server and exfiltrate a sensitive file to complete the attack chain.
 
 ---
 
 ### 2. Objective
 
 - Launch a brute force attack on a Windows server.
-    
 - Run discovery and defense evasion commands.
-    
 - Build and host a Mythic payload.
-    
 - Download and execute the payload on the Windows target.
-    
 - Establish a C2 session and exfiltrate the `passwords.txt` file.
-    
 
 ---
 
@@ -175,7 +163,6 @@ Disable Windows Defender:
 ### 10. Establishing C2 Connection
 
 - Open Mythic Web GUI → **Active Callbacks**.
-    
 - Interact with the agent and run:
     
     `whoami ipconfig`
@@ -194,18 +181,6 @@ Disable Windows Defender:
     - Navigate to **Files** → Check `passwords.txt` contents.
         
 
----
-
-✅ **End of Day 21**  
-You have:
-
-- Performed an RDP brute force attack.
-    
-- Gained initial access via valid credentials.
-    
-- Executed a Mythic agent on the target.
-    
-- Established a C2 session and exfiltrated data.
 
 **Reference**
 https://youtu.be/85x0NLj2zUo?si=_cpuOgH-OqAYwgYo
