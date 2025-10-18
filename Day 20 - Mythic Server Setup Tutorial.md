@@ -85,7 +85,7 @@ Allow TCP traffic from trusted IPs only:
 - TCP 1–65535 (Source: MYDFIR-WIN-emaan)
 - TCP 1–65535 (Source: MYDFIR-Linux-emaan)
 
-Apply `MyDFIR-Mythic-Firewall` to the Mythic server.
+Apply `MyDFIR-Mythic-Firewall` to the Mythic server and update firewall group.
 ![[Pasted image 20251018030747.png]]
 
 ---
