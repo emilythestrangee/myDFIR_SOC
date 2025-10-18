@@ -168,10 +168,6 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 ![[Pasted image 20251018221535.png]]
 
 
-
-
-
-
 ---
 
 ### 9. Setting Up OS Ticket
