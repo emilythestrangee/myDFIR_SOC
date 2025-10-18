@@ -27,7 +27,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
     `xfreerdp /v:<MYDFIR-osTicket-IP> /u:Administrator`
     
-![[Screenshot 2025-10-18 214900.png]]
+<img width="730" height="576" alt="image" src="https://github.com/user-attachments/assets/baf8dca1-d60a-4ddb-a30f-8764382f05d4" />
+
 ---
 
 ### 3. Configuring the Firewall
@@ -53,7 +54,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     
 4. Complete installation and launch the XAMPP Control Panel.
 
-![[Pasted image 20251018215231.png]]
+<img width="842" height="603" alt="image" src="https://github.com/user-attachments/assets/537d6161-bf1d-4d7d-87d0-fcad0d793dc9" />
+
 
 ---
 
@@ -71,7 +73,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
     - Save the file.
     
-![[Pasted image 20251018215406.png]]
+<img width="1100" height="583" alt="image" src="https://github.com/user-attachments/assets/74ded6fe-e42f-4395-b2fb-673a03a8ca18" />
+
 
 2. **Create Firewall Rules**
     
@@ -83,7 +86,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
             
     - Allow TCP traffic.
 
-![[Pasted image 20251018215730.png]]
+<img width="1045" height="718" alt="image" src="https://github.com/user-attachments/assets/2c5f0df8-6ce1-4b29-9ad7-9fb5949463e9" />
+
 
 
 ---
@@ -100,7 +104,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 2. Click **Admin** next to Apache.
 3. Open`localhost / 127.0.0.1 | phpMyAdmin 5.2.1` or select `phpMyAdmin` at the top.
     
-![[Pasted image 20251018215855.png]]
+<img width="680" height="445" alt="image" src="https://github.com/user-attachments/assets/cf7fdc5c-ba19-4e1f-826a-bcdbdd9cf979" />
 
 
 
@@ -119,7 +123,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
     - Repeat the same for the **pma** account.
 
-![[Pasted image 20251018220535.png]]
+<img width="1100" height="530" alt="image" src="https://github.com/user-attachments/assets/edb7751b-efe9-49dc-be0b-d9e80027e7b9" />
+
 
 
 
@@ -138,7 +143,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
             
     - Save changes.
         
-![[Pasted image 20251018220954.png]]
+<img width="1100" height="590" alt="image" src="https://github.com/user-attachments/assets/7d37483b-85c8-46ac-b566-bb3c1d9b459c" />
+
 
 ---
 
@@ -165,7 +171,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         `ost-sampleconfig.php → ost-config.php`
         
 
-![[Pasted image 20251018221535.png]]
+<img width="595" height="719" alt="image" src="https://github.com/user-attachments/assets/57b4525f-9567-462f-b0f0-5244a1da19d6" />
+
 
 
 ---
@@ -179,8 +186,10 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Before we proceed with basic installation, we will first create a database on our server.
     - Go to User accounts and select the root account with the public ip address as the host name. Select the Database tab and add privileges to the newly created database on this account.
     
-    ![[Pasted image 20251018222327.png]]
-![[Pasted image 20251018222611.png]]
+    <img width="517" height="388" alt="image" src="https://github.com/user-attachments/assets/6aacb76b-2642-4949-a70b-c86eb0511d3f" />
+
+<img width="825" height="535" alt="image" src="https://github.com/user-attachments/assets/5b1049fb-e614-4279-ab3a-dfbc702e4b2a" />
+
 
 
 2. **Basic Installation**
@@ -198,9 +207,11 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Ensure DB privileges are set.
     - Rerun setup if required until successful.
     
-![[Pasted image 20251018223016.png]]
+<img width="1100" height="532" alt="image" src="https://github.com/user-attachments/assets/e3dc9e92-e7bf-4ff0-a450-dd133b7165b5" />
 
-![[Pasted image 20251018223550.png]]
+
+<img width="563" height="459" alt="image" src="https://github.com/user-attachments/assets/cedba148-9b6b-429c-963d-ff54c6f10a3d" />
+
 
 ---
 
@@ -219,7 +230,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
         `icacls .\ost-config.php /reset`
     
-![[Pasted image 20251018223144.png]]
+<img width="697" height="123" alt="image" src="https://github.com/user-attachments/assets/fccc6208-c03c-45f3-99d7-da691d979134" />
+
 
 
 2. **Access URLs**
@@ -228,14 +240,16 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
         `http://<MYDFIR-osTicket-IP>/osticket/upload/`
 
-![[Pasted image 20251018224317.png]]
+<img width="825" height="421" alt="image" src="https://github.com/user-attachments/assets/f94791a1-ad9e-46f9-854c-0205177bb19b" />
+
 
 
     - Staff Panel:
         
         `http://<MYDFIR-osTicket-IP>/osticket/upload/scp`
 
-![[Pasted image 20251018223925.png]]
+<img width="707" height="246" alt="image" src="https://github.com/user-attachments/assets/0837cb36-4580-4191-8e8a-3c3e82ac07b8" />
+
 3. Log in using the admin credentials created during setup (Username: **MyDFIR**).
 
 
@@ -256,7 +270,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - View, assign, and manage tickets.
     - Test ticket creation and response flow.
 
-![[Pasted image 20251018224558.png]]
+<img width="537" height="212" alt="image" src="https://github.com/user-attachments/assets/af11754c-49ea-4920-8d10-5c5823641b50" />
+
 
 ---
 
