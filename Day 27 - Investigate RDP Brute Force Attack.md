@@ -35,11 +35,14 @@
     - Determine if the IP has a history of brute force activity.
 ![[Pasted image 20251019012614.png]]
 
+
 - **Which Accounts Were Targeted?**
     
     - Use the SIEM to search for all login attempts from that IP.
     - Identify all users that were targeted to understand the scope.
-    
+
+![[Pasted image 20251019012725.png]]
+
 - **Were Any Logins Successful?**
     
     - Look for successful RDP logins using event codes such as **4624** (Windows Logon Success).
