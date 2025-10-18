@@ -165,6 +165,10 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         `ost-sampleconfig.php → ost-config.php`
         
 
+![[Pasted image 20251018221535.png]]
+
+
+
 
 
 
