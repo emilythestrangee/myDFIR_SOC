@@ -20,6 +20,7 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 1. **Create Fake Password File**
     - Navigate to `Documents` and create a file named `passwords.txt`.
         ![[Pasted image 20251018160503.png]]
+
 2. **Change Windows Password**
     
     - Go to:  
