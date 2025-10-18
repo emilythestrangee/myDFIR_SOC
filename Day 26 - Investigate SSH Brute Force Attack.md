@@ -34,17 +34,25 @@
     - Example: An IP reported 1,816 times with 100% confidence of abuse is highly suspicious.
 
 ![[Pasted image 20251018234919.png]]
-1. **Were Any Other Users Affected by This IP?**:
+
+![[Pasted image 20251018235020.png]]
+
+
+
+2. **Were Any Other Users Affected by This IP?**:
     
     - Search for the IP address in Kibana's Discover tab.
     - Check for distinct users targeted by the IP.
     - Example: Users root, oracle, guest, and test were targeted.
-2. **Were Any Logins Successful?**:
+
+
+
+3. **Were Any Logins Successful?**:
     
     - Search for successful login attempts using keywords like `accepted`.
     - Ensure correct capitalization in queries.
     - Example: No successful logins found within the last 30 days.
-3. **What Activity Occurred After Successful Logins?**:
+4. **What Activity Occurred After Successful Logins?**:
     
     - If there were successful logins, investigate subsequent activities.
     - Look for signs of malicious behavior like downloading scripts, running discovery commands, or executing malicious files.
