@@ -18,7 +18,7 @@
     
     - Expand the alert by clicking on **“View Details.”**
     - Review the rule name, detection source, and description of the alert.
-    - For instance, check for the M
+    - For instance, check for the My-DFIR-SSH-Brute-Force-Activity alert.
 
 
 
