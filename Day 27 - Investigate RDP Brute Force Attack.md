@@ -108,7 +108,7 @@
     
     - Under “Rules,” modify our existing rule for RDP brute force attacks and add an “Action”.
 
-
+![[Pasted image 20251019013221.png]]
 - **Customize Ticket Details:**
     
     - Include relevant variables such as domain, source IP, and rule name.
