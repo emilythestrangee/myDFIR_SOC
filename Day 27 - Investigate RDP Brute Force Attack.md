@@ -14,7 +14,8 @@
     - Navigate to **Security → Alerts**.
     - Filter for alerts related to **RDP login failures** or brute force detection.
     - Select the alert you want to investigate.
-![[Pasted image 20251019012906.png]]
+<img width="512" height="401" alt="image" src="https://github.com/user-attachments/assets/2e7513e3-fd30-4db1-8dec-bb1bf0e033d9" />
+
 - **Review Alert Details:**
     
     - Expand the alert to see metadata such as the **source IP, target username, timestamp, and number of failed attempts**.
@@ -33,7 +34,8 @@
     
     - Check the IP against threat intelligence feeds like AbuseIPDB, GreyNoise, or VirusTotal.
     - Determine if the IP has a history of brute force activity.
-![[Pasted image 20251019012614.png]]
+<img width="882" height="685" alt="image" src="https://github.com/user-attachments/assets/39ec6303-b88a-490f-ab41-295d1e411f30" />
+
 
 
 - **Which Accounts Were Targeted?**
@@ -41,9 +43,11 @@
     - Use the SIEM to search for all login attempts from that IP.
     - Identify all users that were targeted to understand the scope.
 
-![[Pasted image 20251019012725.png]]
+<img width="1655" height="311" alt="image" src="https://github.com/user-attachments/assets/6766e2f8-7cee-4959-b44f-618c80dbf167" />
 
-![[Pasted image 20251019012953.png]]
+
+<img width="198" height="231" alt="image" src="https://github.com/user-attachments/assets/88a63fe1-2b71-41f2-b582-67d275037204" />
+
 
 
 - **Were Any Logins Successful?**
@@ -51,7 +55,8 @@
     - Look for successful RDP logins using event codes such as **4624** (Windows Logon Success).
     - Pay attention to the session type and logon IDs for tracking post-login activity.
 
-![[Pasted image 20251019013020.png]]
+<img width="1100" height="399" alt="image" src="https://github.com/user-attachments/assets/84c58fae-06b6-4912-bafe-92be9e5af34f" />
+
 
 - **Post-Login Activity:**
     
@@ -108,7 +113,8 @@
     
     - Under “Rules,” modify our existing rule for RDP brute force attacks and add an “Action”.
 
-![[Pasted image 20251019013221.png]]
+<img width="1030" height="1035" alt="image" src="https://github.com/user-attachments/assets/3e945107-6a65-4612-9ad5-b680f23211be" />
+
 - **Customize Ticket Details:**
     
     - Include relevant variables such as domain, source IP, and rule name.
@@ -129,27 +135,34 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 - Searched for successful Windows logons for the account I used with `event.code:4624` and the ip. This returned multiple sessions.
     
 - I inspected the earliest session first and copied its `TargetLogonId`. That session showed a successful logon that immediately logged off — consistent with an automated scan/tool, since it all happened within a difference of a couple of seconds. (This matched the Crowbar behavior we ran when it found the password.)
-    ![[Screenshot 2025-10-19 021958.png]]
+    <img width="733" height="275" alt="image" src="https://github.com/user-attachments/assets/8202571d-12cd-4c1e-9595-6385254c8008" />
+
 - I went back to the list of sessions to get some `TargetLogonId` values. The first few had nothing interesting, but the next `TargetLogonId` I tried produced many related events — lots of process creation and activity logged.
     
 - Immediately after that successful logon I found events indicating **credentials were read** (credential-access indicators recorded).
-![[Pasted image 20251019022423.png]]
+<img width="905" height="187" alt="image" src="https://github.com/user-attachments/assets/3d0cd4f9-830e-4658-9104-2663b12ec9ab" />
+
     
 - I also observed **PowerShell** process activity in that same session (command lines and script execution entries).
 
-![[Pasted image 20251019022512.png]]
+<img width="716" height="356" alt="image" src="https://github.com/user-attachments/assets/7e3397df-864a-4e8a-9309-34ae89b48cdc" />
+
 
 - Found a lot of credentials reading and enumerations, if we remember we ran some discovery commands.
 
-![[Pasted image 20251019022601.png]]
+<img width="632" height="185" alt="image" src="https://github.com/user-attachments/assets/0bdc51ea-578d-4d1d-bccb-ed7728c19951" />
+
 - I also observed Windows Defender being disabled during the window.
 
-![[Pasted image 20251019022652.png]]
+<img width="735" height="206" alt="image" src="https://github.com/user-attachments/assets/30022b5b-ad37-4122-aa87-c8e9f06a8047" />
+
 - Searching network events in the same interval revealed an established connection back to the Kali host  on **port 9999** — the same port we used to pull down the Mythic agent.
-![[Pasted image 20251019022804.png]]
+<img width="411" height="349" alt="image" src="https://github.com/user-attachments/assets/c7e4193a-cdd5-4e63-95da-4800d08672f9" />
+
 - Finally, I located a file-creation event that corresponded to the Mythic agent binary being written to disk.
     
-![[Pasted image 20251019022835.png]]
+<img width="655" height="194" alt="image" src="https://github.com/user-attachments/assets/c561e98d-b5bf-472f-957b-9af34f3ccefd" />
+
 
 **What to look for in the session:**
 
