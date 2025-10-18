@@ -85,13 +85,13 @@
 2. **Sample XML Payload:**
     
     <?xml version="1.0" encoding="UTF-8"?>
-    <ticket alert="true" autorespond="true" source="API">
-	    <name>Angry User</name>
-	    <email>api@osticket.com</email>
-	    <subject>MyDFIR-30DayChallenge-emaan</subject>
-	    <phone>318-555-8634X123</phone>
-	    <message type="text/plain"><![CDATA[Message content here]]></message>
-	    <attachments>
+    `<ticket alert="true" autorespond="true" source="API">
+``	    <name>Angry User</name>
+``	    <email>api@osticket.com</email>
+``	    <subject>MyDFIR-30DayChallenge-emaan</subject>
+``	    <phone>318-555-8634X123</phone>
+``	    <message type="text/plain"><![CDATA[Message content here]]></message>
+	`<attachments>
 	        <file name="file.txt" type="text/plain"><![CDATA[
 	            File content is here and is automatically trimmed
 	        ]]></file>
@@ -105,7 +105,7 @@
 	        </file>
 	    </attachments>
 	    <ip>123.211.233.122</ip>
-	</ticket>
+	</ticket>`
     
 3. **Customize Payload**
     
