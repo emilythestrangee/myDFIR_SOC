@@ -158,7 +158,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     
 - **Dashboard Name:**
     
-    `Challenge Suspicious Activity`
+    `MyDFIR-Suspicious-Activity`
     
 
 **Reference**
