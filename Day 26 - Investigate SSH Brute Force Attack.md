@@ -47,8 +47,8 @@
     
     - Search for successful login attempts using keywords like `accepted`.
     - Ensure correct capitalization in queries.
-    - Example: No successful logins found within the last 30 days.
-    
+    - No successful logins found within the last 30 days.
+
 4. **What Activity Occurred After Successful Logins?**:
     
     - If there were successful logins, investigate subsequent activities.
