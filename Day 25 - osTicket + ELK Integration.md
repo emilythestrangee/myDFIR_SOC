@@ -53,23 +53,30 @@
 2. **Create a Webhook Connector**
     
     - In **Stack Management**, go to **Connectors** under _Alerts and Insights_.
+        
     - Click **Create Connector**.
+        
     - Select **Webhook**.
+        
     - Fill in:
         
         - **Name:** `osTicket`
+            
         - **URL:**
             
             `http://<OS_Ticket_Private_IP>/osticket/upload/api/tickets.xml`
             
         - **Method:** POST
+            
         - **Authentication:** None
+            
         - **HTTP Header:**
             
             - Key: `X-API-Key`
+                
             - Value: _<your API key>_
                 
-    
+    - Click **Save & Test**.
         
 
 ---
@@ -152,7 +159,7 @@
 
 ### 7. Conclusion
 
-✅ **Summary:**
+ **Summary:**
 
 - Created and configured an API key in osTicket.
     
@@ -165,7 +172,7 @@
 - Confirmed that alerts in Elastic can now automatically generate tickets in osTicket.
     
 
-💡 _This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed.
+💡 _This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed._
 
 **Reference**
 https://youtu.be/P9YxutqWAF0?si=LuH-J8rqkQ0yWPz6
