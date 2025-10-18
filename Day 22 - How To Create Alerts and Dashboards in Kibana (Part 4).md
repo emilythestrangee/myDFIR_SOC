@@ -29,13 +29,14 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     
     - Look for events with `event.code: 11` (file creation).
     - Note the **target file name**, **username**, and **process GUID**.
-    
-4. **Focus on Process Create Events**
+
+![[Pasted image 20251018180559.png]]
+3. **Focus on Process Create Events**
     
     - Change the query to look for `event.code: 1` (process create).
     - Copy the SHA-1 hash and run it through OSINT (e.g., VirusTotal).
     
-5. **Create Alert Criteria**
+4. **Create Alert Criteria**
     
     - Use `OriginalFileName` and `SHA-256` in the query:
         `event.code:1 and (winlog.event_data.OriginalFileName:"Apollo.exe" or winlog.event_data.Hashes:*4B9414B7F5C3EB1B83ED8D1B98A0C298229977A67BE784DE5E09D2D647D75152*)`
