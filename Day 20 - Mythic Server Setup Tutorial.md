@@ -65,12 +65,12 @@ On running the "make" command, an error occurs that suggests issues with Docker 
 ## Fixing Docker Issues
 
 If Docker fails to start, use:
-
 `systemctl restart docker`
 
 Verify the status:
-
 `systemctl status docker`
+
+![[Pasted image 20251018030153.png]]
 
 ---
 
