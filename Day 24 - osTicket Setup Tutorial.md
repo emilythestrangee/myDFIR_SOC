@@ -98,12 +98,14 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - **MySQL**
         
 2. Click **Admin** next to Apache.
-    
-3. Open:
-    
-    `localhost / 127.0.0.1 | phpMyAdmin 5.2.1`
+3. Open`localhost / 127.0.0.1 | phpMyAdmin 5.2.1`
     
 ![[Pasted image 20251018215855.png]]
+
+
+
+
+
 ---
 
 ### 7. Configuring PHP MyAdmin
