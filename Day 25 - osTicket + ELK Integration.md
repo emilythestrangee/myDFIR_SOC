@@ -64,11 +64,9 @@
             
         - **Method:** POST
         - **Authentication:** None
-            
-        - **HTP Header:**
+        - **HTTP Header:**
             
             - Key: `X-API-Key`
-                
             - Value: _<your API key>_
                 
     - Click **Save & Test**.
@@ -167,6 +165,7 @@
 - Confirmed that alerts in Elastic can now automatically generate tickets in osTicket.
     
 
-💡 _This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed._
+💡 _This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed.
+
 **Reference**
 https://youtu.be/P9YxutqWAF0?si=LuH-J8rqkQ0yWPz6
