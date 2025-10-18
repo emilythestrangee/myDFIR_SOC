@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 27 - Investigate RDP Brute Force Attack.md",
+                "file": "Day 21 - Mythic Agent Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 27 - Investigate RDP Brute Force Attack"
+              "title": "Day 21 - Mythic Agent Setup Tutorial"
             }
           }
         ]
@@ -172,10 +172,10 @@
   },
   "active": "32ae198a13053ba0",
   "lastOpenFiles": [
+    "Day 27 - Investigate RDP Brute Force Attack.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "Day 21 - Mythic Agent Setup Tutorial.md",
     "Day 20 - Mythic Server Setup Tutorial.md",
-    "Day 27 - Investigate RDP Brute Force Attack.md",
     "images/Pasted image 20251019013221.png",
     "images/Pasted image 20251019013020.png",
     "images/Pasted image 20251019012953.png",
