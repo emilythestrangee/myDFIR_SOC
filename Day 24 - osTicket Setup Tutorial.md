@@ -139,13 +139,14 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Save changes.
         
 ![[Pasted image 20251018220954.png]]
+
 ---
 
 ### 8. Installing OS Ticket
 
 **Steps:**
 
-1. Download osTicket self-hosted version (e.g., 1.18.2).
+1. Download osTicket self-hosted version.
 2. Extract files twice to access the `osTicket-v1.18.2` folder.
 3. Create a new directory:
     
