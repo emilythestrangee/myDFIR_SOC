@@ -69,7 +69,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     
 3. **Finalize and Enable Rule**
     
-    - Name: `Challenge Mythic Apollo Process Create Detected`
+    - Name: `MyDFIR-Mythic-Apollo-Process Create Detected`
     - Severity: **Critical**
     - Schedule: **Every 5 minutes**
     - Enable the rule.
