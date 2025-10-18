@@ -35,11 +35,8 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 **Steps:**
 
 1. Go to **Settings → Firewall**.
-    
 2. Add **SOC Simulation Firewall** to restrict inbound access to the web server.
-    
 3. Ensure only required ports (80 and 443) are allowed.
-    
 
 ---
 
@@ -48,15 +45,12 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 **Steps:**
 
 1. Download XAMPP (version 8.2.2 or latest) from Apache Friends.
-    
 2. Run the installer and follow the wizard.
-    
 3. Default install path:
     
     `C:\xampp`
     
-4. Complete installation and launch the XAMPP Control Panel.
-    
+1. Complete installation and launch the XAMPP Control Panel.
 
 ---
 
@@ -67,7 +61,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 1. Edit the properties file in:
     
     `C:\xampp`
-    
+
     - Change `apache_domainname` to:
         
         `<Challenge-OSticket public IP>`
@@ -77,11 +71,9 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 2. **Create Firewall Rules**
     
     - Open **Windows Defender Firewall with Advanced Security**.
-        
     - Add inbound rules for:
         
         - Port 80 (HTTP)
-            
         - Port 443 (HTTPS)
             
     - Allow TCP traffic.
@@ -96,7 +88,6 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 1. In XAMPP Control Panel, start:
     
     - **Apache**
-        
     - **MySQL**
         
 2. Click **Admin** next to Apache.
@@ -115,9 +106,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 1. **Authorize Public IP Address**
     
     - Go to **User Accounts**.
-        
     - Edit the **root** account → change hostname from `localhost` to the **public IP**.
-        
     - Set password to:
         
         `Winter2024!`
@@ -135,7 +124,6 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - Change:
         
         - Server host → `Challenge-OSticket` public IP.
-            
         - Root and pma passwords → `Winter2024!`.
             
     - Save changes.
@@ -148,15 +136,12 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 **Steps:**
 
 1. Download osTicket self-hosted version (e.g., 1.18.2).
-    
 2. Extract files twice to access the `osTicket-v1.18.2` folder.
-    
 3. Create a new directory:
     
     `C:\xampp\htdocs\osticket`
     
 4. Copy the extracted files into the new `osticket` directory.
-    
 5. Access:
     
     `http://<Challenge-OSticket-IP>/osticket/upload`
@@ -179,7 +164,6 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 1. **Basic Installation**
     
     - Enter Helpdesk Name, Admin credentials.
-        
     - In PHP MyAdmin, create a new database:
         
         `challenge-db`
@@ -187,17 +171,13 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 2. **Database Configuration**
     
     - Host: `public IP`
-        
     - Username: `root`
-        
     - Password: `Winter2024!`
         
 3. **Complete Installation**
     
     - Ensure DB privileges are set.
-        
     - Rerun setup if required until successful.
-        
 
 ---
 
@@ -239,15 +219,12 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 - **Admin Panel**
     
     - Configure helpdesk settings.
-        
     - Create new agent accounts.
-        
     - Adjust title and branding.
-        
+    
 - **Ticket Management**
     
     - View, assign, and manage tickets.
-        
     - Test ticket creation and response flow.
         
 
