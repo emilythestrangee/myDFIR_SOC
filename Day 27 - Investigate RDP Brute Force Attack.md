@@ -139,11 +139,13 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 
 ![[Pasted image 20251019022512.png]]
 
+- Found a lot of credentials reading and enumerations, if we remember we ran some discovery commands.
 
-
+![[Pasted image 20251019022601.png]]
 - I also observed Windows Defender being disabled during the window.
-    
-- Searching network events in the same interval revealed an established connection back to the Kali host (example destination IP: `198.51.100.7`) on **port 9999** — the same port we used to pull down the Mythic agent.
+
+![[Pasted image 20251019022652.png]]
+- Searching network events in the same interval revealed an established connection back to the Kali host  on **port 9999** — the same port we used to pull down the Mythic agent.
     
 - Finally, I located a file-creation event that corresponded to the Mythic agent binary being written to disk.
     
