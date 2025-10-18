@@ -1,8 +1,7 @@
 
 ### 1. Introduction
 
-Goal: Create an alert and dashboard in Kibana to detect Mythic activity generated on Day 21.  
-This includes detecting process creation events for the Mythic payload and building visualizations for monitoring suspicious behavior.
+Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This includes detecting process creation events for the Mythic payload and building visualizations for monitoring suspicious behavior.
 
 ---
 
@@ -122,15 +121,10 @@ This includes detecting process creation events for the Mythic payload and build
 - `winlog.event_data.User`
     
 - `winlog.event_data.ParentImage`
-    
 - `winlog.event_data.ParentCommandLine`
-    
 - `winlog.event_data.Image`
-    
 - `winlog.event_data.CommandLine`
-    
 - `winlog.event_data.CurrentDirectory`
-    
 
 ---
 
@@ -141,13 +135,9 @@ This includes detecting process creation events for the Mythic payload and build
 **Fields:**
 
 - `winlog.event_data.Image`
-    
 - `winlog.event_data.SourceIp`
-    
 - `winlog.event_data.DestinationIp`
-    
 - `winlog.event_data.DestinationPort`
-    
 
 ---
 
@@ -158,11 +148,8 @@ This includes detecting process creation events for the Mythic payload and build
 **Fields:**
 
 - `host.hostname`
-    
 - `winlog.event_data.Product Name`
-    
 - `event.code`
-    
 
 ---
 
@@ -171,15 +158,10 @@ This includes detecting process creation events for the Mythic payload and build
 **Steps:**
 
 1. Go to **Analytics → Dashboards**.
-    
 2. Create a new dashboard.
-    
 3. Add visualizations for each query.
-    
 4. Include the relevant fields for each visualization.
-    
 5. Save each panel.
-    
 
 ---
 
@@ -188,16 +170,13 @@ This includes detecting process creation events for the Mythic payload and build
 - **Panel Names:**
     
     - `Process Created (PowerShell, CMD, rundll32)`
-        
     - `Process Initiated Network Connections`
-        
     - `Microsoft Defender Disabled`
-        
+    
 - **Dashboard Name:**
     
     `Challenge Suspicious Activity`
     
 
-✅ **End of Day 22:** You now have a working alert rule to detect Mythic process creation and a dashboard to visualize suspicious activity across key telemetry sources.
 **Reference**
 https://youtu.be/WcVuUamMApA?si=Ccww-7i6zb-si3Uc
