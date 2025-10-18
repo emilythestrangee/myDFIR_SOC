@@ -18,7 +18,7 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
 2. **Query for Mythic C2 Activity**
     
     - Search for the binary:
-        `svrhost-haji.exe`
+        `svchost-emaan.exe`
     
     - Set the time range to **30 days** to capture all relevant events.
     - Sort events from **old to new**.
