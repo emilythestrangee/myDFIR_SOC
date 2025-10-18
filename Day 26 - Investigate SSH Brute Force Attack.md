@@ -20,8 +20,7 @@
     - Review the rule name, detection source, and description of the alert.
     - For instance, check for the My-DFIR-SSH-Brute-Force-Activity alert.
 
-
-
+![[Pasted image 20251018234633.png]]
 
 ---
 
@@ -32,31 +31,24 @@
 - **Is the Domain or Subdomain Suspicious?**
     
     - Check if the queried domain or subdomain is known for malicious activity.
-        
     - Use reputation services such as AbuseIPDB, VirusTotal, or GreyNoise.
-        
     - Example: A domain flagged for data exfiltration by multiple engines is a strong indicator.
-        
+    
 - **Are There High Volumes of Unusual DNS Requests?**
     
     - Use Kibana Discover to filter by the destination domain.
-        
     - Look for excessive TXT or NULL record queries over a short period.
-        
     - Example: 2,000+ queries in 10 minutes may indicate exfiltration.
-        
+
 - **What Endpoint or Host Generated the Requests?**
     
     - Identify the source IP and hostname.
-        
     - Check for patterns like service accounts or critical servers generating requests.
-        
+
 - **Is the Query Pattern Encoded or Structured?**
     
     - Look for Base64-like strings or long subdomains.
-        
     - Example: `ZXhhbXBsZS5leGZpbC5jb20` can indicate encoded payloads.
-        
 
 ---
 
