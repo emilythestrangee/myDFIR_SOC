@@ -95,15 +95,13 @@ Apply `MyDFIR-Mythic-Firewall` to the Mythic server and update firewall group.
 1. Copy the server’s public IP.
 2. Open a browser and navigate to:
     
-    `https://<mythic-server_ip>:7443`
+    `https://<MYDFIR-MYTHIC_ip>:7443`
     
 
 ### Login Credentials
 
 - Default Username: `mythic_admin`
 - Password: Stored in the `.env` file
-
-`cat .env`
 
 You can also change the default operation name:
 
