@@ -43,6 +43,9 @@
 
 ![[Pasted image 20251019012725.png]]
 
+
+
+
 - **Were Any Logins Successful?**
     
     - Look for successful RDP logins using event codes such as **4624** (Windows Logon Success).
