@@ -39,15 +39,16 @@
     - Search for the IP address in Kibana's Discover tab.
     - Check for distinct users targeted by the IP.
     - Example: Users root, oracle, guest, and test were targeted.
+    - Some reports were made on AbuseIPDB about this ip regarding SSH brute force attacks.
+![[Pasted image 20251019000649.png]]
 
 
-
-3. **Were Any Logins Successful?**:
+2. **Were Any Logins Successful?**:
     
     - Search for successful login attempts using keywords like `accepted`.
     - Ensure correct capitalization in queries.
     - Example: No successful logins found within the last 30 days.
-4. **What Activity Occurred After Successful Logins?**:
+3. **What Activity Occurred After Successful Logins?**:
     
     - If there were successful logins, investigate subsequent activities.
     - Look for signs of malicious behavior like downloading scripts, running discovery commands, or executing malicious files.
