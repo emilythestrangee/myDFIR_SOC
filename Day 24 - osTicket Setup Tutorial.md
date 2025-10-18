@@ -236,7 +236,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         `http://<MYDFIR-osTicket-IP>/osticket/upload/scp`
 
 ![[Pasted image 20251018223925.png]]
-3. Log in using the admin credentials created during setup.
+3. Log in using the admin credentials created during setup (MyDFIR).
 
 
 
