@@ -174,6 +174,11 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 
 **Steps:**
 
+1. **Create Database**
+    
+    Before we proceed with basic installation, we will first create a database on our server.
+    
+    
 1. **Basic Installation**
     
     - Enter Helpdesk Name, Admin credentials.
