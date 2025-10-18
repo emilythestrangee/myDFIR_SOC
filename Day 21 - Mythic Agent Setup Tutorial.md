@@ -49,7 +49,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
         
 2. **Install Crowbar**
     
-    `sudo apt-get update && sudo apt-get upgrade -y sudo apt-get install -y crowbar`
+    `sudo apt-get update && sudo apt-get upgrade -y 
+    `sudo apt-get install -y crowbar`
     
 3. **Create Target File**
     
