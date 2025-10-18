@@ -256,6 +256,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
     - View, assign, and manage tickets.
     - Test ticket creation and response flow.
 
+![[Pasted image 20251018224558.png]]
 
 ---
 
