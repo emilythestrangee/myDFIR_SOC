@@ -67,10 +67,12 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 
     - Change `apache_domainname` to:
         
-        `<Challenge-OSticket public IP>`
+        `<MYDFIR-osTicket public IP>`
         
     - Save the file.
-        
+    
+![[Pasted image 20251018215406.png]]
+
 2. **Create Firewall Rules**
     
     - Open **Windows Defender Firewall with Advanced Security**.
