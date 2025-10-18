@@ -119,7 +119,9 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         `Winter2024!`
         
     - Repeat the same for the **pma** account.
-        
+
+![[Pasted image 20251018220535.png]]
+
 2. **Edit Config File**
     
     - Go to:
