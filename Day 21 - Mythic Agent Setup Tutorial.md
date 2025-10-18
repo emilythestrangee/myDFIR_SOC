@@ -31,9 +31,8 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 3. **Adjust Password Policy (if required)**
     
     - Minimum password length: **5 characters**
-        
     - Disable complexity requirements in _Local Group Policy Editor_.
-        
+    
 
 ---
 
