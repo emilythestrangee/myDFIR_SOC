@@ -32,14 +32,13 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     
     - Minimum password length: **5 characters**
     - Disable complexity requirements in _Local Group Policy Editor_.
-    
+    ![[Pasted image 20251018160803.png]]
 
 ---
 
 ### 4. Performing RDP Brute Force Attack
 
 1. **Prepare Wordlist**
-    
     - Navigate to Kali Linux terminal:
         
         `cd /usr/share/wordlists sudo gunzip rockyou.txt.gz head -n50 rockyou.txt > ~/Desktop/Challenge-Wordlist.txt echo "Winter2024!" >> ~/Desktop/Challenge-Wordlist.txt`
@@ -59,7 +58,6 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
 5. **Successful Login**
     
     - Username: `Administrator`
-        
     - Password: `Winter2024!`
         
 
