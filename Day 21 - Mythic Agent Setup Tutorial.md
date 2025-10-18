@@ -90,7 +90,7 @@ Run basic discovery commands in PowerShell or CMD:
 `net group 
 `net user Administrator`
 ![[Pasted image 20251018164112.png]]
-
+![[Pasted image 20251018164424.png]]
 ---
 
 ### 7. Defense Evasion
