@@ -71,9 +71,10 @@ Verify the status:
 `systemctl status docker`
 
 ![[Pasted image 20251018030153.png]]
+![[Pasted image 20251018030319.png]]
+
 
 ---
-
 ## Configuring Firewall
 
 Create a firewall group `Challenge-Mythic-Firewall` on Vultr.
@@ -81,11 +82,8 @@ Create a firewall group `Challenge-Mythic-Firewall` on Vultr.
 Allow TCP traffic from trusted IPs only:
 
 - TCP 1–65535 (Source: Personal IP)
-    
-- TCP 1–65535 (Source: Challenge-WIN-Haji)
-    
-- TCP 1–65535 (Source: Challenge-Linux-Steve)
-    
+- TCP 1–65535 (Source: MYDFIR-WIN-emaan)
+- TCP 1–65535 (Source: MYDFIR-Linux-emaan)
 
 Apply `Challenge-Mythic-Firewall` to the Mythic server.
 
@@ -114,30 +112,19 @@ Press enter or click to view image in full size
 You can also change the default operation name:
 
 - Default: `operation-cima`
-    
 - Example new name: `operation-challenge`
-    
-
-Press enter or click to view image in full size
 
 ---
 
 ## Mythic C2 Dashboard Overview
 
 - **Callbacks:** List of connected agents.
-    
 - **Payloads:** Preconfigured exploits.
-    
 - **File Hosting:** Upload and download files.
-    
 - **Artifacts:** Keylogging, screenshots, credentials, reports.
-    
 - **MITRE ATT&CK Mapping:** Identify and map attack techniques.
-    
 - **Tags:** Categorize and organize targets.
-    
 - **Dark Mode:** Available for UI preference.
-    
 
 ---
 
