@@ -54,7 +54,9 @@
 4. **What Activity Occurred After Successful Logins?**:
     
     - If there were successful logins, investigate subsequent activities.
-    - Look for signs of malicious behavior like downloading scripts, running discovery commands, or executing malicious files.
+    - Look for signs of malicious behavior like downloading scripts, running discovery commands, executing malicious files or perform.
+
+Once investigation is finished we can either close the alert or escalate it depending on our findings.
 
 ---
 
