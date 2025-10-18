@@ -60,7 +60,7 @@ Goal: setting up **Mythic**, a Command and Control (C2) framework used for red t
 `make 
 `./mythic-cli start`
 
-On running the "make" command, an error occurs that suggests issues with Docker daemon. "systemctl status "
+On running the "make" command, an error occurs that suggests issues with Docker daemon. "systemctl status docker" shows that the service failed.
 
 ## Fixing Docker Issues
 
