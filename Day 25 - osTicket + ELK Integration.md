@@ -46,34 +46,26 @@
 1. **Enable Free 30-Day Trial** _(Required to use Webhook Connectors)_
     
     - Log in to Elastic Stack GUI.
-        
     - Click on the **hamburger icon → Stack Management**.
-        
     - Go to **License Management**.
-        
     - Start the 30-day trial.
-        
+    
 2. **Create a Webhook Connector**
     
     - In **Stack Management**, go to **Connectors** under _Alerts and Insights_.
-        
     - Click **Create Connector**.
-        
     - Select **Webhook**.
-        
     - Fill in:
         
         - **Name:** `osTicket`
-            
         - **URL:**
             
             `http://<OS_Ticket_Private_IP>/osticket/upload/api/tickets.xml`
             
         - **Method:** POST
-            
         - **Authentication:** None
             
-        - **HTTP Header:**
+        - **HTP Header:**
             
             - Key: `X-API-Key`
                 
