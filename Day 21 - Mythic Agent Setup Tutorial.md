@@ -118,6 +118,7 @@ Disable Windows Defender:
     
     `./mythic-cli install github https://github.com/MythicC2Profiles/http`
     
+    ![[Pasted image 20251018165718.png]]
     
 4. **Create Payload in Mythic Web GUI**
     
@@ -128,6 +129,7 @@ Disable Windows Defender:
     - Callback Host: `http://<MYDFIR-MYTHIC-IP>`
     - Port: `80`
     - Payload Name: `ChallengeMythicPayload`
+
 
 ---
 
