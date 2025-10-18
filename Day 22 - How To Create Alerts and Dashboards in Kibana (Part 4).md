@@ -74,6 +74,8 @@ Goal: Create an alert and dashboard in Kibana to detect Mythic activity.  This i
     - Schedule: **Every 5 minutes**
     - Enable the rule.
 
+
+
 ---
 
 ### 4. Creating the Dashboard
