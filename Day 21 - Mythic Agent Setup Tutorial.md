@@ -169,8 +169,7 @@ Disable Windows Defender:
     `netstat -anob`
     
     - Also check Task Manager or Mythic GUI callbacks.
-        
-
+    
 ---
 
 ### 10. Establishing C2 Connection
@@ -178,9 +177,10 @@ Disable Windows Defender:
 - Open Mythic Web GUI → **Active Callbacks**.
 - Interact with the agent and run:
     
-    `whoami ipconfig`
+    `whoami 
+    `ipconfig`
     
-
+![[Pasted image 20251018172757.png]]
 ---
 
 ### 11. Exfiltration
