@@ -35,8 +35,9 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 **Steps:**
 
 1. Go to **Settings → Firewall**.
-2. Add **SOC Simulation Firewall** to restrict inbound access to the web server.
+2. Add **30-Day-MyDFIR-SOC-Challenge Firewall** to restrict inbound access to the web server.
 3. Ensure only required ports (80 and 443) are allowed.
+
 
 ---
 
