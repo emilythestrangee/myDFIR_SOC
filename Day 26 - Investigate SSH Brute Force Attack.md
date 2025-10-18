@@ -118,18 +118,15 @@
     
     - Mark the ticket as _Resolved_ and post a closing reply.
     - Closed tickets can be reviewed under the **Closed** tab in osTicket for audit purposes.
-        
 
 ---
 
 ### 8. Conclusion
 
 - SSH brute force alerts should always be analyzed to assess potential compromise.
-    
 - Checking IP reputation provides fast context on attack severity.
-    
 - Integrating alerts with osTicket improves documentation, visibility, and escalation.
-    
 - Automating ticket creation increases efficiency in real-world SOC workflows.
+
 **Reference**
 https://youtu.be/sXQ1hsAFX7U?si=Uw3wS9MFCwbo62J1
