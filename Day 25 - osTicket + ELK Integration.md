@@ -46,38 +46,27 @@
 1. **Enable Free 30-Day Trial** _(Required to use Webhook Connectors)_
     
     - Log in to Elastic Stack GUI.
-        
     - Click on the **hamburger icon → Stack Management**.
-        
     - Go to **License Management**.
-        
     - Start the 30-day trial.
-        
+    
 2. **Create a Webhook Connector**
     
     - In **Stack Management**, go to **Connectors** under _Alerts and Insights_.
-        
     - Click **Create Connector**.
-        
     - Select **Webhook**.
-        
     - Fill in:
         
         - **Name:** `osTicket`
-            
         - **URL:**
-            
             `http://<OS_Ticket_Private_IP>/osticket/upload/api/tickets.xml`
             
         - **Method:** POST
-            
         - **Authentication:** None
-            
         - **HTTP Header:**
             
             - Key: `X-API-Key`
-                
-            - Value: _<your API key>_
+            - Value: `_<your API key>_`
                 
     - Click **Save & Test**.
         
@@ -162,18 +151,11 @@
 
 ### 7. Conclusion
 
-✅ **Summary:**
-
 - Created and configured an API key in osTicket.
-    
 - Enabled Elastic’s 30-day trial to use Webhook connectors.
-    
 - Configured a Webhook connector in Elastic with proper headers and payload.
-    
 - Troubleshot network connectivity and verified successful integration.
-    
 - Confirmed that alerts in Elastic can now automatically generate tickets in osTicket.
-    
 
 This integration streamlines alert tracking and documentation, ensuring security events are accounted for and properly managed.
 
