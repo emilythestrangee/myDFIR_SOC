@@ -11,7 +11,7 @@
 - **Navigate to Alerts:**
     
     - Click on the hamburger icon and select **“Alerts”** under the security tab.
-    - Review the list of alerts and select the one related to **DNS exfiltration**.
+    - Review the list of alerts and select one for analysis.
 
 ![[Pasted image 20251018234405.png]]
 - **View Alert Details:**
@@ -94,13 +94,13 @@
     - Include relevant variables such as domain, source IP, and rule name.
     - Remove unnecessary fields like attachments if not needed.
 
-
-
 - **Test Integration:**
     
     - Save the rule configuration.
     - Run a test to ensure tickets are being created correctly.
-        
+
+
+
 
 ---
 
