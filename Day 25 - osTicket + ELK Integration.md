@@ -110,7 +110,6 @@
 3. **Customize Payload**
     
     - Paste the XML payload into the connector’s **Action Body** field.
-        
     - Update the subject line to something meaningful (e.g., `Challenge - Haji`).
         
 4. **Run the Test**
