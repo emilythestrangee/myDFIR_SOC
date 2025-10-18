@@ -45,6 +45,7 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
         `sudo gunzip rockyou.txt.gz 
         `sudo head -50 rockyou.txt > ~/home/kali/mydfir-wordlist.txt 
         `echo "Winter2024!" >> ~/home/kali/mydfir-wordlist.txt
+        ![[Screenshot (24).png]]
         
 2. **Install Crowbar**
     
