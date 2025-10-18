@@ -66,13 +66,14 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     - Password: `Winter2024!`
         
 ![[Pasted image 20251018163154.png]]
+
 ---
 
 ### 5. Connecting to the Windows Server
 
 1. **Establish RDP Session**
     
-    `xfreerdp /u:Administrator /p:Winter2024! /v:<Challenge-WIN-Haji-IP>:3389`
+    `xfreerdp /u:Administrator /p:Winter2024! /v:<MYDFIR-WIN-IP>:3389`
     
 2. **Trust the certificate** to complete the connection.
     
