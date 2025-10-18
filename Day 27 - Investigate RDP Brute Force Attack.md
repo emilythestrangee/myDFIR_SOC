@@ -137,13 +137,10 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
     
 - I also observed **PowerShell** process activity in that same session (command lines and script execution entries).
 
+![[Pasted image 20251019022512.png]]
 
-- Treating the successful logon timestamp as the **start** and the agent-deletion timestamp as the **end**, I created a between-time window to focus the investigation.
-    
-- To reduce noise I limited my queries to the most relevant providers: **Sysmon**, **Windows Security Auditing**, and **Windows Defender** (i.e., `Microsoft-Windows-Sysmon`, `Microsoft-Windows-Security-Auditing`, `Microsoft-Windows-Windows Defender`).
-    
-- Within that narrowed window and provider set I found extensive credential reads and discovery/enumeration activity (matching the discovery commands we executed).
-    
+
+
 - I also observed Windows Defender being disabled during the window.
     
 - Searching network events in the same interval revealed an established connection back to the Kali host (example destination IP: `198.51.100.7`) on **port 9999** — the same port we used to pull down the Mythic agent.
