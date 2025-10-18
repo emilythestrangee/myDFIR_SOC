@@ -119,8 +119,57 @@
     - Save the rule configuration.
     - Run a test to ensure tickets are being created correctly.
 
-### 7. Integrating with Ticketing System
+### 7. Reconstructing the Kali-based Attack
 
+In this lab, the brute force originated from a Kali VM you used. You did not change IP via VPN, so the attacker IP matches your personal IP — this prevents starting the hunt by IP alone. Instead, use other pivots and time constraints.
+
+**Approach:**
+
+- Remember the Kali session left traces (e.g., a Mythic agent install and related logs). Use those artifacts to bound the search.
+    
+- Use the timeline of the Mythic agent deletion (if present) as an _end_ marker for the suspicious activity. Treat it as the endpoint to limit noise from unrelated past logins from your personal IP.
+    
+
+**Practical steps:**
+
+1. Search for successful logons (`event.code:4624`) with the target username and your personal IP, but restrict the end time to the agent deletion event. This narrows results to the likely Kali activity instead of all your normal logins.
+    
+2. From the returned logon events, start with the earliest one and copy the **TargetLogonId**.
+    
+3. Inspect the session tied to that logon ID. Short-lived successes that immediately log off may indicate automated tools or scans (e.g., Crowbar stopping when it finds a password).
+    
+4. If the first logon ID yields limited findings, iterate through the other returned logon IDs until you find one that shows richer activity (process creations, credential accesses).
+    
+
+**What to look for in the session:**
+
+- Events showing credentials being read (possible credential-dump activity).
+    
+- PowerShell execution or script runs (common for post-exploit activity).
+    
+- Windows Defender being disabled or tampered with.
+    
+- Network connections established back to your Kali VM (in this lab, you expect an established connection on a non-standard port such as 9999).
+    
+- File creation events that correspond to the Mythic agent binary or related payloads.
+    
+
+**Narrowing to the precise timeframe:**
+
+- Use the successful logon timestamp as the _start_ and the agent deletion timestamp as the _end_ to build a “between” time window.
+    
+- Limit queries to relevant event providers to reduce noise: for example `Microsoft-Windows-Sysmon`, `Microsoft-Windows-Security-Auditing`, and `Microsoft-Windows-Windows Defender`.
+    
+
+**Outcome observations (typical for the lab setup):**
+
+- Multiple credential read events and discovery/enumeration commands following the successful login.
+    
+- Defender being disabled around the same timeframe.
+    
+- A network connection from the host to the Kali IP (port 9999) used to fetch or stage the Mythic agent.
+    
+- A file creation event indicating the agent binary or dropper was written to disk.
 
 **Reference**
 https://youtu.be/l9KA6dPdOs8?si=w4SZCr8RGoZv7R1K
