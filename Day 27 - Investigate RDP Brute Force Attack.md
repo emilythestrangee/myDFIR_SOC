@@ -43,13 +43,15 @@
 
 ![[Pasted image 20251019012725.png]]
 
-
+![[Pasted image 20251019012953.png]]
 
 
 - **Were Any Logins Successful?**
     
     - Look for successful RDP logins using event codes such as **4624** (Windows Logon Success).
     - Pay attention to the session type and logon IDs for tracking post-login activity.
+
+![[Pasted image 20251019013020.png]]
 
 - **Post-Login Activity:**
     
@@ -80,7 +82,6 @@
     
     - Record the start and end times of the session.
     - Note any malicious or unusual activity observed, such as persistence mechanisms, data exfiltration attempts, or C2 connections.
-        
 
 ---
 
@@ -89,7 +90,6 @@
 **Steps:**
 
 - Document all findings in the ticketing system.
-    
 - If malicious activity is confirmed:
     
     - Block the source IP.
@@ -97,7 +97,6 @@
     - Update RDP brute force detection rules if needed.
 
 - Close the alert once mitigation and documentation are complete.
-
 
 
 
