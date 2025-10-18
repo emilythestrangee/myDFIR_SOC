@@ -65,7 +65,7 @@ Goal: Perform an RDP brute force attack using Kali Linux, generate a Mythic C2 a
     - Username: `Administrator`
     - Password: `Winter2024!`
         
-
+![[Pasted image 20251018163154.png]]
 ---
 
 ### 5. Connecting to the Windows Server
