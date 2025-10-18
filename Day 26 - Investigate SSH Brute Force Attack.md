@@ -36,12 +36,13 @@
 
 2. **Were Any Other Users Affected by This IP?**:
     
-    - Search for the IP address in Kibana's Discover tab.
+    - Search for the IP address in Kibana's Discover tab (discovered some targeted users).
     - Check for distinct users targeted by the IP.
     - Example: Users root, oracle, guest, and test were targeted.
     - Some reports were made on AbuseIPDB about this ip regarding SSH brute force attacks.
-![[Pasted image 20251019000649.png]]
 
+![[Pasted image 20251019000649.png]]
+![[Pasted image 20251019001025.png]]
 
 3. **Were Any Logins Successful?**:
     
