@@ -133,9 +133,11 @@ The Kali session left traces (e.g., a Mythic agent install and related logs). Us
 - I went back to the list of sessions to get some `TargetLogonId` values. The first few had nothing interesting, but the next `TargetLogonId` I tried produced many related events — lots of process creation and activity logged.
     
 - Immediately after that successful logon I found events indicating **credentials were read** (credential-access indicators recorded).
+![[Pasted image 20251019022423.png]]
     
 - I also observed **PowerShell** process activity in that same session (command lines and script execution entries).
-    
+
+
 - Treating the successful logon timestamp as the **start** and the agent-deletion timestamp as the **end**, I created a between-time window to focus the investigation.
     
 - To reduce noise I limited my queries to the most relevant providers: **Sysmon**, **Windows Security Auditing**, and **Windows Defender** (i.e., `Microsoft-Windows-Sysmon`, `Microsoft-Windows-Security-Auditing`, `Microsoft-Windows-Windows Defender`).
