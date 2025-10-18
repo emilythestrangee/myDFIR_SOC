@@ -155,7 +155,7 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
 4. Copy the extracted files into the new `osticket` directory.
 5. Access:
     
-    `http://<Challenge-OSticket-IP>/osticket/upload`
+    `http://<MYDFIR-osTicket-IP>/osticket/upload`
     
 6. Navigate to:
     
@@ -165,6 +165,9 @@ Goal: Set up and configure osTicket, an open-source ticketing system, on a Windo
         
         `ost-sampleconfig.php → ost-config.php`
         
+
+
+
 
 ---
 
