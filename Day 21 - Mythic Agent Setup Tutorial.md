@@ -160,10 +160,9 @@ Disable Windows Defender:
     ![[Pasted image 20251018172206.png]]
 
     
-    
 3. **Execute Payload**
     
-    `.\apollo.exe`
+    `.\svchost-emaan.exe`
     
 4. **Verify Connection**
     
