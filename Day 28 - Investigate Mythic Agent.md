@@ -46,6 +46,7 @@ Key starting points for investigation: **suspicious executable** + **destination
 - Parent-child relationships observed between PowerShell sessions and Mythic agent process → mapped sequence of actions.
 - Different `ProcessGUIDs` noted for shell commands via C2 → each command spawned a new console session.
 
+
 ---
 
 ### 5. Key Findings
