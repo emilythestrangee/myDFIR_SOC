@@ -34,6 +34,8 @@ Key starting points for investigation: **suspicious executable** + **destination
 ![[Pasted image 20251020014318.png]]
 - Query used: `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
 - Number of events: 3
+- On checking all events, we note that only one has a different process GUID:
+
 ---
 
 ### 4. Observations from Active Agent
