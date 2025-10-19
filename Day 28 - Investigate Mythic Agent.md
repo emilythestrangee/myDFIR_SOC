@@ -48,7 +48,7 @@ Key starting points for investigation: **suspicious executable** + **destination
 ![[Pasted image 20251020020118.png]]
 ![[Pasted image 20251020020456.png]]
 - As per the timestamps we can determine the sequence of actions: the file was created →  a network connection was established →  it was detected that the file is an executable→  a process was created
-- Parent-child relationships observed between PowerShell sessions and Mythic agent process → mapped sequence of actions.
+- Parent-child relationships observed between PowerShell sessions and Mythic agent process. We observe that the highlighted ProcessGuid passed to ParentProcessGuid, because from the the same PowerShell session we executed the agent and started another process.
 - Different `ProcessGUIDs` noted for shell commands via C2 → each command spawned a new console session.
 
 
