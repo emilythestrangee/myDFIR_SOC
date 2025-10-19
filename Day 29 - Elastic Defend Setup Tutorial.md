@@ -79,7 +79,8 @@
     Configure a response (e.g., host isolation).
     
 - **Test Action:**  
-    Re-trigger the malware event and confirm that the response (e.g., isolation) is automatically executed.
+    - Re-trigger the malware event and confirm that the response (e.g., isolation) is automatically executed.
+    - Try to download the Mythic Agent again. SSH into the Mythic instance and mount the HTTP server again on port 9999.
     
 ![[Pasted image 20251020005826.png]]
 
