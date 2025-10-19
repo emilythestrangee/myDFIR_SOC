@@ -62,7 +62,24 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 ### 5. Key Findings
 
-
+- Mythic C2 agent `svchost-emaan.exe` identified.
+- Observed process creations and network connections.
+- Suspicious PowerShell activity detected.
+- Executable in Public Downloads connecting via HTTP.
+- Suspicious IP is **Mythic server**.
+- Three processes connected to same IP → red flag.
+- Multiple back-and-forth network connections; high byte transfers indicate active commands.
+- Suspicious processes in unusual directories.
+- Query: `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>` → 3 events found.
+- One event had a different ProcessGUID → new session/process.
+    
+- Sequence: file created → network connection → executable detected → process created.
+    
+- Parent-child relationship: PowerShell session spawned agent; ProcessGuid passed to ParentProcessGuid.
+    
+- Example: ParentProcessGuid = `{0475c00b-5adf-66f0-283b-000000000a00}`, child ProcessGuid = `{0475c00b-5d10-66f0-393b-000000000a00}`.
+    
+- Child ProcessGuid can be used to find related network connection logs.
 
 ---
 
