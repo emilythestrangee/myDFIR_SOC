@@ -81,6 +81,10 @@
 - **Test Action:**  
     Re-trigger the malware event and confirm that the response (e.g., isolation) is automatically executed.
     
+![[Pasted image 20251020005826.png]]
+
+
+
 
 ---
 
