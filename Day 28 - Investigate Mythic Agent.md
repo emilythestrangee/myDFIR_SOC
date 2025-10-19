@@ -44,7 +44,8 @@ Key starting points for investigation: **suspicious executable** + **destination
 - File creation event occurred immediately after network connections → confirmed agent deployment.
 ![[Pasted image 20251020015652.png]]
 
-- Sysmon Event ID 29 → allowed extraction of executable hash.
+- Log of an executable file detected by ysmon Event ID 29 → allowed extraction of executable hash.
+![[Pasted image 20251020020118.png]]
 - Parent-child relationships observed between PowerShell sessions and Mythic agent process → mapped sequence of actions.
 - Different `ProcessGUIDs` noted for shell commands via C2 → each command spawned a new console session.
 
