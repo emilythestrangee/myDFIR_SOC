@@ -105,7 +105,7 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 ---
 
-### 9. Conclusion
+### 8. Conclusion
 
 - Mythic C2 activity leaves correlated traces across processes, files, network connections.
 - Tracking `ProcessGUID` & parent-child relationships essential for reconstructing command sequences.
