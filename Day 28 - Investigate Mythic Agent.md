@@ -40,78 +40,54 @@ Key starting points for investigation: **suspicious executable** + **destination
 ### 4. Event Correlation and Timeline
 
 - Three network connection events to the Mythic server IP were identified.
-    
 - First event used to extract `ProcessGUID` → correlate all events from the same PowerShell session.
-    
 - File creation events occurred immediately after network connections → confirmed agent deployment.
-    
 - Sysmon Event ID 29 → allowed extraction of executable hash.
-    
 - Parent-child relationships observed between PowerShell sessions and Mythic agent process → mapped sequence of actions.
-    
 - Different `ProcessGUIDs` noted for shell commands via C2 → each command spawned a new console session.
-    
 
 ---
 
-### 6. Key Findings
+### 5. Key Findings
 
 - Credential reads and discovery commands consistently logged during C2 activity.
-    
 - Windows Defender disabled during activity window → AV bypass attempts.
-    
 - Network connections established to Mythic server on standard HTTP ports → exfiltration/command channel confirmed.
-    
 - File creation logs confirmed agent binary deployment.
-    
 - ParentProcessGuid & ProcessGUID correlations provided clear timeline for sessions and commands.
-    
 
 ---
 
-### 7. Alerting and Ticketing Integration
+### 6. Alerting and Ticketing Integration
 
 - Mythic agent detection rule configured to push alerts via Webhook to osTicket.
-    
 - Custom detection rule for `cmd.exe` process creation by non-system users → captures shell commands executed through C2.
-    
 - Alerts include process name, user, timestamp → easier triage.
-    
 - Testing: commands like `whoami` via C2 triggered alerts → detection/integration validated.
-    
 
 ---
 
-### 8. Investigation Notes / Observations
+### 7. Investigation Notes / Observations
 
 - Second Mythic agent was still active; ran commands via C2 (`ipconfig`, `dir`, `mkdir Assigments`, `tree`) → generated logs.
-    
 - Console opened in `C:\Users\Public\Downloads` → unusual location.
-    
 - Dashboard filtering by **Process Initiated Network Connections** showed agent and suspicious PowerShell activity.
-    
 - Executable on Public Downloads connecting to IP via HTTP → suspicious.
-    
 - Three processes all connected to same IP → red flag.
-    
 - Investigation starting points: **suspicious executable** + **destination IP**.
-    
 - Query used to find network connections:
     
     `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
     
 - `ProcessGUID` correlation helped track events across PowerShell session and agent activity.
-    
 - Network connection timestamps vs. file creation timestamps → small delays possible due to Elastic ingestion.
-    
 - Event ID 29 → executable hash extraction.
-    
 - ParentProcessGuid tracking → mapped new processes spawned by agent.
 - Shell commands from C2 → each created a new console, different `ProcessGUID` each time.
 
 ---
 
-### 9. Detection Rule / SIEM Integration
+### 8. Detection Rule / SIEM Integration
 
 - Created custom rule for `cmd.exe` process creation by non-system users:
     
@@ -124,7 +100,7 @@ Key starting points for investigation: **suspicious executable** + **destination
 
 ---
 
-### 10. Conclusion
+### 9. Conclusion
 
 - Mythic C2 activity leaves correlated traces across processes, files, network connections.
 - Tracking `ProcessGUID` & parent-child relationships essential for reconstructing command sequences.
