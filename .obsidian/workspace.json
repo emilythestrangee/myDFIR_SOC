@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
+                "file": "Day 29 - Elastic Defend Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge"
+              "title": "Day 29 - Elastic Defend Setup Tutorial"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "32ae198a13053ba0",
   "lastOpenFiles": [
+    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "images/Pasted image 20251020010927.png",
     "images/Pasted image 20251020010832.png",
@@ -185,7 +186,6 @@
     "images/Pasted image 20251020004530.png",
     "images/Pasted image 20251020003054.png",
     "Day 28 - Investigate Mythic Agent.md",
-    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "README.md",
     "images/Pasted image 20251019134225.png",
     "Day 22 - How To Create Alerts and Dashboards in Kibana (Part 4).md",
