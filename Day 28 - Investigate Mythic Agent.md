@@ -53,7 +53,9 @@ Key starting points for investigation: **suspicious executable** + **destination
 
 ![[Pasted image 20251020021503.png]]
 
-Thus, these findings suggest that the ParentProcessGuid is **{0475c00b-5adf-66f0-283b-000000000a00}** for the PowerShell session and the child ProcessGuid is **{0475c00b-5d10-66f0-393b-000000000a00}**
+Thus, from the above **Process Create** log ,these findings suggest that the ParentProcessGuid is **{0475c00b-5adf-66f0-283b-000000000a00}** for the PowerShell session and the child ProcessGuid is **{0475c00b-5d10-66f0-393b-000000000a00}**
+
+![[Pasted image 20251020022056.png]]
 
 ---
 
