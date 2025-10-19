@@ -84,7 +84,7 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 - Click on our Mythic C2 Apollo Detected rule.
 -  Click on Edit rule settings, move to actions and choose Webhook. Under the body, we can use the same structure we have been using.
 - Save changes.
-- Custom detection rule created for `cmd.exe` process creation by non-system users → captures shell commands executed through C2. (Query used: `event.code : “1” and winlog.event_data.OriginalFileName: “Cmd.Exe” and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM” `)
+
 
 - To test the rule, go to Mythic Server and on Callbacks run “shell whoami”. On execution of this command, we receive alerts: 
 ![[Pasted image 20251020023011.png]]
@@ -97,10 +97,9 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 ### 7. Detection Rule / SIEM Integration
 
-- Created custom rule for `cmd.exe` process creation by non-system users:
-    
-    `event.code : “1”  and winlog.event_data.OriginalFileName: “Cmd.Exe”  and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM”`
-    
+-Custom detection rule created for `cmd.exe` process creation by non-system users → captures shell commands executed through C2. 
+(Query used: `event.code : “1” and winlog.event_data.OriginalFileName: “Cmd.Exe” and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM” `)
+
 - Severity: Medium, Risk Score: 60, run every minute.
 - Alerts pushed via Webhook → osTicket.
 - Test: `shell whoami` → confirmed alert generation.
