@@ -1,110 +1,164 @@
 ### 1. Introduction
 
-**Goal:** Ensure all components of the home lab are fully functional, troubleshoot any issues, and consolidate all configurations.
+**Goal:** Troubleshoot and finalize the SOC home lab setup, ensuring all components are functional and integrated.
 
-- The final day focused on verifying connectivity, agent enrollment, and overall system readiness.
+On the final day, the main objective was to validate that all systems, from the ELK stack to the Fleet server, Elastic Agents, and osTicket, were operating correctly. This included resolving any connection issues, verifying service statuses, and confirming that telemetry and alerting mechanisms were working as expected. Ensuring this functionality was critical for the lab to simulate real-world SOC operations effectively.
+
+---
+
+### 2. Troubleshooting Connection Issues
+
+**Steps:**
+
+**Check Firewall Rules:**
+
+- Confirmed that the firewall rules on the Vultr instance allowed all necessary ports for proper operation. This included verifying a broad range of ports (1–65535) for administrative access and testing connectivity from external IP addresses.
     
-- Key tasks included troubleshooting Fleet Server, Elastic Agent enrollment, PHP MyAdmin configuration, and database setup for osTicket.
+- Open ports are critical for agent enrollment, communication with Fleet, and telemetry ingestion into Elasticsearch.
+    
+
+**Modify Firewall on Virtual Machine:**
+
+- On the Ubuntu VM, the firewall (`ufw`) was configured to allow specific services. For example, port **5601** was opened to allow Kibana access.
+    
+- Restricting ports prevents unauthorized access while ensuring the services needed for lab functionality are reachable.
+    
+
+**Verify System Services:**
+
+- The statuses of **Kibana** and **Elasticsearch** were checked using commands:
+    
+    `systemctl status kibana.service systemctl status elasticsearch.service`
+    
+- Confirming service statuses ensured that critical components were running and that there were no underlying issues affecting connectivity or telemetry ingestion.
     
 
 ---
 
-### 2. Troubleshooting and System Validation
+### 3. Configuring Fleet Server
 
-- Verified firewall rules on Vultr instances and the Ubuntu VM, ensuring required ports were open (Kibana, Fleet, Elasticsearch).
+**Steps:**
+
+**Allow Necessary Ports:**
+
+- Ports for Fleet server communication were explicitly opened (e.g., 8220 and 443) to enable agents to connect securely.
     
-- Checked the status of system services like Kibana and Elasticsearch to confirm proper operation.
+- Correct port configuration is essential for centralized management of Elastic Agents and seamless telemetry flow.
     
-- Adjusted Fleet Server settings and ensured Elastic Agent enrollment succeeded without errors.
+
+**Update Fleet Server Settings:**
+
+- Within the Elastic web GUI, Fleet settings were adjusted to match the open ports. For instance, changing the default port from **443 to 8220** ensured alignment with firewall rules and agent configuration.
     
-- Resolved certificate issues using the `--insecure` flag when necessary.
-    
-- Validated connectivity by pinging the Fleet Server and confirming endpoints reported successfully.
+- Proper configuration prevents enrollment errors and ensures agents can communicate reliably with the Fleet server.
     
 
 ---
 
-### 3. Database and Ticketing Setup
+### 4. Enrolling Elastic Agent
 
-- Configured PHP MyAdmin to allow access using the public IP and updated credentials.
-- Created a database for osTicket and assigned privileges to the root account.
-- Completed osTicket installation and ensured integration with Elastic alerts via webhooks.
-- Tested ticket creation from alert triggers and verified audit trails in the ticketing system.
+**Steps:**
+
+**Run Elastic Agent Install Command:**
+
+- From the Elastic Agent directory on each endpoint, the command:
+    
+    `sudo ./elastic-agent install`
+    
+    was executed to enroll the agents to the Fleet server.
+    
+
+**Troubleshoot Enrollment Issues:**
+
+- Network connectivity was checked whenever enrollment failed, confirming that the Fleet server was accessible.
+    
+- In cases of self-signed certificate errors, the `--insecure` flag was used to bypass TLS verification temporarily.
+    
+- Ensured that agents appeared in the Fleet console as healthy and connected, confirming telemetry flow from endpoints to ELK.
+    
 
 ---
 
-### 4. Deployment Summary
+### 5. Finalizing Setup
 
-#### ELK Instance
+**Steps:**
 
-- Ubuntu server deployed on Vultr hosting Elasticsearch and Kibana.
-- Elasticsearch used for storing and querying logs; Kibana for dashboards and visualization.
+**Verify Enrollment:**
 
-#### Target Machines
-
-- Windows Server 2022 and Ubuntu Server 24.02 deployed as endpoints for telemetry collection.
-- Sysmon installed on Windows for detailed logging of process and network activity.
-- Both servers exposed via SSH/RDP to collect brute force telemetry and conduct attack simulations.
-
-#### Fleet and Elastic Agent
-
-- Fleet server installed for centralized agent management.
-- Elastic Agents deployed on Windows and Ubuntu endpoints to forward telemetry to Elasticsearch.
-
-#### Command and Control Setup
-
-- Mythic C2 server hosted on Ubuntu with Apollo agent deployed on Windows endpoint.
-- Attack simulation conducted via Kali Linux and Mythic C2, demonstrating remote command execution and data exfiltration.
-
-#### Alerts and Dashboards
-
-- SSH and RDP brute force alerts created along with dashboards for visualization.
-- Telemetry from Mythic C2 agent also monitored via dedicated alerts.
-- Dashboards provided high-level views of authentication attempts, endpoint activity, and suspicious behavior.
-
-#### Ticketing System Integration
-
-- osTicket configured to automatically generate tickets for triggered alerts.
-- Tickets allowed tracking, assigning, and documenting incident response actions.
-- Integration satisfied Audit and Accountability requirements in the AAA security model.
-
-#### Investigations
-
-- Applied detection and investigation methodologies for:
+- Agents were verified to be successfully enrolled in the Fleet server interface, ensuring continuous log collection and endpoint monitoring.
     
-    - SSH Brute Force Attacks
-    - RDP Brute Force Attacks
-    - Mythic C2 Activity
+
+**Test Connectivity:**
+
+- Network connectivity was validated by pinging the Fleet server from endpoints:
     
-- Correlated events, process IDs, logon IDs, and network connections to reconstruct attack timelines.
+    `ping <Fleet_Server_IP>`
+    
+- Confirmed that endpoints could communicate bi-directionally with the server, which is vital for alert triggering and agent management.
+    
 
-#### Elastic Defend (EDR)
+**Check for Errors:**
 
-- Installed and configured Elastic Defend to enhance endpoint protection.
-- Observed telemetry such as process trees, file creation events, and malware alerts.
-- Configured response actions like host isolation and verified automated EDR responses.
+- All error messages, such as connection refusals, were reviewed and resolved. These errors typically indicate misconfigured firewall rules, incorrect ports, or agent misconfiguration.
+    
 
 ---
 
-### 5. Key Takeaways
+### 6. Configuring PHP MyAdmin
 
-- Hands-on experience with full SOC lab setup, including SIEM, EDR, ticketing system, and C2 environment.
+**Steps:**
+
+**Authorize Public IP Address:**
+
+- Updated PHP MyAdmin user account settings to allow connections via the public IP.
     
-- Learned the importance of documenting investigations, alerts, and configurations for analysis and review.
+- The root account password was set to **Winter2024!** to ensure secure access.
     
-- Gained practical skills in alert creation, dashboard visualization, threat hunting, and incident response.
+
+**Update Configuration File:**
+
+- Edited `config.inc.php` to reflect the new IP address and credentials.
     
-- Established a home SOC lab that can be reused for future learning, simulations, and skill refinement.
+- Verified the configuration by reconnecting to PHP MyAdmin, confirming successful access to the database server.
+    
 
 ---
 
-### 6. Conclusion
+### 7. Creating Database for OS Ticket
 
-- The 30-day challenge provided both theoretical knowledge and practical skills in cybersecurity operations.
+**Steps:**
+
+**Create Database:**
+
+- A new database for osTicket, e.g., `Challenge-30day-db`, was created in PHP MyAdmin.
     
-- The lab environment now enables continuous learning in detection, investigation, alerting, and endpoint security.
+
+**Set Privileges:**
+
+- Ensured the root account had proper privileges to access and modify the new database.
     
-- This challenge serves as an excellent foundation for anyone looking to jump-start a career in SOC, DFIR, or cybersecurity operations.
+
+**Run OS Ticket Installer:**
+
+- Completed the osTicket setup by providing database details and verifying that the web-based ticketing system could receive and process alerts from ELK.
+    
+
+---
+
+### 8. Troubleshooting Web Hook Errors
+
+**Steps:**
+
+**Check Network Connection:**
+
+- Confirmed that the ELK server could communicate with the osTicket server using network tests, e.g., pinging the osTicket server from the ELK server.
+    
+
+**Update Configuration:**
+
+- Switched osTicket configuration to use the private IP address of the server to avoid firewall or NAT issues.
+    
+- Tested webhook functionality to confirm alerts triggered tickets correctly, completing the integration and ensuring auditability.
 
 **Reference**
 https://youtu.be/o-eR-tJlbqE?si=peve6ZeF9vCeeq8k
