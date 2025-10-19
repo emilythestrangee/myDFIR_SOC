@@ -59,42 +59,30 @@
 #### Alerts and Dashboards
 
 - SSH and RDP brute force alerts created along with dashboards for visualization.
-    
 - Telemetry from Mythic C2 agent also monitored via dedicated alerts.
-    
 - Dashboards provided high-level views of authentication attempts, endpoint activity, and suspicious behavior.
-    
 
 #### Ticketing System Integration
 
 - osTicket configured to automatically generate tickets for triggered alerts.
-    
 - Tickets allowed tracking, assigning, and documenting incident response actions.
-    
 - Integration satisfied Audit and Accountability requirements in the AAA security model.
-    
 
 #### Investigations
 
 - Applied detection and investigation methodologies for:
     
     - SSH Brute Force Attacks
-        
     - RDP Brute Force Attacks
-        
     - Mythic C2 Activity
-        
-- Correlated events, process IDs, logon IDs, and network connections to reconstruct attack timelines.
     
+- Correlated events, process IDs, logon IDs, and network connections to reconstruct attack timelines.
 
 #### Elastic Defend (EDR)
 
 - Installed and configured Elastic Defend to enhance endpoint protection.
-    
 - Observed telemetry such as process trees, file creation events, and malware alerts.
-    
 - Configured response actions like host isolation and verified automated EDR responses.
-    
 
 ---
 
@@ -107,7 +95,6 @@
 - Gained practical skills in alert creation, dashboard visualization, threat hunting, and incident response.
     
 - Established a home SOC lab that can be reused for future learning, simulations, and skill refinement.
-    
 
 ---
 
