@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 28 - Investigate Mythic Agent.md",
+                "file": "Day 29 - Elastic Defend Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 28 - Investigate Mythic Agent"
+              "title": "Day 29 - Elastic Defend Setup Tutorial"
             }
           }
         ],
@@ -187,9 +187,9 @@
   },
   "active": "2d7072cc011fc7ba",
   "lastOpenFiles": [
+    "Day 28 - Investigate Mythic Agent.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
-    "Day 28 - Investigate Mythic Agent.md",
     "README.md",
     "images/Pasted image 20251019134225.png",
     "Day 22 - How To Create Alerts and Dashboards in Kibana (Part 4).md",

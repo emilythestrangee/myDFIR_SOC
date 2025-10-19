@@ -3,12 +3,6 @@
 
 **Goal:** Install Elastic Defend EDR on a Windows host and observe the telemetry it generates. Focus on endpoint detection, malware alerts, and response capabilities.
 
-- Elastic Defend is an Endpoint Detection and Response system that continuously monitors endpoints for suspicious behavior.
-
-- It detects unusual files, unauthorized actions, and other indicators of compromise, alerting security teams in real-time.
-
-- EDR allows analysts to visualize process trees, file activity, network connections, and respond to threats such as isolating a host.
-
 ---
 
 ### 2. Elastic Defend Integration
