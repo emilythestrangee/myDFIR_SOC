@@ -62,11 +62,7 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 ### 5. Key Findings
 
-- Credential reads and discovery commands consistently logged during C2 activity.
-- Windows Defender disabled during activity window → AV bypass attempts.
-- Network connections established to Mythic server on standard HTTP ports → exfiltration/command channel confirmed.
-- File creation logs confirmed agent binary deployment.
-- ParentProcessGuid & ProcessGUID correlations provided clear timeline for sessions and commands.
+
 
 ---
 
