@@ -37,59 +37,100 @@ Key starting points for investigation: **suspicious executable** + **destination
 - On checking all events, noted that only one has a different process GUID:
 ![[Pasted image 20251020014809.png]]
 ---
-
 ### 4. Event Correlation and Timeline
 
-- I identified three network connection events to the Mythic server IP. Using the first event as a starting point, I copied the `ProcessGUID` to correlate all events originating from the same PowerShell session.
+- Three network connection events to the Mythic server IP were identified.
     
-- File creation events appeared immediately after network connection events, confirming agent deployment.
+- First event used to extract `ProcessGUID` → correlate all events from the same PowerShell session.
     
-- Sysmon event ID 29 logs allowed extraction of the executable’s hash.
+- File creation events occurred immediately after network connections → confirmed agent deployment.
     
-- Parent-child relationships were observed between PowerShell sessions and the Mythic agent process, helping map the sequence of actions.
+- Sysmon Event ID 29 → allowed extraction of executable hash.
     
-- Different `ProcessGUIDs` were noted for shell commands executed via the C2, indicating that each command spawned a new console session.
+- Parent-child relationships observed between PowerShell sessions and Mythic agent process → mapped sequence of actions.
+    
+- Different `ProcessGUIDs` noted for shell commands via C2 → each command spawned a new console session.
     
 
 ---
 
 ### 6. Key Findings
 
-- Credential reads and discovery commands were consistently logged during C2 activity.
+- Credential reads and discovery commands consistently logged during C2 activity.
     
-- Windows Defender was disabled during the activity window, showing attempts to bypass AV protections.
+- Windows Defender disabled during activity window → AV bypass attempts.
     
-- Network connections were established to the Mythic server on standard HTTP ports, confirming exfiltration or command channels.
+- Network connections established to Mythic server on standard HTTP ports → exfiltration/command channel confirmed.
     
-- File creation logs confirmed the deployment of the agent binary.
+- File creation logs confirmed agent binary deployment.
     
-- ParentProcessGuid and ProcessGUID correlations provided a clear timeline for each session and command executed.
+- ParentProcessGuid & ProcessGUID correlations provided clear timeline for sessions and commands.
     
 
 ---
 
 ### 7. Alerting and Ticketing Integration
 
-- A Mythic agent detection rule was configured to push alerts via Webhook to the ticketing system (example: osTicket).
+- Mythic agent detection rule configured to push alerts via Webhook to osTicket.
     
-- A custom detection rule was created for `cmd.exe` process creations initiated by users (excluding `NT AUTHORITY\SYSTEM`) to capture shell commands executed through the C2.
+- Custom detection rule for `cmd.exe` process creation by non-system users → captures shell commands executed through C2.
     
-- Alerts included fields such as process name, user, and timestamps for easier triage.
+- Alerts include process name, user, timestamp → easier triage.
     
-- Testing confirmed that running commands like `whoami` through the C2 triggered alerts successfully, validating the detection and integration setup.
+- Testing: commands like `whoami` via C2 triggered alerts → detection/integration validated.
     
 
 ---
 
-### 8. Conclusion
+### 8. Investigation Notes / Observations
 
-- The investigation highlighted how Mythic C2 activity leaves correlated traces across processes, files, and network connections.
+- Second Mythic agent was still active; ran commands via C2 (`ipconfig`, `dir`, `mkdir Assigments`, `tree`) → generated logs.
     
-- Tracking `ProcessGUID` and parent-child relationships was essential to reconstruct command execution sequences.
+- Console opened in `C:\Users\Public\Downloads` → unusual location.
     
-- Using dashboards to visualize process-initiated network connections and filtering by relevant providers simplified identifying suspicious activity.
+- Dashboard filtering by **Process Initiated Network Connections** showed agent and suspicious PowerShell activity.
     
-- Documenting the timeline of events provided a clear understanding of the agent’s lifecycle and operational footprint.
+- Executable on Public Downloads connecting to IP via HTTP → suspicious.
+    
+- Three processes all connected to same IP → red flag.
+    
+- Investigation starting points: **suspicious executable** + **destination IP**.
+    
+- Query used to find network connections:
+    
+    `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
+    
+- `ProcessGUID` correlation helped track events across PowerShell session and agent activity.
+    
+- Network connection timestamps vs. file creation timestamps → small delays possible due to Elastic ingestion.
+    
+- Event ID 29 → executable hash extraction.
+    
+- ParentProcessGuid tracking → mapped new processes spawned by agent.
+- Shell commands from C2 → each created a new console, different `ProcessGUID` each time.
+
+---
+
+### 9. Detection Rule / SIEM Integration
+
+- Created custom rule for `cmd.exe` process creation by non-system users:
+    
+    `event.code : “1”  and winlog.event_data.OriginalFileName: “Cmd.Exe”  and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM”`
+    
+- Severity: Medium, Risk Score: 60, run every minute.
+- Alerts pushed via Webhook → osTicket.
+- Test: `shell whoami` → confirmed alert generation.
+- Custom highlighted fields added for easier alert review.
+
+---
+
+### 10. Conclusion
+
+- Mythic C2 activity leaves correlated traces across processes, files, network connections.
+- Tracking `ProcessGUID` & parent-child relationships essential for reconstructing command sequences.
+- Dashboards simplified identification of suspicious activity.
+- Timeline documentation provided clear understanding of agent lifecycle and operational footprint.
+
 
 **Reference**
 https://youtu.be/b11TuDx_CjU?si=0l7G0t4JCNZ-yv5C
