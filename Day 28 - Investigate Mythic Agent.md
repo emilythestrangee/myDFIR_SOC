@@ -85,14 +85,6 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 -  Click on Edit rule settings, move to actions and choose Webhook. Under the body, we can use the same structure we have been using.
 - Save changes.
 
-
-- To test the rule, go to Mythic Server and on Callbacks run “shell whoami”. On execution of this command, we receive alerts: 
-![[Pasted image 20251020023011.png]]
-
-![[Pasted image 20251020023104.png]]
-
-
-
 ---
 
 ### 7. Detection Rule / SIEM Integration
@@ -102,8 +94,14 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 - Severity: Medium, Risk Score: 60, run every minute.
 - Alerts pushed via Webhook → osTicket.
-- Test: `shell whoami` → confirmed alert generation.
-- Custom highlighted fields added for easier alert review.
+- To test the rule, go to Mythic Server and on Callbacks run “shell whoami”. On execution of this command, we receive alerts: 
+
+
+![[Pasted image 20251020023011.png]]
+
+![[Pasted image 20251020023104.png]]
+
+
 
 ---
 
