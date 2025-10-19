@@ -29,7 +29,8 @@ Key starting points for investigation: **suspicious executable** + **destination
 - **Heartbeat & Process Tracking:** Using Sysmon event ID 3, network creations were correlated with process launches to identify which processes were responsible for C2 communication.
     
 - Suspicious processes included PowerShell sessions and executables in unusual directories like `C:\Users\Public\Downloads`.
-    
+
+- Query used: `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
 
 
 ---
