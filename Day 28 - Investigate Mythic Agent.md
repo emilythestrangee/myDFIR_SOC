@@ -41,7 +41,8 @@ Key starting points for investigation: **suspicious executable** + **destination
 
 - Three network connection events to the Mythic server IP were identified.
 - First event used to extract `ProcessGUID` → correlate all events from the same PowerShell session.
-- File creation events occurred immediately after network connections → confirmed agent deployment.
+- File creation event occurred immediately after network connections → confirmed agent deployment.
+![[Pasted image 20251020015652.png]]
 
 - Sysmon Event ID 29 → allowed extraction of executable hash.
 - Parent-child relationships observed between PowerShell sessions and Mythic agent process → mapped sequence of actions.
