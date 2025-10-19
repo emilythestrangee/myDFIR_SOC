@@ -51,6 +51,7 @@ Key starting points for investigation: **suspicious executable** + **destination
 - Parent-child relationships observed between PowerShell sessions and Mythic agent process. We observe that the highlighted ProcessGuid passed to ParentProcessGuid, because from the the same PowerShell session we executed the agent and started another process.
 - Different `ProcessGUIDs` noted for shell commands via C2 → each command spawned a new console session.
 
+![[Pasted image 20251020021503.png]]
 
 ---
 
