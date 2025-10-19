@@ -37,8 +37,9 @@
 **Steps:**
 
 - **Trigger Detection:**  
-    Open the Windows server console and terminate the malicious `svrhost-haji.exe` process. Attempt to run the file again to verify whether Elastic Defend blocks it.
-    
+    Open the Windows server console and terminate the malicious `svchost-emaan.exe` process. Attempt to run the file again to verify whether Elastic Defend blocks it.
+
+
 - **Confirm Alert:**  
     Check that the EDR triggers a **malware alert** and quarantines the file immediately.
     
