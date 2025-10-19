@@ -185,8 +185,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d7072cc011fc7ba",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
+    "images/Pasted image 20251020003054.png",
     "Day 28 - Investigate Mythic Agent.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
@@ -222,7 +223,6 @@
     "Day 03 - Elasticsearch Setup Tutorial.md",
     "Day 02 - ELK Stack Introduction.md",
     "Day 23 - Ticketing System.md",
-    "Day 19 - How To Create an Attack Diagram.md",
     "images"
   ]
 }

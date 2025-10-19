@@ -17,7 +17,7 @@
 - **Assign to Host:**  
     Select the target machine (**Challenge-WIN-Haji Server**) and deploy the configuration by clicking **Save and Continue** followed by **Save and Deploy Changes**.
     
-
+![[Pasted image 20251020003054.png]]
 ---
 
 ### 3. Verifying Installation
