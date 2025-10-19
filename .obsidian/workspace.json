@@ -170,13 +170,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32ae198a13053ba0",
+  "active": "32dad6c4b98a1de5",
   "lastOpenFiles": [
-    "Pasted image 20251020010832.png",
+    "images/Pasted image 20251020010927.png",
+    "images/Pasted image 20251020010832.png",
     "Day 21 - Mythic Agent Setup Tutorial.md",
     "Day 20 - Mythic Server Setup Tutorial.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
-    "Pasted image 20251020010332.png",
+    "images/Pasted image 20251020010332.png",
     "Pasted image 20251020010305.png",
     "images/Pasted image 20251020005826.png",
     "images/Screenshot 2025-10-20 005037.png",
@@ -190,7 +191,6 @@
     "Day 22 - How To Create Alerts and Dashboards in Kibana (Part 4).md",
     "Day 27 - Investigate RDP Brute Force Attack.md",
     "images/Screenshot 2025-10-19 021958.png",
-    "images/Pasted image 20251019022835.png",
     "Day 26 - Investigate SSH Brute Force Attack.md",
     "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1).md",
     "Day 13 - How To Install Elastic Agent on Ubuntu.md",
