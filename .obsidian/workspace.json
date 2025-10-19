@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
+                "file": "Day 28 - Investigate Mythic Agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge"
+              "title": "Day 28 - Investigate Mythic Agent"
             }
           }
         ],
@@ -187,6 +187,7 @@
   },
   "active": "2d7072cc011fc7ba",
   "lastOpenFiles": [
+    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "README.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "Day 28 - Investigate Mythic Agent.md",
@@ -222,7 +223,6 @@
     "Day 02 - ELK Stack Introduction.md",
     "Day 23 - Ticketing System.md",
     "Day 19 - How To Create an Attack Diagram.md",
-    "Day 01 - How To Create a Logical Diagram.md",
     "images"
   ]
 }
