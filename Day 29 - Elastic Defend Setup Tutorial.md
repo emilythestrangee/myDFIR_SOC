@@ -15,7 +15,7 @@
     Select _Add Elastic Defend_, name the integration (**MyDFIR-EDR**), and choose the configuration type — _Complete EDR_ to capture full telemetry.
     
 - **Deploy:**  
-    After eploy the configuration by clicking **Save and Continue** followed by **Save and Deploy Changes**.
+    After the setup, deploy the configuration by clicking **Save and Continue** followed by **Save and Deploy Changes**.
     
 ![[Pasted image 20251020003054.png]]
 
@@ -31,7 +31,6 @@
 - **Optional Host Isolation:**  
     If a 30-day trial license is active, you can remotely isolate the host. _(This feature isn’t available on the free tier.)_
     
-
 ---
 
 ### 4. Testing Elastic Defend
