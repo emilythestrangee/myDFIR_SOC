@@ -71,15 +71,10 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 - Multiple back-and-forth network connections; high byte transfers indicate active commands.
 - Suspicious processes in unusual directories.
 - Query: `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>` → 3 events found.
-- One event had a different ProcessGUID → new session/process.
-    
+- One event had a different ProcessGUID, while the other two had the same one → new session/process.
 - Sequence: file created → network connection → executable detected → process created.
-    
 - Parent-child relationship: PowerShell session spawned agent; ProcessGuid passed to ParentProcessGuid.
-    
-- Example: ParentProcessGuid = `{0475c00b-5adf-66f0-283b-000000000a00}`, child ProcessGuid = `{0475c00b-5d10-66f0-393b-000000000a00}`.
-    
-- Child ProcessGuid can be used to find related network connection logs.
+- ParentProcessGuid = `{0475c00b-5adf-66f0-283b-000000000a00}`, child ProcessGuid = `{0475c00b-5d10-66f0-393b-000000000a00}`.
 
 ---
 
@@ -89,6 +84,8 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 - Custom detection rule for `cmd.exe` process creation by non-system users → captures shell commands executed through C2.
 - Alerts include process name, user, timestamp → easier triage.
 - Testing: commands like `whoami` via C2 triggered alerts → detection/integration validated.
+
+
 
 ---
 
