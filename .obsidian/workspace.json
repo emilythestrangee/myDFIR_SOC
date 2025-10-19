@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 28 - Investigate Mythic Agent.md",
+                "file": "Day 29 - Elastic Defend Setup Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 28 - Investigate Mythic Agent"
+              "title": "Day 29 - Elastic Defend Setup Tutorial"
             }
           }
         ],
@@ -185,11 +185,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32dad6c4b98a1de5",
+  "active": "2d7072cc011fc7ba",
   "lastOpenFiles": [
+    "Day 28 - Investigate Mythic Agent.md",
     "images/Pasted image 20251019134225.png",
     "Day 22 - How To Create Alerts and Dashboards in Kibana (Part 4).md",
-    "Day 28 - Investigate Mythic Agent.md",
     "Day 27 - Investigate RDP Brute Force Attack.md",
     "images/Screenshot 2025-10-19 021958.png",
     "images/Pasted image 20251019022835.png",
@@ -203,7 +203,6 @@
     "Day 29 - Elastic Defend Setup Tutorial.md",
     "Day 20 - Mythic Server Setup Tutorial.md",
     "images/Pasted image 20251019013221.png",
-    "images/Pasted image 20251019013020.png",
     "Day 26 - Investigate SSH Brute Force Attack.md",
     "Day 14 - How To Create Alerts and Dashboards in Kibana (Part 1).md",
     "Day 13 - How To Install Elastic Agent on Ubuntu.md",
