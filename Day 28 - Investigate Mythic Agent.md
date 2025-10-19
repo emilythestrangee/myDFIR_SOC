@@ -78,10 +78,12 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 ---
 
-### 6. Alerting and Ticketing Integration
+### 6. Ticketing Integration
 
 - Mythic agent detection rule configured to push alerts via Webhook to osTicket.
 - Click on our Mythic C2 Apollo Detected rule.
+-  Click on Edit rule settings, move to actions and choose Webhook. Under the body, we can use the same structure we have been using.
+- Save changes.
 - Custom detection rule created for `cmd.exe` process creation by non-system users → captures shell commands executed through C2. (Query used: `event.code : “1” and winlog.event_data.OriginalFileName: “Cmd.Exe” and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM” `)
 
 - To test the rule, go to Mythic Server and on Callbacks run “shell whoami”. On execution of this command, we receive alerts: 
