@@ -83,12 +83,10 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 - Mythic agent detection rule configured to push alerts via Webhook to osTicket.
 - Custom detection rule created for `cmd.exe` process creation by non-system users → captures shell commands executed through C2. (Query used: `event.code : “1” and winlog.event_data.OriginalFileName: “Cmd.Exe” and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM” `)
 
-- Alerts include process name, user, timestamp → easier triage.
 - To test the rule, go to Mythic Server and on Callbacks run “shell whoami”. On execution of this command, we receive alerts: 
 ![[Pasted image 20251020023011.png]]
 
-
-
+![[Pasted image 20251020023104.png]]
 
 
 
