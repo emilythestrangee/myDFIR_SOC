@@ -92,27 +92,7 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 
 ---
 
-### 7. Investigation Notes / Observations
-
-- Second Mythic agent was still active; ran commands via C2 (`ipconfig`, `dir`, `mkdir Assigments`, `tree`) → generated logs.
-- Console opened in `C:\Users\Public\Downloads` → unusual location.
-- Dashboard filtering by **Process Initiated Network Connections** showed agent and suspicious PowerShell activity.
-- Executable on Public Downloads connecting to IP via HTTP → suspicious.
-- Three processes all connected to same IP → red flag.
-- Investigation starting points: **suspicious executable** + **destination IP**.
-- Query used to find network connections:
-    
-    `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
-    
-- `ProcessGUID` correlation helped track events across PowerShell session and agent activity.
-- Network connection timestamps vs. file creation timestamps → small delays possible due to Elastic ingestion.
-- Event ID 29 → executable hash extraction.
-- ParentProcessGuid tracking → mapped new processes spawned by agent.
-- Shell commands from C2 → each created a new console, different `ProcessGUID` each time.
-
----
-
-### 8. Detection Rule / SIEM Integration
+### 7. Detection Rule / SIEM Integration
 
 - Created custom rule for `cmd.exe` process creation by non-system users:
     
