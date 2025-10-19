@@ -30,7 +30,6 @@
     
 - **Optional Host Isolation:**  
     If a 30-day trial license is active, you can remotely isolate the host. _(This feature isn’t available on the free tier.)_
-    
 ---
 
 ### 4. Testing Elastic Defend
