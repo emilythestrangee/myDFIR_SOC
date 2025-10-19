@@ -27,13 +27,9 @@
 ### 3. Database and Ticketing Setup
 
 - Configured PHP MyAdmin to allow access using the public IP and updated credentials.
-    
 - Created a database for osTicket and assigned privileges to the root account.
-    
 - Completed osTicket installation and ensured integration with Elastic alerts via webhooks.
-    
 - Tested ticket creation from alert triggers and verified audit trails in the ticketing system.
-    
 
 ---
 
@@ -42,32 +38,23 @@
 #### ELK Instance
 
 - Ubuntu server deployed on Vultr hosting Elasticsearch and Kibana.
-    
 - Elasticsearch used for storing and querying logs; Kibana for dashboards and visualization.
-    
 
 #### Target Machines
 
 - Windows Server 2022 and Ubuntu Server 24.02 deployed as endpoints for telemetry collection.
-    
 - Sysmon installed on Windows for detailed logging of process and network activity.
-    
 - Both servers exposed via SSH/RDP to collect brute force telemetry and conduct attack simulations.
-    
 
 #### Fleet and Elastic Agent
 
 - Fleet server installed for centralized agent management.
-    
 - Elastic Agents deployed on Windows and Ubuntu endpoints to forward telemetry to Elasticsearch.
-    
 
 #### Command and Control Setup
 
 - Mythic C2 server hosted on Ubuntu with Apollo agent deployed on Windows endpoint.
-    
 - Attack simulation conducted via Kali Linux and Mythic C2, demonstrating remote command execution and data exfiltration.
-    
 
 #### Alerts and Dashboards
 
