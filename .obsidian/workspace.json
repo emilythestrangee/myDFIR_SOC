@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 29 - Elastic Defend Setup Tutorial.md",
+                "file": "Day 28 - Investigate Mythic Agent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 29 - Elastic Defend Setup Tutorial"
+              "title": "Day 28 - Investigate Mythic Agent"
             }
           }
         ],
@@ -187,8 +187,8 @@
   },
   "active": "2d7072cc011fc7ba",
   "lastOpenFiles": [
-    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "Day 29 - Elastic Defend Setup Tutorial.md",
+    "Day 30 - Troubleshooting 30-Day MyDFIR SOC Analyst Challenge.md",
     "Day 28 - Investigate Mythic Agent.md",
     "README.md",
     "images/Pasted image 20251019134225.png",
