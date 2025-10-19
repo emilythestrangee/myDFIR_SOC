@@ -34,22 +34,11 @@ Key starting points for investigation: **suspicious executable** + **destination
 ![[Pasted image 20251020014318.png]]
 - Query used: `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
 - Number of events: 3
-- On checking all events, we note that only one has a different process GUID:
-
+- On checking all events, noted that only one has a different process GUID:
+![[Pasted image 20251020014809.png]]
 ---
 
-### 4. Observations from Active Agent
-
-- The second Mythic agent remained active and allowed execution of shell commands such as `ipconfig`, `dir`, and `mkdir Assignments`.
-    
-- Running commands directly through the C2 console created separate PowerShell sessions, producing distinct logs each time.
-    
-- The agent was executing from `C:\Users\Public\Downloads`, a non-standard location for legitimate binaries, marking it suspicious.
-    
-
----
-
-### 5. Event Correlation and Timeline
+### 4. Event Correlation and Timeline
 
 - I identified three network connection events to the Mythic server IP. Using the first event as a starting point, I copied the `ProcessGUID` to correlate all events originating from the same PowerShell session.
     
