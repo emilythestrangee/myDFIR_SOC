@@ -53,6 +53,8 @@ Key starting points for investigation: **suspicious executable** + **destination
 
 ![[Pasted image 20251020021503.png]]
 
+Thus, these findings suggest that the ParentProcessGuid is 
+
 ---
 
 ### 5. Key Findings
