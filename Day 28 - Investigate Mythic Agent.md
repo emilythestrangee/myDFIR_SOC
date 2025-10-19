@@ -30,9 +30,10 @@ Key starting points for investigation: **suspicious executable** + **destination
     
 - Suspicious processes included PowerShell sessions and executables in unusual directories like `C:\Users\Public\Downloads`.
 
+
+![[Pasted image 20251020014318.png]]
 - Query used: `event.code : 3 and winlog.event_data.DestinationIp : <suspiciousIP>`
-
-
+- Number of events: 3
 ---
 
 ### 4. Observations from Active Agent
