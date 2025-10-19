@@ -28,7 +28,8 @@ On the final day, the main objective was to validate that all systems, from the 
 
 - The statuses of **Kibana** and **Elasticsearch** were checked using commands:
     
-    `systemctl status kibana.service systemctl status elasticsearch.service`
+    `systemctl status kibana.service 
+    `systemctl status elasticsearch.service`
     
 - Confirming service statuses ensured that critical components were running and that there were no underlying issues affecting connectivity or telemetry ingestion.
     
