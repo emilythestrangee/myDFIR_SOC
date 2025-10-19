@@ -81,8 +81,7 @@ We can use the child ProcessGuid to find the **Network connection detected** log
 ### 6. Alerting and Ticketing Integration
 
 - Mythic agent detection rule configured to push alerts via Webhook to osTicket.
-- Custom detection rule created for `cmd.exe` process creation by non-system users → captures shell commands executed through C2. (Query used: `)
-
+- Custom detection rule created for `cmd.exe` process creation by non-system users → captures shell commands executed through C2. (Query used: `event.code : “1” and winlog.event_data.OriginalFileName: “Cmd.Exe” and not winlog.event_data.ParentUser: “NT AUTHORITY\\SYSTEM” `)
 
 - Alerts include process name, user, timestamp → easier triage.
 - Testing: commands like `whoami` via C2 triggered alerts → detection/integration validated.
