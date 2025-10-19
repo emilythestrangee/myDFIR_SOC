@@ -59,6 +59,12 @@
 - **Visualize Process Tree:**  
     Use the process tree to view parent-child relationships and track the execution chain.
     
+![[Pasted image 20251020004848.png]]
+
+
+
+
+
 
 ---
 
