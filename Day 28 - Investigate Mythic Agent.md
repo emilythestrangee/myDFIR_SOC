@@ -12,16 +12,12 @@
 
 ![[Pasted image 20251020013515.png]]
 
-- In this table, we can see some suspicious PowerShell activities. Let’s assume that the Agent doesn’t have that much of a suspicious name, but it’s still suspicious that an executable on Public Downloads is establishing a connection on an IP and HTTP port. Normally, I would check the IP on threat intelligence tools, but as it’s our Mythic server, it won’t show up. As I censored the Destination IP, you wouldn’t see, but the three processes on the table established a connection with the same IP (our mythic server) so that would give us a red flag too. This way, we already have a starting point, a suspicious executable and an IP address.
+-    As I censored the Destination IP, you wouldn’t see, but the three processes on the table established a connection with the same IP (our mythic server) so that would give us a red flag too. This way, we already have a starting point, a suspicious executable and an IP address.
 - Table shows suspicious **PowerShell activities**.
-    
 - Agent name isn’t obviously suspicious, but behavior is unusual.
-    
-- Executable running from **Public Downloads** connecting to an **IP via HTTP** → suspicious.
-    
+- Executable running from **Public Downloads** connecting to an **IP via HTTP** is suspicious and unusual.
 - Normally, check IP on **threat intelligence tools**, but it’s our **Mythic server**, so won’t appear as malicious.
-    
-- **Three processes** all connected to the same IP → red flag.
+- **Three processes** all connected to the same IP (our Mythic server) → red flag.
     
 - Key starting points for investigation: **suspicious executable** + **destination IP**.
 
